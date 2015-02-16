@@ -17,6 +17,10 @@ app.config(['$routeProvider',
         templateUrl: 'views/blog.html',
         controller: 'BlogController'
       }).
+      when('/photography', {
+        templateUrl: 'views/photography.html',
+        controller: 'PhotographyController'
+      }).
       otherwise({
         redirectTo: '/main'
       });
@@ -35,4 +39,8 @@ app.controller('AboutController', function($scope) {
 app.controller('BlogController', function($scope) {
     $scope.message = 'This is Add new blog screen';
      
+});
+
+app.controller('PhotographyController', function($scope) {
+    $scope.message = 'This is PhotographyController';
 });
