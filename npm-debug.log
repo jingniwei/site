@@ -1,0 +1,2352 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'http-server' ]
+2 info using npm@1.4.9
+3 info using node@v0.10.28
+4 verbose cache add [ 'http-server', null ]
+5 verbose cache add name=undefined spec="http-server" args=["http-server",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'http-server',
+6 verbose parsed url   path: 'http-server',
+6 verbose parsed url   href: 'http-server' }
+7 silly lockFile ed608307-http-server http-server
+8 verbose lock http-server /Users/Jing/.npm/ed608307-http-server.lock
+9 silly lockFile ed608307-http-server http-server
+10 silly lockFile ed608307-http-server http-server
+11 verbose addNamed [ 'http-server', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 550353c6-http-server http-server@
+14 verbose lock http-server@ /Users/Jing/.npm/550353c6-http-server.lock
+15 silly addNameRange { name: 'http-server', range: '*', hasData: false }
+16 verbose url raw http-server
+17 verbose url resolving [ 'https://registry.npmjs.org/', './http-server' ]
+18 verbose url resolved https://registry.npmjs.org/http-server
+19 info trying registry request attempt 1 at 13:25:24
+20 verbose etag "DTTB5FNMQ9USKRG0SUUXGLWO8"
+21 http GET https://registry.npmjs.org/http-server
+22 http 200 https://registry.npmjs.org/http-server
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:23 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+23 silly registry.get     etag: '"45ZO3OH5S0X7YIGHM0VRSA7U"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     'content-length': '40181',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     'x-served-by': 'cache-atl6235-ATL',
+23 silly registry.get     'x-cache': 'HIT',
+23 silly registry.get     'x-cache-hits': '1',
+23 silly registry.get     'x-timer': 'S1424111122.935367,VS0,VE308',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'http-server', range: '*', hasData: true }
+25 silly addNameRange versions [ 'http-server',
+25 silly addNameRange   [ '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.3',
+25 silly addNameRange     '0.2.1',
+25 silly addNameRange     '0.2.2',
+25 silly addNameRange     '0.2.3',
+25 silly addNameRange     '0.2.4',
+25 silly addNameRange     '0.2.5',
+25 silly addNameRange     '0.2.6',
+25 silly addNameRange     '0.2.9',
+25 silly addNameRange     '0.3.0',
+25 silly addNameRange     '0.4.0',
+25 silly addNameRange     '0.4.1',
+25 silly addNameRange     '0.5.0',
+25 silly addNameRange     '0.5.1',
+25 silly addNameRange     '0.5.2',
+25 silly addNameRange     '0.5.3',
+25 silly addNameRange     '0.5.5',
+25 silly addNameRange     '0.6.0',
+25 silly addNameRange     '0.6.1',
+25 silly addNameRange     '0.7.0',
+25 silly addNameRange     '0.7.1',
+25 silly addNameRange     '0.7.2',
+25 silly addNameRange     '0.7.3',
+25 silly addNameRange     '0.7.4' ] ]
+26 verbose addNamed [ 'http-server', '0.7.4' ]
+27 verbose addNamed [ '0.7.4', '0.7.4' ]
+28 silly lockFile f9914dcb-http-server-0-7-4 http-server@0.7.4
+29 verbose lock http-server@0.7.4 /Users/Jing/.npm/f9914dcb-http-server-0-7-4.lock
+30 silly lockFile f9914dcb-http-server-0-7-4 http-server@0.7.4
+31 silly lockFile f9914dcb-http-server-0-7-4 http-server@0.7.4
+32 silly lockFile 550353c6-http-server http-server@
+33 silly lockFile 550353c6-http-server http-server@
+34 silly resolved [ { name: 'http-server',
+34 silly resolved     version: '0.7.4',
+34 silly resolved     description: 'a simple zero-configuration command-line http server',
+34 silly resolved     main: './lib/http-server',
+34 silly resolved     repository:
+34 silly resolved      { type: 'git',
+34 silly resolved        url: 'git://github.com/nodeapps/http-server.git' },
+34 silly resolved     keywords: [ 'cli', 'command' ],
+34 silly resolved     scripts:
+34 silly resolved      { start: 'node ./bin/http-server',
+34 silly resolved        pretest: 'stylezero bin/ lib/ test',
+34 silly resolved        test: 'vows --spec --isolate' },
+34 silly resolved     contributors:
+34 silly resolved      [ [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object],
+34 silly resolved        [Object] ],
+34 silly resolved     dependencies:
+34 silly resolved      { colors: '1.0.3',
+34 silly resolved        optimist: '0.6.x',
+34 silly resolved        union: '~0.4.3',
+34 silly resolved        ecstatic: '~0.5.6',
+34 silly resolved        portfinder: '0.2.x',
+34 silly resolved        opener: '~1.4.0' },
+34 silly resolved     devDependencies: { vows: '0.7.x', request: '2.49.x', stylezero: '2.1.1' },
+34 silly resolved     bugs: { url: 'https://github.com/nodeapps/http-server/issues' },
+34 silly resolved     licenses: [ [Object] ],
+34 silly resolved     analyze: false,
+34 silly resolved     preferGlobal: 'true',
+34 silly resolved     bin: { 'http-server': './bin/http-server', hs: './bin/http-server' },
+34 silly resolved     readme: '# http-server: a command-line http server\n\n`http-server` is a simple, zero-configuration command-line http server.  It is powerful enough for production usage, but it\'s simple and hackable enough to be used for testing, local development, and learning.\n\n![](https://github.com/nodeapps/http-server/raw/master/screenshots/public.png)\n\n# Installing globally:\n\nInstallation via `npm`.  If you don\'t have `npm` yet:\n\n     curl https://npmjs.org/install.sh | sh\n\nOnce you have `npm`:\n\n     npm install http-server -g\n\nThis will install `http-server` globally so that it may be run from the command line.\n\n## Usage:\n\n     http-server [path] [options]\n\n`[path]` defaults to `./public` if the folder exists, and `./` otherwise.\n\n# Installing as a node app\n\n     mkdir myapp\n     cd myapp/\n     jitsu install http-server\n\n*If you do not have `jitsu` installed you can install it via `npm install jitsu -g`*\n\n## Usage\n\n### Starting http-server locally\n\n     node bin/http-server\n\n*Now you can visit http://localhost:8080 to view your server*\n\n### Deploy http-server to nodejitsu\n\n     jitsu deploy\n\n*You will now be prompted for a `subdomain` to deploy your application on*\n\n## Available Options:\n\n`-p` Port to use (defaults to 8080)\n\n`-a` Address to use (defaults to 0.0.0.0)\n\n`-d` Show directory listings (defaults to \'True\')\n\n`-i` Display autoIndex (defaults to \'True\')\n\n`-e` or `--ext` Default file extension if none supplied (defaults to \'html\')\n\n`-s` or `--silent` Suppress log messages from output\n\n`--cors` Enable CORS via the `Access-Control-Allow-Origin` header\n\n`-o` Open browser window after staring the server\n\n`-h` or `--help` Print this list and exit.\n\n`-c` Set cache time (in seconds) for cache-control max-age header, e.g. -c10 for 10 seconds\n(defaults to \'3600\'). To disable caching, use -c-1.\n',
+34 silly resolved     readmeFilename: 'README.md',
+34 silly resolved     homepage: 'https://github.com/nodeapps/http-server',
+34 silly resolved     _id: 'http-server@0.7.4',
+34 silly resolved     _shasum: '6c23ea345d7db567a91f772924d2de6226b3f4cd',
+34 silly resolved     _from: 'http-server@',
+34 silly resolved     _resolved: 'https://registry.npmjs.org/http-server/-/http-server-0.7.4.tgz' } ]
+35 info install http-server@0.7.4 into /Users/Jing/Desktop/site/app
+36 info installOne http-server@0.7.4
+37 info /Users/Jing/Desktop/site/app/node_modules/http-server unbuild
+38 verbose tar unpack /Users/Jing/.npm/http-server/0.7.4/package.tgz
+39 silly lockFile 7600c97e-ite-app-node-modules-http-server tar:///Users/Jing/Desktop/site/app/node_modules/http-server
+40 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server /Users/Jing/.npm/7600c97e-ite-app-node-modules-http-server.lock
+41 silly lockFile 0b57cf47-pm-http-server-0-7-4-package-tgz tar:///Users/Jing/.npm/http-server/0.7.4/package.tgz
+42 verbose lock tar:///Users/Jing/.npm/http-server/0.7.4/package.tgz /Users/Jing/.npm/0b57cf47-pm-http-server-0-7-4-package-tgz.lock
+43 silly gunzTarPerm modes [ '755', '644' ]
+44 silly gunzTarPerm extractEntry package.json
+45 silly gunzTarPerm extractEntry .npmignore
+46 silly gunzTarPerm extractEntry README.md
+47 silly gunzTarPerm extractEntry LICENSE
+48 silly gunzTarPerm extractEntry lib/http-server.js
+49 silly gunzTarPerm extractEntry screenshots/directory.png
+50 silly gunzTarPerm extractEntry screenshots/public.png
+51 silly gunzTarPerm extractEntry screenshots/start.png
+52 silly gunzTarPerm extractEntry bin/http-server
+53 silly gunzTarPerm extractEntry public/404.html
+54 silly gunzTarPerm extractEntry public/img/turtle.png
+55 silly gunzTarPerm extractEntry public/index.html
+56 silly gunzTarPerm extractEntry test/http-server-test.js
+57 silly gunzTarPerm extractEntry test/fixtures/root/canYouSeeMe
+58 silly gunzTarPerm extractEntry test/fixtures/root/file
+59 silly lockFile 7600c97e-ite-app-node-modules-http-server tar:///Users/Jing/Desktop/site/app/node_modules/http-server
+60 silly lockFile 7600c97e-ite-app-node-modules-http-server tar:///Users/Jing/Desktop/site/app/node_modules/http-server
+61 silly lockFile 0b57cf47-pm-http-server-0-7-4-package-tgz tar:///Users/Jing/.npm/http-server/0.7.4/package.tgz
+62 silly lockFile 0b57cf47-pm-http-server-0-7-4-package-tgz tar:///Users/Jing/.npm/http-server/0.7.4/package.tgz
+63 info preinstall http-server@0.7.4
+64 verbose readDependencies using package.json deps
+65 verbose readDependencies using package.json deps
+66 verbose cache add [ 'colors@1.0.3', null ]
+67 verbose cache add name=undefined spec="colors@1.0.3" args=["colors@1.0.3",null]
+68 verbose parsed url { protocol: null,
+68 verbose parsed url   slashes: null,
+68 verbose parsed url   auth: null,
+68 verbose parsed url   host: null,
+68 verbose parsed url   port: null,
+68 verbose parsed url   hostname: null,
+68 verbose parsed url   hash: null,
+68 verbose parsed url   search: null,
+68 verbose parsed url   query: null,
+68 verbose parsed url   pathname: 'colors@1.0.3',
+68 verbose parsed url   path: 'colors@1.0.3',
+68 verbose parsed url   href: 'colors@1.0.3' }
+69 verbose cache add name="colors" spec="1.0.3" args=["colors","1.0.3"]
+70 verbose parsed url { protocol: null,
+70 verbose parsed url   slashes: null,
+70 verbose parsed url   auth: null,
+70 verbose parsed url   host: null,
+70 verbose parsed url   port: null,
+70 verbose parsed url   hostname: null,
+70 verbose parsed url   hash: null,
+70 verbose parsed url   search: null,
+70 verbose parsed url   query: null,
+70 verbose parsed url   pathname: '1.0.3',
+70 verbose parsed url   path: '1.0.3',
+70 verbose parsed url   href: '1.0.3' }
+71 verbose addNamed [ 'colors', '1.0.3' ]
+72 verbose addNamed [ '1.0.3', '1.0.3' ]
+73 silly lockFile 2ed681a9-colors-1-0-3 colors@1.0.3
+74 verbose lock colors@1.0.3 /Users/Jing/.npm/2ed681a9-colors-1-0-3.lock
+75 verbose cache add [ 'optimist@0.6.x', null ]
+76 verbose cache add name=undefined spec="optimist@0.6.x" args=["optimist@0.6.x",null]
+77 verbose parsed url { protocol: null,
+77 verbose parsed url   slashes: null,
+77 verbose parsed url   auth: null,
+77 verbose parsed url   host: null,
+77 verbose parsed url   port: null,
+77 verbose parsed url   hostname: null,
+77 verbose parsed url   hash: null,
+77 verbose parsed url   search: null,
+77 verbose parsed url   query: null,
+77 verbose parsed url   pathname: 'optimist@0.6.x',
+77 verbose parsed url   path: 'optimist@0.6.x',
+77 verbose parsed url   href: 'optimist@0.6.x' }
+78 verbose cache add name="optimist" spec="0.6.x" args=["optimist","0.6.x"]
+79 verbose parsed url { protocol: null,
+79 verbose parsed url   slashes: null,
+79 verbose parsed url   auth: null,
+79 verbose parsed url   host: null,
+79 verbose parsed url   port: null,
+79 verbose parsed url   hostname: null,
+79 verbose parsed url   hash: null,
+79 verbose parsed url   search: null,
+79 verbose parsed url   query: null,
+79 verbose parsed url   pathname: '0.6.x',
+79 verbose parsed url   path: '0.6.x',
+79 verbose parsed url   href: '0.6.x' }
+80 verbose addNamed [ 'optimist', '0.6.x' ]
+81 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+82 silly lockFile 153c05cb-optimist-0-6-x optimist@0.6.x
+83 verbose lock optimist@0.6.x /Users/Jing/.npm/153c05cb-optimist-0-6-x.lock
+84 verbose cache add [ 'union@~0.4.3', null ]
+85 verbose cache add name=undefined spec="union@~0.4.3" args=["union@~0.4.3",null]
+86 verbose parsed url { protocol: null,
+86 verbose parsed url   slashes: null,
+86 verbose parsed url   auth: null,
+86 verbose parsed url   host: null,
+86 verbose parsed url   port: null,
+86 verbose parsed url   hostname: null,
+86 verbose parsed url   hash: null,
+86 verbose parsed url   search: null,
+86 verbose parsed url   query: null,
+86 verbose parsed url   pathname: 'union@~0.4.3',
+86 verbose parsed url   path: 'union@~0.4.3',
+86 verbose parsed url   href: 'union@~0.4.3' }
+87 verbose cache add name="union" spec="~0.4.3" args=["union","~0.4.3"]
+88 verbose parsed url { protocol: null,
+88 verbose parsed url   slashes: null,
+88 verbose parsed url   auth: null,
+88 verbose parsed url   host: null,
+88 verbose parsed url   port: null,
+88 verbose parsed url   hostname: null,
+88 verbose parsed url   hash: null,
+88 verbose parsed url   search: null,
+88 verbose parsed url   query: null,
+88 verbose parsed url   pathname: '~0.4.3',
+88 verbose parsed url   path: '~0.4.3',
+88 verbose parsed url   href: '~0.4.3' }
+89 verbose addNamed [ 'union', '~0.4.3' ]
+90 verbose addNamed [ null, '>=0.4.3-0 <0.5.0-0' ]
+91 silly lockFile 68666879-union-0-4-3 union@~0.4.3
+92 verbose lock union@~0.4.3 /Users/Jing/.npm/68666879-union-0-4-3.lock
+93 verbose cache add [ 'ecstatic@~0.5.6', null ]
+94 verbose cache add name=undefined spec="ecstatic@~0.5.6" args=["ecstatic@~0.5.6",null]
+95 verbose parsed url { protocol: null,
+95 verbose parsed url   slashes: null,
+95 verbose parsed url   auth: null,
+95 verbose parsed url   host: null,
+95 verbose parsed url   port: null,
+95 verbose parsed url   hostname: null,
+95 verbose parsed url   hash: null,
+95 verbose parsed url   search: null,
+95 verbose parsed url   query: null,
+95 verbose parsed url   pathname: 'ecstatic@~0.5.6',
+95 verbose parsed url   path: 'ecstatic@~0.5.6',
+95 verbose parsed url   href: 'ecstatic@~0.5.6' }
+96 verbose cache add name="ecstatic" spec="~0.5.6" args=["ecstatic","~0.5.6"]
+97 verbose parsed url { protocol: null,
+97 verbose parsed url   slashes: null,
+97 verbose parsed url   auth: null,
+97 verbose parsed url   host: null,
+97 verbose parsed url   port: null,
+97 verbose parsed url   hostname: null,
+97 verbose parsed url   hash: null,
+97 verbose parsed url   search: null,
+97 verbose parsed url   query: null,
+97 verbose parsed url   pathname: '~0.5.6',
+97 verbose parsed url   path: '~0.5.6',
+97 verbose parsed url   href: '~0.5.6' }
+98 verbose addNamed [ 'ecstatic', '~0.5.6' ]
+99 verbose addNamed [ null, '>=0.5.6-0 <0.6.0-0' ]
+100 silly lockFile 4a558dc1-ecstatic-0-5-6 ecstatic@~0.5.6
+101 verbose lock ecstatic@~0.5.6 /Users/Jing/.npm/4a558dc1-ecstatic-0-5-6.lock
+102 silly addNameRange { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+103 verbose cache add [ 'portfinder@0.2.x', null ]
+104 verbose cache add name=undefined spec="portfinder@0.2.x" args=["portfinder@0.2.x",null]
+105 verbose parsed url { protocol: null,
+105 verbose parsed url   slashes: null,
+105 verbose parsed url   auth: null,
+105 verbose parsed url   host: null,
+105 verbose parsed url   port: null,
+105 verbose parsed url   hostname: null,
+105 verbose parsed url   hash: null,
+105 verbose parsed url   search: null,
+105 verbose parsed url   query: null,
+105 verbose parsed url   pathname: 'portfinder@0.2.x',
+105 verbose parsed url   path: 'portfinder@0.2.x',
+105 verbose parsed url   href: 'portfinder@0.2.x' }
+106 verbose cache add name="portfinder" spec="0.2.x" args=["portfinder","0.2.x"]
+107 verbose parsed url { protocol: null,
+107 verbose parsed url   slashes: null,
+107 verbose parsed url   auth: null,
+107 verbose parsed url   host: null,
+107 verbose parsed url   port: null,
+107 verbose parsed url   hostname: null,
+107 verbose parsed url   hash: null,
+107 verbose parsed url   search: null,
+107 verbose parsed url   query: null,
+107 verbose parsed url   pathname: '0.2.x',
+107 verbose parsed url   path: '0.2.x',
+107 verbose parsed url   href: '0.2.x' }
+108 verbose addNamed [ 'portfinder', '0.2.x' ]
+109 verbose addNamed [ null, '>=0.2.0-0 <0.3.0-0' ]
+110 silly lockFile 5a28abaf-portfinder-0-2-x portfinder@0.2.x
+111 verbose lock portfinder@0.2.x /Users/Jing/.npm/5a28abaf-portfinder-0-2-x.lock
+112 silly addNameRange { name: 'union', range: '>=0.4.3-0 <0.5.0-0', hasData: false }
+113 verbose cache add [ 'opener@~1.4.0', null ]
+114 verbose cache add name=undefined spec="opener@~1.4.0" args=["opener@~1.4.0",null]
+115 verbose parsed url { protocol: null,
+115 verbose parsed url   slashes: null,
+115 verbose parsed url   auth: null,
+115 verbose parsed url   host: null,
+115 verbose parsed url   port: null,
+115 verbose parsed url   hostname: null,
+115 verbose parsed url   hash: null,
+115 verbose parsed url   search: null,
+115 verbose parsed url   query: null,
+115 verbose parsed url   pathname: 'opener@~1.4.0',
+115 verbose parsed url   path: 'opener@~1.4.0',
+115 verbose parsed url   href: 'opener@~1.4.0' }
+116 verbose cache add name="opener" spec="~1.4.0" args=["opener","~1.4.0"]
+117 verbose parsed url { protocol: null,
+117 verbose parsed url   slashes: null,
+117 verbose parsed url   auth: null,
+117 verbose parsed url   host: null,
+117 verbose parsed url   port: null,
+117 verbose parsed url   hostname: null,
+117 verbose parsed url   hash: null,
+117 verbose parsed url   search: null,
+117 verbose parsed url   query: null,
+117 verbose parsed url   pathname: '~1.4.0',
+117 verbose parsed url   path: '~1.4.0',
+117 verbose parsed url   href: '~1.4.0' }
+118 verbose addNamed [ 'opener', '~1.4.0' ]
+119 verbose addNamed [ null, '>=1.4.0-0 <1.5.0-0' ]
+120 silly lockFile 0e281f52-opener-1-4-0 opener@~1.4.0
+121 verbose lock opener@~1.4.0 /Users/Jing/.npm/0e281f52-opener-1-4-0.lock
+122 silly addNameRange { name: 'ecstatic', range: '>=0.5.6-0 <0.6.0-0', hasData: false }
+123 silly addNameRange { name: 'portfinder',
+123 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+123 silly addNameRange   hasData: false }
+124 silly addNameRange { name: 'opener', range: '>=1.4.0-0 <1.5.0-0', hasData: false }
+125 verbose url raw colors
+126 verbose url resolving [ 'https://registry.npmjs.org/', './colors' ]
+127 verbose url resolved https://registry.npmjs.org/colors
+128 info trying registry request attempt 1 at 13:25:25
+129 verbose etag "AZXP2AYSBLOCMKEDY2K3KL0OD"
+130 http GET https://registry.npmjs.org/colors
+131 verbose url raw optimist
+132 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+133 verbose url resolved https://registry.npmjs.org/optimist
+134 info trying registry request attempt 1 at 13:25:25
+135 verbose etag "3V5Q1FVXCIHNB0OVFO0QGGQ7U"
+136 http GET https://registry.npmjs.org/optimist
+137 verbose url raw union
+138 verbose url resolving [ 'https://registry.npmjs.org/', './union' ]
+139 verbose url resolved https://registry.npmjs.org/union
+140 info trying registry request attempt 1 at 13:25:25
+141 verbose etag "1CGSAAGXGVNWQ0QI3JZGWJ6A4"
+142 http GET https://registry.npmjs.org/union
+143 verbose url raw ecstatic
+144 verbose url resolving [ 'https://registry.npmjs.org/', './ecstatic' ]
+145 verbose url resolved https://registry.npmjs.org/ecstatic
+146 info trying registry request attempt 1 at 13:25:25
+147 verbose etag "8PPAU6TY8KN0C4W6PST3LKV39"
+148 http GET https://registry.npmjs.org/ecstatic
+149 verbose url raw portfinder
+150 verbose url resolving [ 'https://registry.npmjs.org/', './portfinder' ]
+151 verbose url resolved https://registry.npmjs.org/portfinder
+152 info trying registry request attempt 1 at 13:25:25
+153 verbose etag "2K9A7PSERVKW70B6XSTWJ4XJW"
+154 http GET https://registry.npmjs.org/portfinder
+155 verbose url raw opener
+156 verbose url resolving [ 'https://registry.npmjs.org/', './opener' ]
+157 verbose url resolved https://registry.npmjs.org/opener
+158 info trying registry request attempt 1 at 13:25:25
+159 verbose etag "DAWTZ8WD05OA3LZWXRU993S14"
+160 http GET https://registry.npmjs.org/opener
+161 http 304 https://registry.npmjs.org/optimist
+162 silly registry.get cb [ 304,
+162 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:23 GMT',
+162 silly registry.get     server: 'Apache',
+162 silly registry.get     via: '1.1 varnish',
+162 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:17 GMT',
+162 silly registry.get     'cache-control': 'max-age=60',
+162 silly registry.get     etag: '"3V5Q1FVXCIHNB0OVFO0QGGQ7U"',
+162 silly registry.get     age: '58',
+162 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+162 silly registry.get     'x-cache': 'HIT',
+162 silly registry.get     'x-cache-hits': '3',
+162 silly registry.get     'x-timer': 'S1424111123.762772,VS0,VE0',
+162 silly registry.get     vary: 'Accept',
+162 silly registry.get     'content-length': '0',
+162 silly registry.get     'keep-alive': 'timeout=10, max=50',
+162 silly registry.get     connection: 'Keep-Alive' } ]
+163 verbose etag optimist from cache
+164 silly addNameRange number 2 { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: true }
+165 silly addNameRange versions [ 'optimist',
+165 silly addNameRange   [ '0.0.1',
+165 silly addNameRange     '0.0.2',
+165 silly addNameRange     '0.0.4',
+165 silly addNameRange     '0.0.5',
+165 silly addNameRange     '0.0.6',
+165 silly addNameRange     '0.0.7',
+165 silly addNameRange     '0.1.0',
+165 silly addNameRange     '0.1.1',
+165 silly addNameRange     '0.1.2',
+165 silly addNameRange     '0.1.3',
+165 silly addNameRange     '0.1.4',
+165 silly addNameRange     '0.1.5',
+165 silly addNameRange     '0.1.6',
+165 silly addNameRange     '0.1.7',
+165 silly addNameRange     '0.1.8',
+165 silly addNameRange     '0.1.9',
+165 silly addNameRange     '0.0.3',
+165 silly addNameRange     '0.2.0',
+165 silly addNameRange     '0.2.1',
+165 silly addNameRange     '0.2.2',
+165 silly addNameRange     '0.2.3',
+165 silly addNameRange     '0.2.4',
+165 silly addNameRange     '0.2.5',
+165 silly addNameRange     '0.2.6',
+165 silly addNameRange     '0.2.7',
+165 silly addNameRange     '0.2.8',
+165 silly addNameRange     '0.3.0',
+165 silly addNameRange     '0.3.1',
+165 silly addNameRange     '0.3.3',
+165 silly addNameRange     '0.3.4',
+165 silly addNameRange     '0.3.5',
+165 silly addNameRange     '0.3.6',
+165 silly addNameRange     '0.3.7',
+165 silly addNameRange     '0.4.0',
+165 silly addNameRange     '0.5.0',
+165 silly addNameRange     '0.5.1',
+165 silly addNameRange     '0.5.2',
+165 silly addNameRange     '0.6.0',
+165 silly addNameRange     '0.6.1' ] ]
+166 verbose addNamed [ 'optimist', '0.6.1' ]
+167 verbose addNamed [ '0.6.1', '0.6.1' ]
+168 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+169 verbose lock optimist@0.6.1 /Users/Jing/.npm/0fc74eb8-optimist-0-6-1.lock
+170 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+171 silly lockFile 0fc74eb8-optimist-0-6-1 optimist@0.6.1
+172 silly lockFile 153c05cb-optimist-0-6-x optimist@0.6.x
+173 silly lockFile 153c05cb-optimist-0-6-x optimist@0.6.x
+174 http 304 https://registry.npmjs.org/union
+175 silly registry.get cb [ 304,
+175 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:23 GMT',
+175 silly registry.get     server: 'Apache',
+175 silly registry.get     via: '1.1 varnish',
+175 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:23 GMT',
+175 silly registry.get     'cache-control': 'max-age=60',
+175 silly registry.get     etag: '"1CGSAAGXGVNWQ0QI3JZGWJ6A4"',
+175 silly registry.get     age: '0',
+175 silly registry.get     'x-served-by': 'cache-atl6220-ATL',
+175 silly registry.get     'x-cache': 'HIT',
+175 silly registry.get     'x-cache-hits': '1',
+175 silly registry.get     'x-timer': 'S1424111123.759522,VS0,VE23',
+175 silly registry.get     vary: 'Accept',
+175 silly registry.get     'content-length': '0',
+175 silly registry.get     'keep-alive': 'timeout=10, max=50',
+175 silly registry.get     connection: 'Keep-Alive' } ]
+176 verbose etag union from cache
+177 http 304 https://registry.npmjs.org/portfinder
+178 silly registry.get cb [ 304,
+178 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:23 GMT',
+178 silly registry.get     server: 'Apache',
+178 silly registry.get     via: '1.1 varnish',
+178 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:23 GMT',
+178 silly registry.get     'cache-control': 'max-age=60',
+178 silly registry.get     etag: '"2K9A7PSERVKW70B6XSTWJ4XJW"',
+178 silly registry.get     age: '0',
+178 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+178 silly registry.get     'x-cache': 'HIT',
+178 silly registry.get     'x-cache-hits': '1',
+178 silly registry.get     'x-timer': 'S1424111123.762686,VS0,VE22',
+178 silly registry.get     vary: 'Accept',
+178 silly registry.get     'content-length': '0',
+178 silly registry.get     'keep-alive': 'timeout=10, max=50',
+178 silly registry.get     connection: 'Keep-Alive' } ]
+179 verbose etag portfinder from cache
+180 silly addNameRange number 2 { name: 'union', range: '>=0.4.3-0 <0.5.0-0', hasData: true }
+181 silly addNameRange versions [ 'union',
+181 silly addNameRange   [ '0.1.0',
+181 silly addNameRange     '0.1.2',
+181 silly addNameRange     '0.1.3',
+181 silly addNameRange     '0.1.4',
+181 silly addNameRange     '0.1.5',
+181 silly addNameRange     '0.1.6',
+181 silly addNameRange     '0.1.7',
+181 silly addNameRange     '0.1.8',
+181 silly addNameRange     '0.2.0',
+181 silly addNameRange     '0.2.1',
+181 silly addNameRange     '0.3.0',
+181 silly addNameRange     '0.3.2',
+181 silly addNameRange     '0.3.3',
+181 silly addNameRange     '0.3.4',
+181 silly addNameRange     '0.3.5',
+181 silly addNameRange     '0.3.6',
+181 silly addNameRange     '0.3.7',
+181 silly addNameRange     '0.3.8',
+181 silly addNameRange     '0.4.0',
+181 silly addNameRange     '0.4.1',
+181 silly addNameRange     '0.4.2',
+181 silly addNameRange     '0.4.3',
+181 silly addNameRange     '0.4.4' ] ]
+182 verbose addNamed [ 'union', '0.4.4' ]
+183 verbose addNamed [ '0.4.4', '0.4.4' ]
+184 silly lockFile 0d19ca6f-union-0-4-4 union@0.4.4
+185 verbose lock union@0.4.4 /Users/Jing/.npm/0d19ca6f-union-0-4-4.lock
+186 http 304 https://registry.npmjs.org/ecstatic
+187 silly registry.get cb [ 304,
+187 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:23 GMT',
+187 silly registry.get     server: 'Apache',
+187 silly registry.get     via: '1.1 varnish',
+187 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:23 GMT',
+187 silly registry.get     'cache-control': 'max-age=60',
+187 silly registry.get     etag: '"8PPAU6TY8KN0C4W6PST3LKV39"',
+187 silly registry.get     age: '0',
+187 silly registry.get     'x-served-by': 'cache-atl6234-ATL',
+187 silly registry.get     'x-cache': 'HIT',
+187 silly registry.get     'x-cache-hits': '1',
+187 silly registry.get     'x-timer': 'S1424111123.759679,VS0,VE29',
+187 silly registry.get     vary: 'Accept',
+187 silly registry.get     'content-length': '0',
+187 silly registry.get     'keep-alive': 'timeout=10, max=50',
+187 silly registry.get     connection: 'Keep-Alive' } ]
+188 verbose etag ecstatic from cache
+189 silly addNameRange number 2 { name: 'portfinder',
+189 silly addNameRange   range: '>=0.2.0-0 <0.3.0-0',
+189 silly addNameRange   hasData: true }
+190 silly addNameRange versions [ 'portfinder',
+190 silly addNameRange   [ '0.1.0', '0.2.0', '0.2.1', '0.3.0', '0.4.0' ] ]
+191 verbose addNamed [ 'portfinder', '0.2.1' ]
+192 verbose addNamed [ '0.2.1', '0.2.1' ]
+193 silly lockFile 78f7f8fd-portfinder-0-2-1 portfinder@0.2.1
+194 verbose lock portfinder@0.2.1 /Users/Jing/.npm/78f7f8fd-portfinder-0-2-1.lock
+195 silly addNameRange number 2 { name: 'ecstatic', range: '>=0.5.6-0 <0.6.0-0', hasData: true }
+196 silly addNameRange versions [ 'ecstatic',
+196 silly addNameRange   [ '0.0.0',
+196 silly addNameRange     '0.0.1',
+196 silly addNameRange     '0.1.0',
+196 silly addNameRange     '0.1.1',
+196 silly addNameRange     '0.1.1-1',
+196 silly addNameRange     '0.1.2',
+196 silly addNameRange     '0.1.2-1',
+196 silly addNameRange     '0.1.4',
+196 silly addNameRange     '0.1.5',
+196 silly addNameRange     '0.1.6',
+196 silly addNameRange     '0.1.7',
+196 silly addNameRange     '0.3.0',
+196 silly addNameRange     '0.3.1',
+196 silly addNameRange     '0.3.2',
+196 silly addNameRange     '0.4.0',
+196 silly addNameRange     '0.4.1',
+196 silly addNameRange     '0.4.2',
+196 silly addNameRange     '0.4.3',
+196 silly addNameRange     '0.4.4',
+196 silly addNameRange     '0.4.5',
+196 silly addNameRange     '0.4.6',
+196 silly addNameRange     '0.4.7',
+196 silly addNameRange     '0.4.8',
+196 silly addNameRange     '0.4.9',
+196 silly addNameRange     '0.4.10',
+196 silly addNameRange     '0.4.11',
+196 silly addNameRange     '0.4.12',
+196 silly addNameRange     '0.4.13',
+196 silly addNameRange     '0.5.0',
+196 silly addNameRange     '0.5.1',
+196 silly addNameRange     '0.5.2',
+196 silly addNameRange     '0.5.3',
+196 silly addNameRange     '0.5.4',
+196 silly addNameRange     '0.5.5',
+196 silly addNameRange     '0.5.6',
+196 silly addNameRange     '0.5.7',
+196 silly addNameRange     '0.5.8' ] ]
+197 verbose addNamed [ 'ecstatic', '0.5.8' ]
+198 verbose addNamed [ '0.5.8', '0.5.8' ]
+199 silly lockFile a516fede-ecstatic-0-5-8 ecstatic@0.5.8
+200 verbose lock ecstatic@0.5.8 /Users/Jing/.npm/a516fede-ecstatic-0-5-8.lock
+201 silly lockFile 0d19ca6f-union-0-4-4 union@0.4.4
+202 silly lockFile 0d19ca6f-union-0-4-4 union@0.4.4
+203 silly lockFile 68666879-union-0-4-3 union@~0.4.3
+204 silly lockFile 68666879-union-0-4-3 union@~0.4.3
+205 silly lockFile 78f7f8fd-portfinder-0-2-1 portfinder@0.2.1
+206 silly lockFile 78f7f8fd-portfinder-0-2-1 portfinder@0.2.1
+207 silly lockFile 5a28abaf-portfinder-0-2-x portfinder@0.2.x
+208 silly lockFile 5a28abaf-portfinder-0-2-x portfinder@0.2.x
+209 silly lockFile a516fede-ecstatic-0-5-8 ecstatic@0.5.8
+210 silly lockFile a516fede-ecstatic-0-5-8 ecstatic@0.5.8
+211 silly lockFile 4a558dc1-ecstatic-0-5-6 ecstatic@~0.5.6
+212 silly lockFile 4a558dc1-ecstatic-0-5-6 ecstatic@~0.5.6
+213 http 200 https://registry.npmjs.org/colors
+214 silly registry.get cb [ 200,
+214 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:23 GMT',
+214 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+214 silly registry.get     etag: '"79QD6CXDM1WK8SKUUGYOV8GSY"',
+214 silly registry.get     'content-type': 'application/json',
+214 silly registry.get     'cache-control': 'max-age=60',
+214 silly registry.get     'content-length': '15943',
+214 silly registry.get     'accept-ranges': 'bytes',
+214 silly registry.get     via: '1.1 varnish',
+214 silly registry.get     age: '25',
+214 silly registry.get     'x-served-by': 'cache-atl6228-ATL',
+214 silly registry.get     'x-cache': 'HIT',
+214 silly registry.get     'x-cache-hits': '47',
+214 silly registry.get     'x-timer': 'S1424111123.767805,VS0,VE0',
+214 silly registry.get     vary: 'Accept',
+214 silly registry.get     'keep-alive': 'timeout=10, max=50',
+214 silly registry.get     connection: 'Keep-Alive' } ]
+215 silly lockFile 51fc380f-pmjs-org-colors-colors-1-0-3-tgz https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+216 verbose lock https://registry.npmjs.org/colors/-/colors-1.0.3.tgz /Users/Jing/.npm/51fc380f-pmjs-org-colors-colors-1-0-3-tgz.lock
+217 verbose addRemoteTarball [ 'https://registry.npmjs.org/colors/-/colors-1.0.3.tgz',
+217 verbose addRemoteTarball   '0433f44d809680fdeb60ed260f1b0c262e82a40b' ]
+218 info retry fetch attempt 1 at 13:25:25
+219 verbose fetch to= /var/folders/cr/yz5dzh4s2wq1wry8h_56s8j00000gn/T/npm-84432-ITf6Y0Oq/1424111125903-0.5532003983389586/tmp.tgz
+220 http GET https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+221 http 304 https://registry.npmjs.org/opener
+222 silly registry.get cb [ 304,
+222 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:23 GMT',
+222 silly registry.get     server: 'Apache',
+222 silly registry.get     via: '1.1 varnish',
+222 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:23 GMT',
+222 silly registry.get     'cache-control': 'max-age=60',
+222 silly registry.get     etag: '"DAWTZ8WD05OA3LZWXRU993S14"',
+222 silly registry.get     age: '0',
+222 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+222 silly registry.get     'x-cache': 'HIT',
+222 silly registry.get     'x-cache-hits': '1',
+222 silly registry.get     'x-timer': 'S1424111123.814463,VS0,VE73',
+222 silly registry.get     vary: 'Accept',
+222 silly registry.get     'content-length': '0',
+222 silly registry.get     'keep-alive': 'timeout=10, max=49',
+222 silly registry.get     connection: 'Keep-Alive' } ]
+223 verbose etag opener from cache
+224 silly addNameRange number 2 { name: 'opener', range: '>=1.4.0-0 <1.5.0-0', hasData: true }
+225 silly addNameRange versions [ 'opener',
+225 silly addNameRange   [ '1.0.0', '1.0.1', '1.1.0', '1.2.0', '1.3.0', '1.4.0' ] ]
+226 verbose addNamed [ 'opener', '1.4.0' ]
+227 verbose addNamed [ '1.4.0', '1.4.0' ]
+228 silly lockFile 14125289-opener-1-4-0 opener@1.4.0
+229 verbose lock opener@1.4.0 /Users/Jing/.npm/14125289-opener-1-4-0.lock
+230 silly lockFile 14125289-opener-1-4-0 opener@1.4.0
+231 silly lockFile 14125289-opener-1-4-0 opener@1.4.0
+232 silly lockFile 0e281f52-opener-1-4-0 opener@~1.4.0
+233 silly lockFile 0e281f52-opener-1-4-0 opener@~1.4.0
+234 http 200 https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+235 verbose tar unpack /var/folders/cr/yz5dzh4s2wq1wry8h_56s8j00000gn/T/npm-84432-ITf6Y0Oq/1424111125903-0.5532003983389586/tmp.tgz
+236 silly lockFile 921571c6-rs-Jing-npm-colors-1-0-3-package tar:///Users/Jing/.npm/colors/1.0.3/package
+237 verbose lock tar:///Users/Jing/.npm/colors/1.0.3/package /Users/Jing/.npm/921571c6-rs-Jing-npm-colors-1-0-3-package.lock
+238 silly lockFile 8853d602-25903-0-5532003983389586-tmp-tgz tar:///var/folders/cr/yz5dzh4s2wq1wry8h_56s8j00000gn/T/npm-84432-ITf6Y0Oq/1424111125903-0.5532003983389586/tmp.tgz
+239 verbose lock tar:///var/folders/cr/yz5dzh4s2wq1wry8h_56s8j00000gn/T/npm-84432-ITf6Y0Oq/1424111125903-0.5532003983389586/tmp.tgz /Users/Jing/.npm/8853d602-25903-0-5532003983389586-tmp-tgz.lock
+240 silly gunzTarPerm modes [ '755', '644' ]
+241 silly gunzTarPerm extractEntry package.json
+242 silly gunzTarPerm extractEntry safe.js
+243 silly gunzTarPerm extractEntry .travis.yml
+244 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+245 silly gunzTarPerm extractEntry ReadMe.md
+246 silly gunzTarPerm extractEntry examples/normal-usage.js
+247 silly gunzTarPerm extractEntry examples/safe-string.js
+248 silly gunzTarPerm extractEntry lib/colors.js
+249 silly gunzTarPerm extractEntry lib/extendStringPrototype.js
+250 silly gunzTarPerm extractEntry lib/index.js
+251 silly gunzTarPerm extractEntry lib/styles.js
+252 silly gunzTarPerm extractEntry lib/custom/trap.js
+253 silly gunzTarPerm extractEntry lib/custom/zalgo.js
+254 silly gunzTarPerm extractEntry lib/maps/america.js
+255 silly gunzTarPerm extractEntry lib/maps/rainbow.js
+256 silly gunzTarPerm extractEntry lib/maps/random.js
+257 silly gunzTarPerm extractEntry lib/maps/zebra.js
+258 silly gunzTarPerm extractEntry lib/system/supports-colors.js
+259 silly gunzTarPerm extractEntry screenshots/colors.png
+260 silly gunzTarPerm extractEntry tests/basic-test.js
+261 silly gunzTarPerm extractEntry tests/safe-test.js
+262 silly gunzTarPerm extractEntry themes/generic-logging.js
+263 silly lockFile 921571c6-rs-Jing-npm-colors-1-0-3-package tar:///Users/Jing/.npm/colors/1.0.3/package
+264 silly lockFile 921571c6-rs-Jing-npm-colors-1-0-3-package tar:///Users/Jing/.npm/colors/1.0.3/package
+265 silly lockFile 8853d602-25903-0-5532003983389586-tmp-tgz tar:///var/folders/cr/yz5dzh4s2wq1wry8h_56s8j00000gn/T/npm-84432-ITf6Y0Oq/1424111125903-0.5532003983389586/tmp.tgz
+266 silly lockFile 8853d602-25903-0-5532003983389586-tmp-tgz tar:///var/folders/cr/yz5dzh4s2wq1wry8h_56s8j00000gn/T/npm-84432-ITf6Y0Oq/1424111125903-0.5532003983389586/tmp.tgz
+267 silly lockFile 51fc380f-pmjs-org-colors-colors-1-0-3-tgz https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+268 silly lockFile 51fc380f-pmjs-org-colors-colors-1-0-3-tgz https://registry.npmjs.org/colors/-/colors-1.0.3.tgz
+269 silly lockFile 2ed681a9-colors-1-0-3 colors@1.0.3
+270 silly lockFile 2ed681a9-colors-1-0-3 colors@1.0.3
+271 silly resolved [ { name: 'optimist',
+271 silly resolved     version: '0.6.1',
+271 silly resolved     description: 'Light-weight option parsing with an argv hash. No optstrings attached.',
+271 silly resolved     main: './index.js',
+271 silly resolved     dependencies: { wordwrap: '~0.0.2', minimist: '~0.0.1' },
+271 silly resolved     devDependencies: { hashish: '~0.0.4', tap: '~0.4.0' },
+271 silly resolved     scripts: { test: 'tap ./test/*.js' },
+271 silly resolved     repository:
+271 silly resolved      { type: 'git',
+271 silly resolved        url: 'http://github.com/substack/node-optimist.git' },
+271 silly resolved     keywords:
+271 silly resolved      [ 'argument',
+271 silly resolved        'args',
+271 silly resolved        'option',
+271 silly resolved        'parser',
+271 silly resolved        'parsing',
+271 silly resolved        'cli',
+271 silly resolved        'command' ],
+271 silly resolved     author:
+271 silly resolved      { name: 'James Halliday',
+271 silly resolved        email: 'mail@substack.net',
+271 silly resolved        url: 'http://substack.net' },
+271 silly resolved     license: 'MIT/X11',
+271 silly resolved     engine: { node: '>=0.4' },
+271 silly resolved     readme: '# DEPRECATION NOTICE\n\nI don\'t want to maintain this module anymore since I just use\n[minimist](https://npmjs.org/package/minimist), the argument parsing engine,\ndirectly instead nowadays.\n\nSee [yargs](https://github.com/chevex/yargs) for the modern, pirate-themed\nsuccessor to optimist.\n\n[![yarrrrrrrgs!](http://i.imgur.com/4WFGVJ9.png)](https://github.com/chevex/yargs)\n\nYou should also consider [nomnom](https://github.com/harthur/nomnom).\n\noptimist\n========\n\nOptimist is a node.js library for option parsing for people who hate option\nparsing. More specifically, this module is for people who like all the --bells\nand -whistlz of program usage but think optstrings are a waste of time.\n\nWith optimist, option parsing doesn\'t have to suck (as much).\n\n[![build status](https://secure.travis-ci.org/substack/node-optimist.png)](http://travis-ci.org/substack/node-optimist)\n\nexamples\n========\n\nWith Optimist, the options are just a hash! No optstrings attached.\n-------------------------------------------------------------------\n\nxup.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\n\nif (argv.rif - 5 * argv.xup > 7.138) {\n    console.log(\'Buy more riffiwobbles\');\n}\nelse {\n    console.log(\'Sell the xupptumblers\');\n}\n````\n\n***\n\n    $ ./xup.js --rif=55 --xup=9.52\n    Buy more riffiwobbles\n    \n    $ ./xup.js --rif 12 --xup 8.1\n    Sell the xupptumblers\n\n![This one\'s optimistic.](http://substack.net/images/optimistic.png)\n\nBut wait! There\'s more! You can do short options:\n-------------------------------------------------\n \nshort.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\n````\n\n***\n\n    $ ./short.js -x 10 -y 21\n    (10,21)\n\nAnd booleans, both long and short (and grouped):\n----------------------------------\n\nbool.js:\n\n````javascript\n#!/usr/bin/env node\nvar util = require(\'util\');\nvar argv = require(\'optimist\').argv;\n\nif (argv.s) {\n    util.print(argv.fr ? \'Le chat dit: \' : \'The cat says: \');\n}\nconsole.log(\n    (argv.fr ? \'miaou\' : \'meow\') + (argv.p ? \'.\' : \'\')\n);\n````\n\n***\n\n    $ ./bool.js -s\n    The cat says: meow\n    \n    $ ./bool.js -sp\n    The cat says: meow.\n\n    $ ./bool.js -sp --fr\n    Le chat dit: miaou.\n\nAnd non-hypenated options too! Just use `argv._`!\n-------------------------------------------------\n \nnonopt.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\').argv;\nconsole.log(\'(%d,%d)\', argv.x, argv.y);\nconsole.log(argv._);\n````\n\n***\n\n    $ ./nonopt.js -x 6.82 -y 3.35 moo\n    (6.82,3.35)\n    [ \'moo\' ]\n    \n    $ ./nonopt.js foo -x 0.54 bar -y 1.12 baz\n    (0.54,1.12)\n    [ \'foo\', \'bar\', \'baz\' ]\n\nPlus, Optimist comes with .usage() and .demand()!\n-------------------------------------------------\n\ndivide.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Usage: $0 -x [num] -y [num]\')\n    .demand([\'x\',\'y\'])\n    .argv;\n\nconsole.log(argv.x / argv.y);\n````\n\n***\n \n    $ ./divide.js -x 55 -y 11\n    5\n    \n    $ node ./divide.js -x 4.91 -z 2.51\n    Usage: node ./divide.js -x [num] -y [num]\n\n    Options:\n      -x  [required]\n      -y  [required]\n\n    Missing required arguments: y\n\nEVEN MORE HOLY COW\n------------------\n\ndefault_singles.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default(\'x\', 10)\n    .default(\'y\', 10)\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_singles.js -x 5\n    15\n\ndefault_hash.js:\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .default({ x : 10, y : 10 })\n    .argv\n;\nconsole.log(argv.x + argv.y);\n````\n\n***\n\n    $ ./default_hash.js -y 7\n    17\n\nAnd if you really want to get all descriptive about it...\n---------------------------------------------------------\n\nboolean_single.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean(\'v\')\n    .argv\n;\nconsole.dir(argv);\n````\n\n***\n\n    $ ./boolean_single.js -v foo bar baz\n    true\n    [ \'bar\', \'baz\', \'foo\' ]\n\nboolean_double.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .boolean([\'x\',\'y\',\'z\'])\n    .argv\n;\nconsole.dir([ argv.x, argv.y, argv.z ]);\nconsole.dir(argv._);\n````\n\n***\n\n    $ ./boolean_double.js -x -z one two three\n    [ true, false, true ]\n    [ \'one\', \'two\', \'three\' ]\n\nOptimist is here to help...\n---------------------------\n\nYou can describe parameters for help messages and set aliases. Optimist figures\nout how to format a handy help string automatically.\n\nline_count.js\n\n````javascript\n#!/usr/bin/env node\nvar argv = require(\'optimist\')\n    .usage(\'Count the lines in a file.\\nUsage: $0\')\n    .demand(\'f\')\n    .alias(\'f\', \'file\')\n    .describe(\'f\', \'Load a file\')\n    .argv\n;\n\nvar fs = require(\'fs\');\nvar s = fs.createReadStream(argv.file);\n\nvar lines = 0;\ns.on(\'data\', function (buf) {\n    lines += buf.toString().match(/\\n/g).length;\n});\n\ns.on(\'end\', function () {\n    console.log(lines);\n});\n````\n\n***\n\n    $ node line_count.js\n    Count the lines in a file.\n    Usage: node ./line_count.js\n\n    Options:\n      -f, --file  Load a file  [required]\n\n    Missing required arguments: f\n\n    $ node line_count.js --file line_count.js \n    20\n    \n    $ node line_count.js -f line_count.js \n    20\n\nmethods\n=======\n\nBy itself,\n\n````javascript\nrequire(\'optimist\').argv\n`````\n\nwill use `process.argv` array to construct the `argv` object.\n\nYou can pass in the `process.argv` yourself:\n\n````javascript\nrequire(\'optimist\')([ \'-x\', \'1\', \'-y\', \'2\' ]).argv\n````\n\nor use .parse() to do the same thing:\n\n````javascript\nrequire(\'optimist\').parse([ \'-x\', \'1\', \'-y\', \'2\' ])\n````\n\nThe rest of these methods below come in just before the terminating `.argv`.\n\n.alias(key, alias)\n------------------\n\nSet key names as equivalent such that updates to a key will propagate to aliases\nand vice-versa.\n\nOptionally `.alias()` can take an object that maps keys to aliases.\n\n.default(key, value)\n--------------------\n\nSet `argv[key]` to `value` if no option was specified on `process.argv`.\n\nOptionally `.default()` can take an object that maps keys to default values.\n\n.demand(key)\n------------\n\nIf `key` is a string, show the usage information and exit if `key` wasn\'t\nspecified in `process.argv`.\n\nIf `key` is a number, demand at least as many non-option arguments, which show\nup in `argv._`.\n\nIf `key` is an Array, demand each element.\n\n.describe(key, desc)\n--------------------\n\nDescribe a `key` for the generated usage information.\n\nOptionally `.describe()` can take an object that maps keys to descriptions.\n\n.options(key, opt)\n------------------\n\nInstead of chaining together `.alias().demand().default()`, you can specify\nkeys in `opt` for each of the chainable methods.\n\nFor example:\n\n````javascript\nvar argv = require(\'optimist\')\n    .options(\'f\', {\n        alias : \'file\',\n        default : \'/etc/passwd\',\n    })\n    .argv\n;\n````\n\nis the same as\n\n````javascript\nvar argv = require(\'optimist\')\n    .alias(\'f\', \'file\')\n    .default(\'f\', \'/etc/passwd\')\n    .argv\n;\n````\n\nOptionally `.options()` can take an object that maps keys to `opt` parameters.\n\n.usage(message)\n---------------\n\nSet a usage message to show which commands to use. Inside `message`, the string\n`$0` will get interpolated to the current script name or node command for the\npresent script similar to how `$0` works in bash or perl.\n\n.check(fn)\n----------\n\nCheck that certain conditions are met in the provided arguments.\n\nIf `fn` throws or returns `false`, show the thrown error, usage information, and\nexit.\n\n.boolean(key)\n-------------\n\nInterpret `key` as a boolean. If a non-flag option follows `key` in\n`process.argv`, that string won\'t get set as the value of `key`.\n\nIf `key` never shows up as a flag in `process.arguments`, `argv[key]` will be\n`false`.\n\nIf `key` is an Array, interpret all the elements as booleans.\n\n.string(key)\n------------\n\nTell the parser logic not to interpret `key` as a number or boolean.\nThis can be useful if you need to preserve leading zeros in an input.\n\nIf `key` is an Array, interpret all the elements as strings.\n\n.wrap(columns)\n--------------\n\nFormat usage output to wrap at `columns` many columns.\n\n.help()\n-------\n\nReturn the generated usage string.\n\n.showHelp(fn=console.error)\n---------------------------\n\nPrint the usage data using `fn` for printing.\n\n.parse(args)\n------------\n\nParse `args` instead of `process.argv`. Returns the `argv` object.\n\n.argv\n-----\n\nGet the arguments as a plain old object.\n\nArguments without a corresponding flag show up in the `argv._` array.\n\nThe script name or node command is available at `argv.$0` similarly to how `$0`\nworks in bash or perl.\n\nparsing tricks\n==============\n\nstop parsing\n------------\n\nUse `--` to stop parsing flags and stuff the remainder into `argv._`.\n\n    $ node examples/reflect.js -a 1 -b 2 -- -c 3 -d 4\n    { _: [ \'-c\', \'3\', \'-d\', \'4\' ],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: 1,\n      b: 2 }\n\nnegate fields\n-------------\n\nIf you want to explicity set a field to false instead of just leaving it\nundefined or to override a default you can do `--no-key`.\n\n    $ node examples/reflect.js -a --no-b\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n      a: true,\n      b: false }\n\nnumbers\n-------\n\nEvery argument that looks like a number (`!isNaN(Number(arg))`) is converted to\none. This way you can just `net.createConnection(argv.port)` and you can add\nnumbers out of `argv` with `+` without having that mean concatenation,\nwhich is super frustrating.\n\nduplicates\n----------\n\nIf you specify a flag multiple times it will get turned into an array containing\nall the values in order.\n\n    $ node examples/reflect.js -x 5 -x 8 -x 0\n    { _: [],\n      \'$0\': \'node ./examples/reflect.js\',\n        x: [ 5, 8, 0 ] }\n\ndot notation\n------------\n\nWhen you use dots (`.`s) in argument names, an implicit object path is assumed.\nThis lets you organize arguments into nested objects.\n\n     $ node examples/reflect.js --foo.bar.baz=33 --foo.quux=5\n     { _: [],\n       \'$0\': \'node ./examples/reflect.js\',\n         foo: { bar: { baz: 33 }, quux: 5 } }\n\nshort numbers\n-------------\n\nShort numeric `head -n5` style argument work too:\n\n    $ node reflect.js -n123 -m456\n    { \'3\': true,\n      \'6\': true,\n      _: [],\n      \'$0\': \'node ./reflect.js\',\n      n: 123,\n      m: 456 }\n\ninstallation\n============\n\nWith [npm](http://github.com/isaacs/npm), just do:\n    npm install optimist\n \nor clone this project on github:\n\n    git clone http://github.com/substack/node-optimist.git\n\nTo run the tests with [expresso](http://github.com/visionmedia/expresso),\njust do:\n    \n    expresso\n\ninspired By\n===========\n\nThis module is loosely inspired by Perl\'s\n[Getopt::Casual](http://search.cpan.org/~photo/Getopt-Casual-0.13.1/Casual.pm).\n',
+271 silly resolved     readmeFilename: 'readme.markdown',
+271 silly resolved     bugs: { url: 'https://github.com/substack/node-optimist/issues' },
+271 silly resolved     homepage: 'https://github.com/substack/node-optimist',
+271 silly resolved     _id: 'optimist@0.6.1',
+271 silly resolved     _shasum: 'da3ea74686fa21a19a111c326e90eb15a0196686',
+271 silly resolved     _from: 'optimist@0.6.x',
+271 silly resolved     _resolved: 'https://registry.npmjs.org/optimist/-/optimist-0.6.1.tgz' },
+271 silly resolved   { name: 'union',
+271 silly resolved     description: 'A hybrid buffered / streaming middleware kernel backwards compatible with connect.',
+271 silly resolved     version: '0.4.4',
+271 silly resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+271 silly resolved     maintainers: [ [Object] ],
+271 silly resolved     repository: { type: 'git', url: 'http://github.com/flatiron/union.git' },
+271 silly resolved     dependencies: { qs: '~2.3.3' },
+271 silly resolved     devDependencies:
+271 silly resolved      { ecstatic: '0.5.x',
+271 silly resolved        director: '1.x.x',
+271 silly resolved        request: '2.29.x',
+271 silly resolved        vows: '0.8.x',
+271 silly resolved        connect: '2.22.x' },
+271 silly resolved     scripts: { test: 'vows test/*-test.js --spec -i' },
+271 silly resolved     main: './lib',
+271 silly resolved     engines: { node: '>= 0.8.0' },
+271 silly resolved     readme: '\n<img src="https://github.com/flatiron/union/raw/master/union.png" />\n\n# Synopsis\nA hybrid streaming middleware kernel backwards compatible with connect.\n\n# Motivation\nThe advantage to streaming middlewares is that they do not require buffering the entire stream in order to execute their function.\n\n# Status\n\n[![Build Status](https://secure.travis-ci.org/flatiron/union.png)](http://travis-ci.org/flatiron/union)\n\n# Installation\nThere are a few ways to use `union`. Install the library using npm. You can add it to your `package.json` file as a dependancy\n\n```bash\n  $ [sudo] npm install union\n```\n\n## Usage\nUnion\'s request handling is [connect](https://github.com/senchalabs/connect)-compatible, meaning that all existing connect middlewares should work out-of-the-box with union.\n\n**(Union 0.3.x is compatible with connect >= 2.1.0, [Extensively Tested](https://github.com/pksunkara/connect-union))**\n\nIn addition, the response object passed to middlewares listens for a "next" event, which is equivalent to calling `next()`. Flatiron middlewares are written in this manner, meaning they are not reverse-compatible with connect.\n\n### A simple case\n\n``` js\nvar fs = require(\'fs\'),\n    union = require(\'../lib\'),\n    director = require(\'director\');\n\nvar router = new director.http.Router();\n\nvar server = union.createServer({\n  before: [\n    function (req, res) {\n      var found = router.dispatch(req, res);\n      if (!found) {\n        res.emit(\'next\');\n      }\n    }\n  ]\n});\n\nrouter.get(/foo/, function () {\n  this.res.writeHead(200, { \'Content-Type\': \'text/plain\' })\n  this.res.end(\'hello world\\n\');\n});\n\nrouter.post(/foo/, { stream: true }, function () {\n  var req = this.req,\n      res = this.res,\n      writeStream;\n\n  writeStream = fs.createWriteStream(Date.now() + \'-foo.txt\');\n  req.pipe(writeStream);\n\n  writeStream.on(\'close\', function () {\n    res.writeHead(200, { \'Content-Type\': \'text/plain\' });\n    res.end(\'wrote to a stream!\');\n  });\n});\n\nserver.listen(9090);\nconsole.log(\'union with director running on 9090\');\n```\n\nTo demonstrate the code, we use [director](https://github.com/flatiron/director). A light-weight, Client AND Server side URL-Router for Node.js and Single Page Apps!\n\n### A case with connect\n\nCode based on connect\n\n```js\nvar connect = require(\'connect\')\n  , http = require(\'http\');\n\nvar app = connect()\n  .use(connect.favicon())\n  .use(connect.logger(\'dev\'))\n  .use(connect.static(\'public\'))\n  .use(connect.directory(\'public\'))\n  .use(connect.cookieParser(\'my secret here\'))\n  .use(connect.session())\n  .use(function (req, res) {\n    res.end(\'Hello from Connect!\\n\');\n  });\n\nhttp.createServer(app).listen(3000);\n```\n\nCode based on union\n\n```js\nvar connect = require(\'connect\')\n  , union = require(\'union\');\n\nvar server = union.createServer({\n  buffer: false,\n  before: [\n    connect.favicon(),\n    connect.logger(\'dev\'),\n    connect.static(\'public\'),\n    connect.directory(\'public\'),\n    connect.cookieParser(\'my secret here\'),\n    connect.session(),\n    function (req, res) {\n      res.end(\'Hello from Connect!\\n\');\n    },\n  ]\n}).listen(3000);\n```\n\n### SPDY enabled server example\n\n# API\n\n## union Static Members\n\n### createServer(options)\nThe `options` object is required. Options include:\n\nSpecification\n\n```\n  function createServer(options)\n\n  @param options {Object}\n  An object literal that represents the configuration for the server.\n\n    @option before {Array}\n    The `before` value is an array of middlewares, which are used to route and serve incoming\n    requests. For instance, in the example, `favicon` is a middleware which handles requests\n    for `/favicon.ico`.\n\n    @option after {Array}\n    The `after` value is an array of functions that return stream filters,\n    which are applied after the request handlers in `options.before`.\n    Stream filters inherit from `union.ResponseStream`, which implements the\n    Node.js core streams api with a bunch of other goodies.\n\n    @option limit {Object}\n    (optional) A value, passed to internal instantiations of `union.BufferedStream`.\n\n    @option https {Object}\n    (optional) A value that specifies the certificate and key necessary to create an instance of\n    `https.Server`.\n\n    @option spdy {Object}\n    (optional) A value that specifies the certificate and key necessary to create an instance of\n    `spdy.Server`.\n\n    @option headers {Object}\n    (optional) An object representing a set of headers to set in every outgoing response\n```\n\nExample\n\n```js\nvar server = union.createServer({\n  before: [\n    favicon(\'./favicon.png\'),\n    function (req, res) {\n      var found = router.dispatch(req, res);\n      if (!found) {\n        res.emit(\'next\');\n      }\n    }\n  ]\n});\n```\n\nAn example of the `https` or `spdy` option.\n\n``` js\n{\n  cert: \'path/to/cert.pem\',\n  key: \'path/to/key.pem\',\n  ca: \'path/to/ca.pem\'\n}\n```\n\nAn example of the `headers` option.\n\n``` js\n{\n  \'x-powered-by\': \'your-sweet-application v10.9.8\'\n}\n```\n\n## Error Handling\nError handler is similiar to middlware but takes an extra argument for error at the beginning.\n\n```js\nvar handle = function (err, req, res) {\n  res.statusCode = err.status;\n  res.end(req.headers);\n};\n\nvar server = union.createServer({\n  onError: handle,\n  before: [\n    favicon(\'./favicon.png\'),\n    function (req, res) {\n      var found = router.dispatch(req, res);\n      if (!found) {\n        res.emit(\'next\');\n      }\n    }\n  ]\n});\n```\n\n## BufferedStream Constructor\nThis constructor inherits from `Stream` and can buffer data up to `limit` bytes. It also implements `pause` and `resume` methods.\n\nSpecification\n\n```\n  function BufferedStream(limit)\n\n  @param limit {Number}\n  the limit for which the stream can be buffered\n```\n\nExample\n\n```js\nvar bs = union.BufferedStream(n);\n```\n\n## HttpStream Constructor\nThis constructor inherits from `union.BufferedStream` and returns a stream with these extra properties:\n\nSpecification\n\n```\n  function HttpStream()\n```\n\nExample\n\n```js\nvar hs = union.HttpStream();\n```\n\n## HttpStream Instance Members\n\n### url\nThe url from the request.\n\nExample\n\n```js\nhttpStream.url = \'\';\n```\n\n### headers\nThe HTTP headers associated with the stream.\n\nExample\n\n```js\nhttpStream.headers = \'\';\n```\n\n### method\nThe HTTP method ("GET", "POST", etc).\n\nExample\n\n```js\nhttpStream.method = \'POST\';\n```\n\n### query\nThe querystring associated with the stream (if applicable).\n\nExample\n\n```js\nhttpStream.query = \'\';\n```\n\n## ResponseStream Constructor\nThis constructor inherits from `union.HttpStream`, and is additionally writeable. Union supplies this constructor as a basic response stream middleware from which to inherit.\n\nSpecification\n\n```\n  function ResponseStream()\n```\n\nExample\n\n```js\nvar rs = union.ResponseStream();\n```\n\n# Tests\n\nAll tests are written with [vows][0] and should be run with [npm][1]:\n\n``` bash\n  $ npm test\n```\n\n# Licence\n\n(The MIT License)\n\nCopyright (c) 2010-2012 Charlie Robbins & the Contributors\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \'Software\'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \'AS IS\', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\n[0]: http://vowsjs.org\n[1]: http://npmjs.org\n',
+271 silly resolved     readmeFilename: 'README.md',
+271 silly resolved     bugs: { url: 'https://github.com/flatiron/union/issues' },
+271 silly resolved     homepage: 'https://github.com/flatiron/union',
+271 silly resolved     _id: 'union@0.4.4',
+271 silly resolved     _shasum: 'd73f49321d6ffb721a4c69ff5b0a6c31a98ff3e0',
+271 silly resolved     _from: 'union@~0.4.3',
+271 silly resolved     _resolved: 'https://registry.npmjs.org/union/-/union-0.4.4.tgz' },
+271 silly resolved   { name: 'portfinder',
+271 silly resolved     version: '0.2.1',
+271 silly resolved     description: 'A simple tool to find an open port on the current machine',
+271 silly resolved     author: { name: 'Charlie Robbins', email: 'charlie.robbins@gmail.com' },
+271 silly resolved     repository:
+271 silly resolved      { type: 'git',
+271 silly resolved        url: 'git@github.com:indexzero/node-portfinder.git' },
+271 silly resolved     keywords: [ 'http', 'ports', 'utilities' ],
+271 silly resolved     dependencies: { mkdirp: '0.0.x' },
+271 silly resolved     devDependencies: { async: '0.1.x', vows: '0.5.x' },
+271 silly resolved     main: './lib/portfinder',
+271 silly resolved     scripts: { test: 'vows test/*-test.js --spec' },
+271 silly resolved     engines: { node: '>= 0.4.0' },
+271 silly resolved     readme: '# node-portfinder\n\n## Installation\n\n### Installing npm (node package manager)\n``` bash\n  curl http://npmjs.org/install.sh | sh\n```\n\n### Installing node-portfinder\n``` bash\n  $ [sudo] npm install portfinder\n```\n\n## Usage\nThe `portfinder` module has a simple interface:\n\n``` js\n  var portfinder = require(\'portfinder\');\n  \n  portfinder.getPort(function (err, port) {\n    //\n    // `port` is guarenteed to be a free port \n    // in this scope.\n    //\n  });\n```\n\nBy default `portfinder` will start searching from `8000`. To change this simply set `portfinder.basePort`.\n\n## Run Tests\n``` bash\n  $ npm test\n```\n\n#### Author: [Charlie Robbins][0]\n[0]: http://nodejitsu.com',
+271 silly resolved     readmeFilename: 'README.md',
+271 silly resolved     bugs: { url: 'https://github.com/indexzero/node-portfinder/issues' },
+271 silly resolved     homepage: 'https://github.com/indexzero/node-portfinder',
+271 silly resolved     _id: 'portfinder@0.2.1',
+271 silly resolved     _shasum: 'b2b9b0164f9e17fa3a9c7db2304d0a75140c71ad',
+271 silly resolved     _from: 'portfinder@0.2.x',
+271 silly resolved     _resolved: 'https://registry.npmjs.org/portfinder/-/portfinder-0.2.1.tgz' },
+271 silly resolved   { author:
+271 silly resolved      { name: 'Joshua Holbrook',
+271 silly resolved        email: 'josh@nodejitsu.com',
+271 silly resolved        url: 'http://jesusabdullah.net' },
+271 silly resolved     name: 'ecstatic',
+271 silly resolved     description: 'A simple static file server middleware that works with both Express and Flatiron',
+271 silly resolved     version: '0.5.8',
+271 silly resolved     homepage: 'https://github.com/jesusabdullah/node-ecstatic',
+271 silly resolved     repository:
+271 silly resolved      { type: 'git',
+271 silly resolved        url: 'git@github.com:jesusabdullah/node-ecstatic.git' },
+271 silly resolved     main: './lib/ecstatic.js',
+271 silly resolved     scripts: { test: 'tap test/*.js' },
+271 silly resolved     bin: { ecstatic: './lib/ecstatic.js' },
+271 silly resolved     keywords: [ 'static', 'web', 'server', 'files', 'mime', 'middleware' ],
+271 silly resolved     dependencies: { he: '^0.5.0', mime: '^1.2.11', minimist: '^1.1.0' },
+271 silly resolved     devDependencies:
+271 silly resolved      { tap: '^0.4.13',
+271 silly resolved        request: '^2.49.0',
+271 silly resolved        express: '^3.0.6',
+271 silly resolved        union: '^0.3.8',
+271 silly resolved        mkdirp: '^0.5.0' },
+271 silly resolved     readme: '# Ecstatic [![build status](https://secure.travis-ci.org/jesusabdullah/node-ecstatic.png)](http://travis-ci.org/jesusabdullah/node-ecstatic)\n\n![](http://imgur.com/vhub5.png)\n\nA simple static file server middleware. Use it with a raw http server,\nexpress/connect, or flatiron/union!\n\n# Examples:\n\n## express 3.0.x\n\n``` js\nvar http = require(\'http\');\nvar express = require(\'express\');\nvar ecstatic = require(\'ecstatic\');\n\nvar app = express();\napp.use(ecstatic({ root: __dirname + \'/public\' }));\nhttp.createServer(app).listen(8080);\n\nconsole.log(\'Listening on :8080\');\n```\n\n## union\n\n``` js\nvar union = require(\'union\');\nvar ecstatic = require(\'ecstatic\');\n\nunion.createServer({\n  before: [\n    ecstatic({ root: __dirname + \'/public\' }),\n  ]\n}).listen(8080);\n\nconsole.log(\'Listening on :8080\');\n```\n\n## stock http server\n\n``` js\nvar http = require(\'http\');\nvar ecstatic = require(\'ecstatic\');\n\nhttp.createServer(\n  ecstatic({ root: __dirname + \'/public\' })\n).listen(8080);\n\nconsole.log(\'Listening on :8080\');\n```\n### fall through\nTo allow fall through to your custom routes:\n\n```js\necstatic({ root: __dirname + \'/public\', handleError: false })\n```\n\n# API:\n\n## ecstatic(opts);\n\nPass ecstatic an options hash, and it will return your middleware!\n\n```js\nvar opts = {\n             root          : __dirname + \'/public\',\n             baseDir       : \'/\',\n             cache         : 3600,\n             showDir       : true,\n             autoIndex     : false,\n             humanReadable : true,\n             si            : false,\n             defaultExt    : \'html\',\n             gzip          : false\n           }\n```\n\nIf `opts` is a string, the string is assigned to the root folder and all other\noptions are set to their defaults.\n\n### `opts.root` \n\n`opts.root` is the directory you want to serve up.\n\n### `opts.baseDir`\n\n`opts.baseDir` is `/` by default, but can be changed to allow your static files\nto be served off a specific route. For example, if `opts.baseDir === "blog"`\nand `opts.root = "./public"`, requests for `localhost:8080/blog/index.html` will\nresolve to `./public/index.html`.\n\n### `opts.cache`\n\nCustomize cache control with `opts.cache` , if it is a number then it will set max-age in seconds.\nOther wise it will pass through directly to cache-control. Time defaults to 3600 s (ie, 1 hour).\n\n### `opts.showDir`\n\nTurn **off** directory listings with `opts.showDir === false`. Defaults to **true**.\n\n### `opts.humanReadable`\n\nIf showDir is enabled, add human-readable file sizes. Defaults to **true**.\nAliases are `humanreadable` and `human-readable`.\n\n### `opts.si`\n\nIf showDir and humanReadable are enabled, print file sizes with base 1000 instead\nof base 1024. Name is inferred from cli options for `ls`. Aliased to `index`, the\nequivalent option in Apache.\n\n### `opts.autoIndex`\n\nServe `/path/index.html` when `/path/` is requested.\nTurn **off** autoIndexing with `opts.autoIndex === false`. Defaults to **true**.\n\n### `opts.defaultExt`\n\nTurn on default file extensions with `opts.defaultExt`. If `opts.defaultExt` is\ntrue, it will default to `html`. For example if you want a request to `/a-file`\nto resolve to `./public/a-file.html`, set this to `true`. If you want\n`/a-file` to resolve to `./public/a-file.json` instead, set `opts.defaultExt` to\n`json`.\n\n### `opts.gzip`\n\nSet `opts.gzip === true` in order to turn on "gzip mode," wherein ecstatic will\nserve `./public/some-file.js.gz` in place of `./public/some-file.js` when the\ngzipped version exists and ecstatic determines that the behavior is appropriate.\n\n### `opts.handleError`\n\nTurn **off** handleErrors to allow fall-through with `opts.handleError === false`, Defaults to **true**.\n\n## middleware(req, res, next);\n\nThis works more or less as you\'d expect.\n\n### ecstatic.showDir(folder);\n\nThis returns another middleware which will attempt to show a directory view. Turning on auto-indexing is roughly equivalent to adding this middleware after an ecstatic middleware with autoindexing disabled.\n\n### `ecstatic` command\n\nto start a standalone static http server,\nrun `npm install -g ecstatic` and then run `ecstatic [dir?] [options] --port PORT`\nall options work as above, passed in [optimist](https://github.com/substack/node-optimist) style.\n`port` defaults to `8000`. If a `dir` or `--root dir` argument is not passed, ecsatic will\nserve the current dir.\n\n# Tests:\n\nEcstatic has a fairly extensive test suite. You can run it with:\n\n```sh\n$ npm test\n```\n\n# Contribute:\n\nWithout outside contributions, ecstatic would wither and die! Before\ncontributing, take a quick look at the contributing guidelines in\n./CONTRIBUTING.md . They\'re relatively painless, I promise.\n\n# License:\n\nMIT.\n',
+271 silly resolved     readmeFilename: 'README.md',
+271 silly resolved     bugs: { url: 'https://github.com/jesusabdullah/node-ecstatic/issues' },
+271 silly resolved     _id: 'ecstatic@0.5.8',
+271 silly resolved     _shasum: '819163c3d1e8c73d4e36e268626fea68dd7c398d',
+271 silly resolved     _from: 'ecstatic@~0.5.6',
+271 silly resolved     _resolved: 'https://registry.npmjs.org/ecstatic/-/ecstatic-0.5.8.tgz' },
+271 silly resolved   { name: 'opener',
+271 silly resolved     description: 'Opens stuff, like webpages and files and executables, cross-platform',
+271 silly resolved     version: '1.4.0',
+271 silly resolved     author:
+271 silly resolved      { name: 'Domenic Denicola',
+271 silly resolved        email: 'domenic@domenicdenicola.com',
+271 silly resolved        url: 'http://domenic.me/' },
+271 silly resolved     license: 'WTFPL',
+271 silly resolved     repository: { type: 'git', url: 'git://github.com/domenic/opener.git' },
+271 silly resolved     bugs: { url: 'http://github.com/domenic/opener/issues' },
+271 silly resolved     main: 'opener.js',
+271 silly resolved     bin: { opener: 'opener.js' },
+271 silly resolved     scripts: { lint: 'jshint opener.js' },
+271 silly resolved     devDependencies: { jshint: '^2.5.4' },
+271 silly resolved     readme: '# It Opens Stuff\n\nThat is, in your desktop environment. This will make *actual windows pop up*, with stuff in them:\n\n```bash\nnpm install opener -g\n\nopener http://google.com\nopener ./my-file.txt\nopener firefox\nopener npm run lint\n```\n\nAlso if you want to use it programmatically you can do that too:\n\n```js\nvar opener = require("opener");\n\nopener("http://google.com");\nopener("./my-file.txt");\nopener("firefox");\nopener("npm run lint");\n```\n\nPlus, it returns the child process created, so you can do things like let your script exit while the window stays open:\n\n```js\nvar editor = opener("documentation.odt");\neditor.unref();\n// These other unrefs may be necessary if your OS\'s opener process\n// exits before the process it started is complete.\neditor.stdin.unref();\neditor.stdout.unref();\neditor.stderr.unref();\n```\n\n\n## Use It for Good\n\nLike opening the user\'s browser with a test harness in your package\'s test script:\n\n```json\n{\n    "scripts": {\n        "test": "opener ./test/runner.html"\n    },\n    "devDependencies": {\n        "opener": "*"\n    }\n}\n```\n\n## Why\n\nBecause Windows has `start`, Macs have `open`, and *nix has `xdg-open`. At least\n[according to some guy on StackOverflow](http://stackoverflow.com/q/1480971/3191). And I like things that work on all\nthree. Like Node.js. And Opener.\n',
+271 silly resolved     readmeFilename: 'README.md',
+271 silly resolved     homepage: 'https://github.com/domenic/opener',
+271 silly resolved     _id: 'opener@1.4.0',
+271 silly resolved     _shasum: 'd11f86eeeb076883735c9d509f538fe82d10b941',
+271 silly resolved     _from: 'opener@~1.4.0',
+271 silly resolved     _resolved: 'https://registry.npmjs.org/opener/-/opener-1.4.0.tgz' },
+271 silly resolved   { name: 'colors',
+271 silly resolved     description: 'get colors in your node.js console',
+271 silly resolved     version: '1.0.3',
+271 silly resolved     author: { name: 'Marak Squires' },
+271 silly resolved     homepage: 'https://github.com/Marak/colors.js',
+271 silly resolved     bugs: { url: 'https://github.com/Marak/colors.js/issues' },
+271 silly resolved     keywords: [ 'ansi', 'terminal', 'colors' ],
+271 silly resolved     repository: { type: 'git', url: 'http://github.com/Marak/colors.js.git' },
+271 silly resolved     license: 'MIT',
+271 silly resolved     scripts: { test: 'node tests/basic-test.js && node tests/safe-test.js' },
+271 silly resolved     engines: { node: '>=0.1.90' },
+271 silly resolved     main: './lib/index',
+271 silly resolved     readme: '# colors.js\n\n## get color and style in your node.js console\n\n<img src="https://github.com/Marak/colors.js/raw/master/screenshots/colors.png"/>\n\n## Installation\n\n    npm install colors\n\n## colors and styles!\n\n### text colors\n\n  - black\n  - red\n  - green\n  - yellow\n  - blue\n  - magenta\n  - cyan\n  - white\n  - gray\n  - grey\n\n### background colors\n\n\n\n  - bgBlack\n  - bgRed\n  - bgGreen\n  - bgYellow\n  - bgBlue\n  - bgMagenta\n  - bgCyan\n  - bgWhite\n\n### styles\n\n  - reset\n  - bold\n  - dim\n  - italic\n  - underline\n  - inverse\n  - hidden\n  - strikethrough\n\n### extras\n\n  - rainbow\n  - zebra\n  - america\n  - trap\n  - random\n\n\n## Usage\n\nBy popular demand, `colors` now ships with two types of usages!\n\nThe super nifty way\n\n```js\nvar colors = require(\'colors\');\n\nconsole.log(\'hello\'.green); // outputs green text\nconsole.log(\'i like cake and pies\'.underline.red) // outputs red underlined text\nconsole.log(\'inverse the color\'.inverse); // inverses the color\nconsole.log(\'OMG Rainbows!\'.rainbow); // rainbow\nconsole.log(\'Run the trap\'.trap); // Drops the bass\n\n```\n\nor a slightly less nifty way which doesn\'t extend `String.prototype`\n\n```js\nvar colors = require(\'colors/safe\');\n\nconsole.log(colors.green(\'hello\')); // outputs green text\nconsole.log(colors.red.underline(\'i like cake and pies\')) // outputs red underlined text\nconsole.log(colors.inverse(\'inverse the color\')); // inverses the color\nconsole.log(colors.rainbow(\'OMG Rainbows!\')); // rainbow\nconsole.log(colors.trap(\'Run the trap\')); // Drops the bass\n\n```\n\nI prefer the first way. Some people seem to be afraid of extending `String.prototype` and prefer the second way. \n\nIf you are writing good code you will never have an issue with the first approach. If you really don\'t want to touch `String.prototype`, the second usage will not touch `String` native object.\n\n## Disabling Colors\n\nTo disable colors you can pass the following arguments in the command line to your application:\n\n```bash\nnode myapp.js --no-color\n```\n\n## Console.log [string substitution](http://nodejs.org/docs/latest/api/console.html#console_console_log_data)\n\n```js\nvar name = \'Marak\';\nconsole.log(colors.green(\'Hello %s\'), name);\n// outputs -> \'Hello Marak\'\n```\n\n## Custom themes\n\n### Using standard API\n\n```js\n\nvar colors = require(\'colors\');\n\ncolors.setTheme({\n  silly: \'rainbow\',\n  input: \'grey\',\n  verbose: \'cyan\',\n  prompt: \'grey\',\n  info: \'green\',\n  data: \'grey\',\n  help: \'cyan\',\n  warn: \'yellow\',\n  debug: \'blue\',\n  error: \'red\'\n});\n\n// outputs red text\nconsole.log("this is an error".error);\n\n// outputs yellow text\nconsole.log("this is a warning".warn);\n```\n\n### Using string safe API\n\n```js\nvar colors = require(\'colors/safe\');\n\n// set single property\nvar error = colors.red;\nerror(\'this is red\');\n\n// set theme\ncolors.setTheme({\n  silly: \'rainbow\',\n  input: \'grey\',\n  verbose: \'cyan\',\n  prompt: \'grey\',\n  info: \'green\',\n  data: \'grey\',\n  help: \'cyan\',\n  warn: \'yellow\',\n  debug: \'blue\',\n  error: \'red\'\n});\n\n// outputs red text\nconsole.log(colors.error("this is an error"));\n\n// outputs yellow text\nconsole.log(colors.warn("this is a warning"));\n```\n\n*Protip: There is a secret undocumented style in `colors`. If you find the style you can summon him.*',
+271 silly resolved     readmeFilename: 'ReadMe.md',
+271 silly resolved     _id: 'colors@1.0.3',
+271 silly resolved     _shasum: '0433f44d809680fdeb60ed260f1b0c262e82a40b',
+271 silly resolved     _from: 'colors@1.0.3',
+271 silly resolved     _resolved: 'https://registry.npmjs.org/colors/-/colors-1.0.3.tgz' } ]
+272 info install optimist@0.6.1 into /Users/Jing/Desktop/site/app/node_modules/http-server
+273 info install union@0.4.4 into /Users/Jing/Desktop/site/app/node_modules/http-server
+274 info install portfinder@0.2.1 into /Users/Jing/Desktop/site/app/node_modules/http-server
+275 info install ecstatic@0.5.8 into /Users/Jing/Desktop/site/app/node_modules/http-server
+276 info install opener@1.4.0 into /Users/Jing/Desktop/site/app/node_modules/http-server
+277 info install colors@1.0.3 into /Users/Jing/Desktop/site/app/node_modules/http-server
+278 info installOne optimist@0.6.1
+279 info installOne union@0.4.4
+280 info installOne portfinder@0.2.1
+281 info installOne ecstatic@0.5.8
+282 info installOne opener@1.4.0
+283 info installOne colors@1.0.3
+284 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist unbuild
+285 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union unbuild
+286 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder unbuild
+287 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic unbuild
+288 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/opener unbuild
+289 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/colors unbuild
+290 verbose tar unpack /Users/Jing/.npm/optimist/0.6.1/package.tgz
+291 silly lockFile 2845690e-ttp-server-node-modules-optimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist
+292 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist /Users/Jing/.npm/2845690e-ttp-server-node-modules-optimist.lock
+293 silly lockFile 51d4e335-g-npm-optimist-0-6-1-package-tgz tar:///Users/Jing/.npm/optimist/0.6.1/package.tgz
+294 verbose lock tar:///Users/Jing/.npm/optimist/0.6.1/package.tgz /Users/Jing/.npm/51d4e335-g-npm-optimist-0-6-1-package-tgz.lock
+295 verbose tar unpack /Users/Jing/.npm/union/0.4.4/package.tgz
+296 silly lockFile 38579cd4-s-http-server-node-modules-union tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union
+297 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union /Users/Jing/.npm/38579cd4-s-http-server-node-modules-union.lock
+298 silly lockFile 1a4683ba-Jing-npm-union-0-4-4-package-tgz tar:///Users/Jing/.npm/union/0.4.4/package.tgz
+299 verbose lock tar:///Users/Jing/.npm/union/0.4.4/package.tgz /Users/Jing/.npm/1a4683ba-Jing-npm-union-0-4-4-package-tgz.lock
+300 verbose tar unpack /Users/Jing/.npm/portfinder/0.2.1/package.tgz
+301 silly lockFile 7ccadb63-p-server-node-modules-portfinder tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder
+302 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder /Users/Jing/.npm/7ccadb63-p-server-node-modules-portfinder.lock
+303 silly lockFile 57ae5d5c-npm-portfinder-0-2-1-package-tgz tar:///Users/Jing/.npm/portfinder/0.2.1/package.tgz
+304 verbose lock tar:///Users/Jing/.npm/portfinder/0.2.1/package.tgz /Users/Jing/.npm/57ae5d5c-npm-portfinder-0-2-1-package-tgz.lock
+305 verbose tar unpack /Users/Jing/.npm/ecstatic/0.5.8/package.tgz
+306 silly lockFile a5285e18-ttp-server-node-modules-ecstatic tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+307 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic /Users/Jing/.npm/a5285e18-ttp-server-node-modules-ecstatic.lock
+308 silly lockFile 506f4863-g-npm-ecstatic-0-5-8-package-tgz tar:///Users/Jing/.npm/ecstatic/0.5.8/package.tgz
+309 verbose lock tar:///Users/Jing/.npm/ecstatic/0.5.8/package.tgz /Users/Jing/.npm/506f4863-g-npm-ecstatic-0-5-8-package-tgz.lock
+310 verbose tar unpack /Users/Jing/.npm/opener/1.4.0/package.tgz
+311 silly lockFile ccdfecbd--http-server-node-modules-opener tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/opener
+312 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/opener /Users/Jing/.npm/ccdfecbd--http-server-node-modules-opener.lock
+313 silly lockFile 04fdf5c6-ing-npm-opener-1-4-0-package-tgz tar:///Users/Jing/.npm/opener/1.4.0/package.tgz
+314 verbose lock tar:///Users/Jing/.npm/opener/1.4.0/package.tgz /Users/Jing/.npm/04fdf5c6-ing-npm-opener-1-4-0-package-tgz.lock
+315 verbose tar unpack /Users/Jing/.npm/colors/1.0.3/package.tgz
+316 silly lockFile a3c128b8--http-server-node-modules-colors tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/colors
+317 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/colors /Users/Jing/.npm/a3c128b8--http-server-node-modules-colors.lock
+318 silly lockFile 84853c00-ing-npm-colors-1-0-3-package-tgz tar:///Users/Jing/.npm/colors/1.0.3/package.tgz
+319 verbose lock tar:///Users/Jing/.npm/colors/1.0.3/package.tgz /Users/Jing/.npm/84853c00-ing-npm-colors-1-0-3-package-tgz.lock
+320 silly gunzTarPerm modes [ '755', '644' ]
+321 silly gunzTarPerm modes [ '755', '644' ]
+322 silly gunzTarPerm modes [ '755', '644' ]
+323 silly gunzTarPerm modes [ '755', '644' ]
+324 silly gunzTarPerm modes [ '755', '644' ]
+325 silly gunzTarPerm modes [ '755', '644' ]
+326 silly gunzTarPerm extractEntry package.json
+327 silly gunzTarPerm extractEntry package.json
+328 silly gunzTarPerm extractEntry .gitignore
+329 silly gunzTarPerm extractEntry package.json
+330 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+331 silly gunzTarPerm extractEntry package.json
+332 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+333 silly gunzTarPerm extractEntry package.json
+334 silly gunzTarPerm extractEntry LICENSE
+335 silly gunzTarPerm extractEntry index.js
+336 silly gunzTarPerm extractEntry .npmignore
+337 silly gunzTarPerm extractEntry README.md
+338 silly gunzTarPerm extractEntry package.json
+339 silly gunzTarPerm extractEntry README.md
+340 silly gunzTarPerm extractEntry .npmignore
+341 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+342 silly gunzTarPerm extractEntry README.md
+343 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+344 silly gunzTarPerm extractEntry README.md
+345 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+346 silly gunzTarPerm extractEntry opener.js
+347 silly gunzTarPerm modified mode [ 'opener.js', 438, 420 ]
+348 silly gunzTarPerm extractEntry safe.js
+349 silly gunzTarPerm extractEntry .travis.yml
+350 silly gunzTarPerm extractEntry .travis.yml
+351 silly gunzTarPerm extractEntry example/bool.js
+352 silly gunzTarPerm extractEntry lib/portfinder.js
+353 silly gunzTarPerm extractEntry test/port-finder-socket-test.js
+354 silly gunzTarPerm extractEntry LICENSE
+355 silly gunzTarPerm extractEntry examples/after/index.js
+356 silly gunzTarPerm extractEntry .travis.yml
+357 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+358 silly gunzTarPerm extractEntry CONTRIBUTING.md
+359 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+360 silly gunzTarPerm extractEntry LICENSE.txt
+361 silly gunzTarPerm modified mode [ 'LICENSE.txt', 438, 420 ]
+362 silly gunzTarPerm extractEntry MIT-LICENSE.txt
+363 silly gunzTarPerm extractEntry ReadMe.md
+364 silly gunzTarPerm extractEntry examples/simple/simple.js
+365 silly gunzTarPerm extractEntry examples/simple/spdy.js
+366 silly gunzTarPerm extractEntry examples/simple/favicon.png
+367 silly gunzTarPerm extractEntry examples/simple/middleware/favicon.js
+368 silly gunzTarPerm extractEntry examples/simple/middleware/gzip-decode.js
+369 silly gunzTarPerm extractEntry examples/simple/middleware/gzip-encode.js
+370 silly gunzTarPerm extractEntry examples/socketio/README
+371 silly gunzTarPerm extractEntry examples/socketio/server.js
+372 silly gunzTarPerm extractEntry examples/socketio/index.html
+373 silly gunzTarPerm extractEntry .travis.yml
+374 silly gunzTarPerm extractEntry CHANGELOG.md
+375 silly gunzTarPerm extractEntry lib/buffered-stream.js
+376 silly gunzTarPerm extractEntry lib/core.js
+377 silly gunzTarPerm extractEntry lib/http-stream.js
+378 silly gunzTarPerm extractEntry lib/index.js
+379 silly gunzTarPerm extractEntry lib/request-stream.js
+380 silly gunzTarPerm extractEntry lib/response-stream.js
+381 silly gunzTarPerm extractEntry lib/routing-stream.js
+382 silly gunzTarPerm extractEntry test/after-test.js
+383 silly gunzTarPerm extractEntry test/double-write-test.js
+384 silly gunzTarPerm extractEntry test/ecstatic-test.js
+385 silly gunzTarPerm extractEntry test/status-code-test.js
+386 silly gunzTarPerm extractEntry test/body-parser-test.js
+387 silly gunzTarPerm extractEntry test/simple-test.js
+388 silly gunzTarPerm extractEntry test/prop-test.js
+389 silly gunzTarPerm extractEntry test/streaming-test.js
+390 silly gunzTarPerm extractEntry test/header-test.js
+391 silly gunzTarPerm extractEntry test/helpers/index.js
+392 silly gunzTarPerm extractEntry test/helpers/macros.js
+393 silly gunzTarPerm extractEntry test/fixtures/index.js
+394 silly gunzTarPerm extractEntry test/fixtures/static/some-file.txt
+395 silly gunzTarPerm extractEntry union.png
+396 silly gunzTarPerm extractEntry LICENSE.txt
+397 silly gunzTarPerm modified mode [ 'LICENSE.txt', 436, 420 ]
+398 silly gunzTarPerm extractEntry example/core.js
+399 silly gunzTarPerm modified mode [ 'example/core.js', 436, 420 ]
+400 silly gunzTarPerm extractEntry test/port-finder-test.js
+401 silly gunzTarPerm extractEntry test/fixtures/.gitkeep
+402 silly gunzTarPerm extractEntry example/default_singles.js
+403 silly gunzTarPerm extractEntry example/divide.js
+404 silly gunzTarPerm extractEntry example/line_count.js
+405 silly gunzTarPerm extractEntry example/default_hash.js
+406 silly gunzTarPerm extractEntry example/line_count_wrap.js
+407 silly gunzTarPerm extractEntry example/nonopt.js
+408 silly gunzTarPerm extractEntry example/reflect.js
+409 silly gunzTarPerm extractEntry example/short.js
+410 silly gunzTarPerm extractEntry example/string.js
+411 silly gunzTarPerm extractEntry example/boolean_single.js
+412 silly gunzTarPerm extractEntry example/usage-options.js
+413 silly gunzTarPerm extractEntry example/boolean_double.js
+414 silly gunzTarPerm extractEntry example/xup.js
+415 silly gunzTarPerm extractEntry example/line_count_options.js
+416 silly gunzTarPerm extractEntry readme.markdown
+417 silly gunzTarPerm extractEntry test/_.js
+418 silly gunzTarPerm extractEntry test/dash.js
+419 silly gunzTarPerm extractEntry test/parse.js
+420 silly gunzTarPerm extractEntry test/parse_modified.js
+421 silly gunzTarPerm extractEntry test/short.js
+422 silly gunzTarPerm extractEntry test/usage.js
+423 silly gunzTarPerm extractEntry test/whitespace.js
+424 silly gunzTarPerm extractEntry test/_/argv.js
+425 silly gunzTarPerm extractEntry test/_/bin.js
+426 silly gunzTarPerm extractEntry examples/normal-usage.js
+427 silly gunzTarPerm extractEntry examples/safe-string.js
+428 silly gunzTarPerm extractEntry lib/colors.js
+429 silly gunzTarPerm extractEntry lib/extendStringPrototype.js
+430 silly gunzTarPerm extractEntry example/express.js
+431 silly gunzTarPerm modified mode [ 'example/express.js', 436, 420 ]
+432 silly gunzTarPerm extractEntry example/union.js
+433 silly gunzTarPerm modified mode [ 'example/union.js', 436, 420 ]
+434 silly gunzTarPerm extractEntry lib/index.js
+435 silly gunzTarPerm extractEntry lib/styles.js
+436 silly gunzTarPerm extractEntry example/public/beep/index.html
+437 silly gunzTarPerm modified mode [ 'example/public/beep/index.html', 436, 420 ]
+438 silly lockFile ccdfecbd--http-server-node-modules-opener tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/opener
+439 silly lockFile ccdfecbd--http-server-node-modules-opener tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/opener
+440 silly lockFile 04fdf5c6-ing-npm-opener-1-4-0-package-tgz tar:///Users/Jing/.npm/opener/1.4.0/package.tgz
+441 silly lockFile 04fdf5c6-ing-npm-opener-1-4-0-package-tgz tar:///Users/Jing/.npm/opener/1.4.0/package.tgz
+442 info preinstall opener@1.4.0
+443 silly gunzTarPerm extractEntry lib/custom/trap.js
+444 silly gunzTarPerm extractEntry lib/custom/zalgo.js
+445 verbose readDependencies using package.json deps
+446 verbose readDependencies using package.json deps
+447 silly resolved []
+448 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/opener
+449 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/opener
+450 verbose linkStuff [ false,
+450 verbose linkStuff   false,
+450 verbose linkStuff   false,
+450 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules' ]
+451 info linkStuff opener@1.4.0
+452 silly gunzTarPerm extractEntry example/public/hello.txt
+453 silly gunzTarPerm modified mode [ 'example/public/hello.txt', 436, 420 ]
+454 silly gunzTarPerm extractEntry example/public/subdir/world.txt
+455 silly gunzTarPerm modified mode [ 'example/public/subdir/world.txt', 436, 420 ]
+456 verbose linkBins opener@1.4.0
+457 verbose link bins [ { opener: 'opener.js' },
+457 verbose link bins   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/.bin',
+457 verbose link bins   false ]
+458 verbose linkMans opener@1.4.0
+459 verbose rebuildBundles opener@1.4.0
+460 info install opener@1.4.0
+461 silly gunzTarPerm extractEntry lib/maps/america.js
+462 silly gunzTarPerm extractEntry lib/maps/rainbow.js
+463 silly gunzTarPerm extractEntry example/public/turtle.png
+464 silly gunzTarPerm modified mode [ 'example/public/turtle.png', 436, 420 ]
+465 info postinstall opener@1.4.0
+466 silly gunzTarPerm extractEntry lib/ecstatic.js
+467 silly gunzTarPerm modified mode [ 'lib/ecstatic.js', 509, 493 ]
+468 silly gunzTarPerm extractEntry lib/maps/random.js
+469 silly gunzTarPerm extractEntry lib/maps/zebra.js
+470 silly gunzTarPerm extractEntry lib/ecstatic/etag.js
+471 silly gunzTarPerm modified mode [ 'lib/ecstatic/etag.js', 436, 420 ]
+472 silly gunzTarPerm extractEntry lib/ecstatic/opts.js
+473 silly gunzTarPerm modified mode [ 'lib/ecstatic/opts.js', 436, 420 ]
+474 silly gunzTarPerm extractEntry lib/ecstatic/showdir.js
+475 silly gunzTarPerm modified mode [ 'lib/ecstatic/showdir.js', 436, 420 ]
+476 silly gunzTarPerm extractEntry lib/ecstatic/status-handlers.js
+477 silly gunzTarPerm modified mode [ 'lib/ecstatic/status-handlers.js', 436, 420 ]
+478 silly lockFile 7ccadb63-p-server-node-modules-portfinder tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder
+479 silly lockFile 7ccadb63-p-server-node-modules-portfinder tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder
+480 silly lockFile 57ae5d5c-npm-portfinder-0-2-1-package-tgz tar:///Users/Jing/.npm/portfinder/0.2.1/package.tgz
+481 silly lockFile 57ae5d5c-npm-portfinder-0-2-1-package-tgz tar:///Users/Jing/.npm/portfinder/0.2.1/package.tgz
+482 silly gunzTarPerm extractEntry lib/system/supports-colors.js
+483 silly gunzTarPerm extractEntry screenshots/colors.png
+484 silly gunzTarPerm extractEntry test/304.js
+485 silly gunzTarPerm modified mode [ 'test/304.js', 436, 420 ]
+486 silly gunzTarPerm extractEntry test/core-error.js
+487 silly gunzTarPerm modified mode [ 'test/core-error.js', 436, 420 ]
+488 info preinstall portfinder@0.2.1
+489 verbose readDependencies using package.json deps
+490 verbose readDependencies using package.json deps
+491 silly gunzTarPerm extractEntry tests/basic-test.js
+492 silly gunzTarPerm extractEntry tests/safe-test.js
+493 verbose cache add [ 'mkdirp@0.0.x', null ]
+494 verbose cache add name=undefined spec="mkdirp@0.0.x" args=["mkdirp@0.0.x",null]
+495 verbose parsed url { protocol: null,
+495 verbose parsed url   slashes: null,
+495 verbose parsed url   auth: null,
+495 verbose parsed url   host: null,
+495 verbose parsed url   port: null,
+495 verbose parsed url   hostname: null,
+495 verbose parsed url   hash: null,
+495 verbose parsed url   search: null,
+495 verbose parsed url   query: null,
+495 verbose parsed url   pathname: 'mkdirp@0.0.x',
+495 verbose parsed url   path: 'mkdirp@0.0.x',
+495 verbose parsed url   href: 'mkdirp@0.0.x' }
+496 verbose cache add name="mkdirp" spec="0.0.x" args=["mkdirp","0.0.x"]
+497 verbose parsed url { protocol: null,
+497 verbose parsed url   slashes: null,
+497 verbose parsed url   auth: null,
+497 verbose parsed url   host: null,
+497 verbose parsed url   port: null,
+497 verbose parsed url   hostname: null,
+497 verbose parsed url   hash: null,
+497 verbose parsed url   search: null,
+497 verbose parsed url   query: null,
+497 verbose parsed url   pathname: '0.0.x',
+497 verbose parsed url   path: '0.0.x',
+497 verbose parsed url   href: '0.0.x' }
+498 verbose addNamed [ 'mkdirp', '0.0.x' ]
+499 verbose addNamed [ null, '>=0.0.0-0 <0.1.0-0' ]
+500 silly lockFile 42a09ba5-mkdirp-0-0-x mkdirp@0.0.x
+501 verbose lock mkdirp@0.0.x /Users/Jing/.npm/42a09ba5-mkdirp-0-0-x.lock
+502 silly gunzTarPerm extractEntry test/core.js
+503 silly gunzTarPerm modified mode [ 'test/core.js', 436, 420 ]
+504 silly gunzTarPerm extractEntry test/default-default-ext.js
+505 silly gunzTarPerm modified mode [ 'test/default-default-ext.js', 436, 420 ]
+506 silly gunzTarPerm extractEntry test/escaping.js
+507 silly gunzTarPerm modified mode [ 'test/escaping.js', 436, 420 ]
+508 silly gunzTarPerm extractEntry test/common-cases.js
+509 silly gunzTarPerm modified mode [ 'test/common-cases.js', 436, 420 ]
+510 silly gunzTarPerm extractEntry test/express.js
+511 silly gunzTarPerm modified mode [ 'test/express.js', 436, 420 ]
+512 silly gunzTarPerm extractEntry test/malformed-dir.js
+513 silly gunzTarPerm modified mode [ 'test/malformed-dir.js', 436, 420 ]
+514 silly gunzTarPerm extractEntry test/malformed.js
+515 silly gunzTarPerm modified mode [ 'test/malformed.js', 436, 420 ]
+516 silly gunzTarPerm extractEntry test/union-error.js
+517 silly gunzTarPerm modified mode [ 'test/union-error.js', 436, 420 ]
+518 silly gunzTarPerm extractEntry test/range.js
+519 silly gunzTarPerm modified mode [ 'test/range.js', 436, 420 ]
+520 silly gunzTarPerm extractEntry test/common-cases-error.js
+521 silly gunzTarPerm modified mode [ 'test/common-cases-error.js', 436, 420 ]
+522 silly gunzTarPerm extractEntry test/union.js
+523 silly gunzTarPerm modified mode [ 'test/union.js', 436, 420 ]
+524 silly gunzTarPerm extractEntry test/express-error.js
+525 silly gunzTarPerm modified mode [ 'test/express-error.js', 436, 420 ]
+526 silly gunzTarPerm extractEntry test/public/c.js
+527 silly gunzTarPerm modified mode [ 'test/public/c.js', 436, 420 ]
+528 silly gunzTarPerm extractEntry test/public/e.js
+529 silly gunzTarPerm modified mode [ 'test/public/e.js', 436, 420 ]
+530 silly gunzTarPerm extractEntry test/public/curimit@gmail.com (40%)/index.html
+531 silly gunzTarPerm modified mode [ 'test/public/curimit@gmail.com (40%)/index.html', 436, 420 ]
+532 silly gunzTarPerm extractEntry test/public/compress/foo.js
+533 silly gunzTarPerm modified mode [ 'test/public/compress/foo.js', 436, 420 ]
+534 silly gunzTarPerm extractEntry test/public/compress/foo_2.js
+535 silly gunzTarPerm modified mode [ 'test/public/compress/foo_2.js', 436, 420 ]
+536 silly gunzTarPerm extractEntry test/public/a.txt
+537 silly gunzTarPerm modified mode [ 'test/public/a.txt', 436, 420 ]
+538 silly gunzTarPerm extractEntry test/public/b.txt
+539 silly gunzTarPerm modified mode [ 'test/public/b.txt', 436, 420 ]
+540 silly gunzTarPerm extractEntry test/public/404.html
+541 silly gunzTarPerm modified mode [ 'test/public/404.html', 436, 420 ]
+542 silly gunzTarPerm extractEntry test/public/subdir/e.html
+543 silly gunzTarPerm modified mode [ 'test/public/subdir/e.html', 436, 420 ]
+544 silly gunzTarPerm extractEntry test/public/subdir/index.html
+545 silly gunzTarPerm modified mode [ 'test/public/subdir/index.html', 436, 420 ]
+546 silly gunzTarPerm extractEntry test/public/subdir_with space/file_with space.html
+547 silly gunzTarPerm modified mode [ 'test/public/subdir_with space/file_with space.html',
+547 silly gunzTarPerm   436,
+547 silly gunzTarPerm   420 ]
+548 silly gunzTarPerm extractEntry test/public/subdir_with space/index.html
+549 silly gunzTarPerm modified mode [ 'test/public/subdir_with space/index.html', 436, 420 ]
+550 silly gunzTarPerm extractEntry test/public/中文/檔案.html
+551 silly gunzTarPerm modified mode [ 'test/public/中文/檔案.html', 436, 420 ]
+552 silly addNameRange { name: 'mkdirp', range: '>=0.0.0-0 <0.1.0-0', hasData: false }
+553 verbose url raw mkdirp
+554 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+555 verbose url resolved https://registry.npmjs.org/mkdirp
+556 info trying registry request attempt 1 at 13:25:26
+557 verbose etag "CL75KK6ZZI6UXVC9HS3VYDN5V"
+558 http GET https://registry.npmjs.org/mkdirp
+559 silly gunzTarPerm extractEntry themes/generic-logging.js
+560 silly lockFile 2845690e-ttp-server-node-modules-optimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist
+561 silly lockFile 2845690e-ttp-server-node-modules-optimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist
+562 silly lockFile 51d4e335-g-npm-optimist-0-6-1-package-tgz tar:///Users/Jing/.npm/optimist/0.6.1/package.tgz
+563 silly lockFile 51d4e335-g-npm-optimist-0-6-1-package-tgz tar:///Users/Jing/.npm/optimist/0.6.1/package.tgz
+564 info preinstall optimist@0.6.1
+565 verbose readDependencies using package.json deps
+566 verbose readDependencies using package.json deps
+567 verbose cache add [ 'wordwrap@~0.0.2', null ]
+568 verbose cache add name=undefined spec="wordwrap@~0.0.2" args=["wordwrap@~0.0.2",null]
+569 verbose parsed url { protocol: null,
+569 verbose parsed url   slashes: null,
+569 verbose parsed url   auth: null,
+569 verbose parsed url   host: null,
+569 verbose parsed url   port: null,
+569 verbose parsed url   hostname: null,
+569 verbose parsed url   hash: null,
+569 verbose parsed url   search: null,
+569 verbose parsed url   query: null,
+569 verbose parsed url   pathname: 'wordwrap@~0.0.2',
+569 verbose parsed url   path: 'wordwrap@~0.0.2',
+569 verbose parsed url   href: 'wordwrap@~0.0.2' }
+570 verbose cache add name="wordwrap" spec="~0.0.2" args=["wordwrap","~0.0.2"]
+571 verbose parsed url { protocol: null,
+571 verbose parsed url   slashes: null,
+571 verbose parsed url   auth: null,
+571 verbose parsed url   host: null,
+571 verbose parsed url   port: null,
+571 verbose parsed url   hostname: null,
+571 verbose parsed url   hash: null,
+571 verbose parsed url   search: null,
+571 verbose parsed url   query: null,
+571 verbose parsed url   pathname: '~0.0.2',
+571 verbose parsed url   path: '~0.0.2',
+571 verbose parsed url   href: '~0.0.2' }
+572 verbose addNamed [ 'wordwrap', '~0.0.2' ]
+573 verbose addNamed [ null, '>=0.0.2-0 <0.1.0-0' ]
+574 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+575 verbose lock wordwrap@~0.0.2 /Users/Jing/.npm/8bd42136-wordwrap-0-0-2.lock
+576 verbose cache add [ 'minimist@~0.0.1', null ]
+577 verbose cache add name=undefined spec="minimist@~0.0.1" args=["minimist@~0.0.1",null]
+578 verbose parsed url { protocol: null,
+578 verbose parsed url   slashes: null,
+578 verbose parsed url   auth: null,
+578 verbose parsed url   host: null,
+578 verbose parsed url   port: null,
+578 verbose parsed url   hostname: null,
+578 verbose parsed url   hash: null,
+578 verbose parsed url   search: null,
+578 verbose parsed url   query: null,
+578 verbose parsed url   pathname: 'minimist@~0.0.1',
+578 verbose parsed url   path: 'minimist@~0.0.1',
+578 verbose parsed url   href: 'minimist@~0.0.1' }
+579 verbose cache add name="minimist" spec="~0.0.1" args=["minimist","~0.0.1"]
+580 verbose parsed url { protocol: null,
+580 verbose parsed url   slashes: null,
+580 verbose parsed url   auth: null,
+580 verbose parsed url   host: null,
+580 verbose parsed url   port: null,
+580 verbose parsed url   hostname: null,
+580 verbose parsed url   hash: null,
+580 verbose parsed url   search: null,
+580 verbose parsed url   query: null,
+580 verbose parsed url   pathname: '~0.0.1',
+580 verbose parsed url   path: '~0.0.1',
+580 verbose parsed url   href: '~0.0.1' }
+581 verbose addNamed [ 'minimist', '~0.0.1' ]
+582 verbose addNamed [ null, '>=0.0.1-0 <0.1.0-0' ]
+583 silly lockFile 7a855a96-minimist-0-0-1 minimist@~0.0.1
+584 verbose lock minimist@~0.0.1 /Users/Jing/.npm/7a855a96-minimist-0-0-1.lock
+585 silly addNameRange { name: 'wordwrap', range: '>=0.0.2-0 <0.1.0-0', hasData: false }
+586 silly addNameRange { name: 'minimist', range: '>=0.0.1-0 <0.1.0-0', hasData: false }
+587 verbose url raw wordwrap
+588 verbose url resolving [ 'https://registry.npmjs.org/', './wordwrap' ]
+589 verbose url resolved https://registry.npmjs.org/wordwrap
+590 info trying registry request attempt 1 at 13:25:26
+591 verbose etag "ALYDR9120G3MFMF3HT2W8TQOT"
+592 http GET https://registry.npmjs.org/wordwrap
+593 verbose url raw minimist
+594 verbose url resolving [ 'https://registry.npmjs.org/', './minimist' ]
+595 verbose url resolved https://registry.npmjs.org/minimist
+596 info trying registry request attempt 1 at 13:25:26
+597 verbose etag "1XZYUOLJVFPQ6WACA6KDFYTSG"
+598 http GET https://registry.npmjs.org/minimist
+599 silly lockFile a3c128b8--http-server-node-modules-colors tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/colors
+600 silly lockFile a3c128b8--http-server-node-modules-colors tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/colors
+601 silly lockFile 84853c00-ing-npm-colors-1-0-3-package-tgz tar:///Users/Jing/.npm/colors/1.0.3/package.tgz
+602 silly lockFile 84853c00-ing-npm-colors-1-0-3-package-tgz tar:///Users/Jing/.npm/colors/1.0.3/package.tgz
+603 info preinstall colors@1.0.3
+604 verbose readDependencies using package.json deps
+605 verbose readDependencies using package.json deps
+606 silly resolved []
+607 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/colors
+608 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/colors
+609 verbose linkStuff [ false,
+609 verbose linkStuff   false,
+609 verbose linkStuff   false,
+609 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules' ]
+610 info linkStuff colors@1.0.3
+611 verbose linkBins colors@1.0.3
+612 verbose linkMans colors@1.0.3
+613 verbose rebuildBundles colors@1.0.3
+614 info install colors@1.0.3
+615 info postinstall colors@1.0.3
+616 silly lockFile 38579cd4-s-http-server-node-modules-union tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union
+617 silly lockFile 38579cd4-s-http-server-node-modules-union tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union
+618 silly lockFile 1a4683ba-Jing-npm-union-0-4-4-package-tgz tar:///Users/Jing/.npm/union/0.4.4/package.tgz
+619 silly lockFile 1a4683ba-Jing-npm-union-0-4-4-package-tgz tar:///Users/Jing/.npm/union/0.4.4/package.tgz
+620 info preinstall union@0.4.4
+621 verbose readDependencies using package.json deps
+622 verbose readDependencies using package.json deps
+623 verbose cache add [ 'qs@~2.3.3', null ]
+624 verbose cache add name=undefined spec="qs@~2.3.3" args=["qs@~2.3.3",null]
+625 verbose parsed url { protocol: null,
+625 verbose parsed url   slashes: null,
+625 verbose parsed url   auth: null,
+625 verbose parsed url   host: null,
+625 verbose parsed url   port: null,
+625 verbose parsed url   hostname: null,
+625 verbose parsed url   hash: null,
+625 verbose parsed url   search: null,
+625 verbose parsed url   query: null,
+625 verbose parsed url   pathname: 'qs@~2.3.3',
+625 verbose parsed url   path: 'qs@~2.3.3',
+625 verbose parsed url   href: 'qs@~2.3.3' }
+626 verbose cache add name="qs" spec="~2.3.3" args=["qs","~2.3.3"]
+627 verbose parsed url { protocol: null,
+627 verbose parsed url   slashes: null,
+627 verbose parsed url   auth: null,
+627 verbose parsed url   host: null,
+627 verbose parsed url   port: null,
+627 verbose parsed url   hostname: null,
+627 verbose parsed url   hash: null,
+627 verbose parsed url   search: null,
+627 verbose parsed url   query: null,
+627 verbose parsed url   pathname: '~2.3.3',
+627 verbose parsed url   path: '~2.3.3',
+627 verbose parsed url   href: '~2.3.3' }
+628 verbose addNamed [ 'qs', '~2.3.3' ]
+629 verbose addNamed [ null, '>=2.3.3-0 <2.4.0-0' ]
+630 silly lockFile d9d58d79-qs-2-3-3 qs@~2.3.3
+631 verbose lock qs@~2.3.3 /Users/Jing/.npm/d9d58d79-qs-2-3-3.lock
+632 silly addNameRange { name: 'qs', range: '>=2.3.3-0 <2.4.0-0', hasData: false }
+633 verbose url raw qs
+634 verbose url resolving [ 'https://registry.npmjs.org/', './qs' ]
+635 verbose url resolved https://registry.npmjs.org/qs
+636 info trying registry request attempt 1 at 13:25:26
+637 verbose etag "7GM9TY7BL57M3R7O9GEZGC9JR"
+638 http GET https://registry.npmjs.org/qs
+639 silly lockFile a5285e18-ttp-server-node-modules-ecstatic tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+640 silly lockFile a5285e18-ttp-server-node-modules-ecstatic tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+641 silly lockFile 506f4863-g-npm-ecstatic-0-5-8-package-tgz tar:///Users/Jing/.npm/ecstatic/0.5.8/package.tgz
+642 silly lockFile 506f4863-g-npm-ecstatic-0-5-8-package-tgz tar:///Users/Jing/.npm/ecstatic/0.5.8/package.tgz
+643 info preinstall ecstatic@0.5.8
+644 verbose readDependencies using package.json deps
+645 verbose readDependencies using package.json deps
+646 verbose cache add [ 'he@^0.5.0', null ]
+647 verbose cache add name=undefined spec="he@^0.5.0" args=["he@^0.5.0",null]
+648 verbose parsed url { protocol: null,
+648 verbose parsed url   slashes: null,
+648 verbose parsed url   auth: null,
+648 verbose parsed url   host: null,
+648 verbose parsed url   port: null,
+648 verbose parsed url   hostname: null,
+648 verbose parsed url   hash: null,
+648 verbose parsed url   search: null,
+648 verbose parsed url   query: null,
+648 verbose parsed url   pathname: 'he@^0.5.0',
+648 verbose parsed url   path: 'he@^0.5.0',
+648 verbose parsed url   href: 'he@^0.5.0' }
+649 verbose cache add name="he" spec="^0.5.0" args=["he","^0.5.0"]
+650 verbose parsed url { protocol: null,
+650 verbose parsed url   slashes: null,
+650 verbose parsed url   auth: null,
+650 verbose parsed url   host: null,
+650 verbose parsed url   port: null,
+650 verbose parsed url   hostname: null,
+650 verbose parsed url   hash: null,
+650 verbose parsed url   search: null,
+650 verbose parsed url   query: null,
+650 verbose parsed url   pathname: '^0.5.0',
+650 verbose parsed url   path: '^0.5.0',
+650 verbose parsed url   href: '^0.5.0' }
+651 verbose addNamed [ 'he', '^0.5.0' ]
+652 verbose addNamed [ null, '>=0.5.0-0 <0.6.0-0' ]
+653 silly lockFile b6bb0826-he-0-5-0 he@^0.5.0
+654 verbose lock he@^0.5.0 /Users/Jing/.npm/b6bb0826-he-0-5-0.lock
+655 verbose cache add [ 'mime@^1.2.11', null ]
+656 verbose cache add name=undefined spec="mime@^1.2.11" args=["mime@^1.2.11",null]
+657 verbose parsed url { protocol: null,
+657 verbose parsed url   slashes: null,
+657 verbose parsed url   auth: null,
+657 verbose parsed url   host: null,
+657 verbose parsed url   port: null,
+657 verbose parsed url   hostname: null,
+657 verbose parsed url   hash: null,
+657 verbose parsed url   search: null,
+657 verbose parsed url   query: null,
+657 verbose parsed url   pathname: 'mime@^1.2.11',
+657 verbose parsed url   path: 'mime@^1.2.11',
+657 verbose parsed url   href: 'mime@^1.2.11' }
+658 verbose cache add name="mime" spec="^1.2.11" args=["mime","^1.2.11"]
+659 verbose parsed url { protocol: null,
+659 verbose parsed url   slashes: null,
+659 verbose parsed url   auth: null,
+659 verbose parsed url   host: null,
+659 verbose parsed url   port: null,
+659 verbose parsed url   hostname: null,
+659 verbose parsed url   hash: null,
+659 verbose parsed url   search: null,
+659 verbose parsed url   query: null,
+659 verbose parsed url   pathname: '^1.2.11',
+659 verbose parsed url   path: '^1.2.11',
+659 verbose parsed url   href: '^1.2.11' }
+660 verbose addNamed [ 'mime', '^1.2.11' ]
+661 verbose addNamed [ null, '>=1.2.11-0 <2.0.0-0' ]
+662 silly lockFile 2ee47c7e-mime-1-2-11 mime@^1.2.11
+663 verbose lock mime@^1.2.11 /Users/Jing/.npm/2ee47c7e-mime-1-2-11.lock
+664 verbose cache add [ 'minimist@^1.1.0', null ]
+665 verbose cache add name=undefined spec="minimist@^1.1.0" args=["minimist@^1.1.0",null]
+666 verbose parsed url { protocol: null,
+666 verbose parsed url   slashes: null,
+666 verbose parsed url   auth: null,
+666 verbose parsed url   host: null,
+666 verbose parsed url   port: null,
+666 verbose parsed url   hostname: null,
+666 verbose parsed url   hash: null,
+666 verbose parsed url   search: null,
+666 verbose parsed url   query: null,
+666 verbose parsed url   pathname: 'minimist@^1.1.0',
+666 verbose parsed url   path: 'minimist@^1.1.0',
+666 verbose parsed url   href: 'minimist@^1.1.0' }
+667 verbose cache add name="minimist" spec="^1.1.0" args=["minimist","^1.1.0"]
+668 verbose parsed url { protocol: null,
+668 verbose parsed url   slashes: null,
+668 verbose parsed url   auth: null,
+668 verbose parsed url   host: null,
+668 verbose parsed url   port: null,
+668 verbose parsed url   hostname: null,
+668 verbose parsed url   hash: null,
+668 verbose parsed url   search: null,
+668 verbose parsed url   query: null,
+668 verbose parsed url   pathname: '^1.1.0',
+668 verbose parsed url   path: '^1.1.0',
+668 verbose parsed url   href: '^1.1.0' }
+669 verbose addNamed [ 'minimist', '^1.1.0' ]
+670 verbose addNamed [ null, '>=1.1.0-0 <2.0.0-0' ]
+671 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+672 verbose lock minimist@^1.1.0 /Users/Jing/.npm/b7cda548-minimist-1-1-0.lock
+673 silly addNameRange { name: 'he', range: '>=0.5.0-0 <0.6.0-0', hasData: false }
+674 silly addNameRange { name: 'mime', range: '>=1.2.11-0 <2.0.0-0', hasData: false }
+675 silly addNameRange { name: 'minimist', range: '>=1.1.0-0 <2.0.0-0', hasData: false }
+676 verbose url raw minimist
+677 verbose url resolving [ 'https://registry.npmjs.org/', './minimist' ]
+678 verbose url resolved https://registry.npmjs.org/minimist
+679 info trying registry request attempt 1 at 13:25:26
+680 verbose etag "1XZYUOLJVFPQ6WACA6KDFYTSG"
+681 http GET https://registry.npmjs.org/minimist
+682 verbose url raw mime
+683 verbose url resolving [ 'https://registry.npmjs.org/', './mime' ]
+684 verbose url resolved https://registry.npmjs.org/mime
+685 info trying registry request attempt 1 at 13:25:26
+686 verbose etag "1DZVA85EWUV4UWIWYSWG26729"
+687 http GET https://registry.npmjs.org/mime
+688 verbose url raw he
+689 verbose url resolving [ 'https://registry.npmjs.org/', './he' ]
+690 verbose url resolved https://registry.npmjs.org/he
+691 info trying registry request attempt 1 at 13:25:26
+692 verbose etag "E23G873L84QZH0NSWESTL8FC0"
+693 http GET https://registry.npmjs.org/he
+694 http 304 https://registry.npmjs.org/mkdirp
+695 silly registry.get cb [ 304,
+695 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:24 GMT',
+695 silly registry.get     server: 'Apache',
+695 silly registry.get     via: '1.1 varnish',
+695 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:19 GMT',
+695 silly registry.get     'cache-control': 'max-age=60',
+695 silly registry.get     etag: '"CL75KK6ZZI6UXVC9HS3VYDN5V"',
+695 silly registry.get     age: '18',
+695 silly registry.get     'x-served-by': 'cache-atl6228-ATL',
+695 silly registry.get     'x-cache': 'HIT',
+695 silly registry.get     'x-cache-hits': '2',
+695 silly registry.get     'x-timer': 'S1424111124.537904,VS0,VE0',
+695 silly registry.get     vary: 'Accept',
+695 silly registry.get     'content-length': '0',
+695 silly registry.get     'keep-alive': 'timeout=10, max=50',
+695 silly registry.get     connection: 'Keep-Alive' } ]
+696 verbose etag mkdirp from cache
+697 silly addNameRange number 2 { name: 'mkdirp', range: '>=0.0.0-0 <0.1.0-0', hasData: true }
+698 silly addNameRange versions [ 'mkdirp',
+698 silly addNameRange   [ '0.0.1',
+698 silly addNameRange     '0.0.2',
+698 silly addNameRange     '0.0.3',
+698 silly addNameRange     '0.0.4',
+698 silly addNameRange     '0.0.5',
+698 silly addNameRange     '0.0.6',
+698 silly addNameRange     '0.0.7',
+698 silly addNameRange     '0.1.0',
+698 silly addNameRange     '0.2.0',
+698 silly addNameRange     '0.2.1',
+698 silly addNameRange     '0.2.2',
+698 silly addNameRange     '0.3.0',
+698 silly addNameRange     '0.3.1',
+698 silly addNameRange     '0.3.2',
+698 silly addNameRange     '0.3.3',
+698 silly addNameRange     '0.3.4',
+698 silly addNameRange     '0.3.5',
+698 silly addNameRange     '0.4.0',
+698 silly addNameRange     '0.4.1',
+698 silly addNameRange     '0.4.2',
+698 silly addNameRange     '0.5.0' ] ]
+699 verbose addNamed [ 'mkdirp', '0.0.7' ]
+700 verbose addNamed [ '0.0.7', '0.0.7' ]
+701 silly lockFile e4c983e0-mkdirp-0-0-7 mkdirp@0.0.7
+702 verbose lock mkdirp@0.0.7 /Users/Jing/.npm/e4c983e0-mkdirp-0-0-7.lock
+703 silly lockFile e4c983e0-mkdirp-0-0-7 mkdirp@0.0.7
+704 silly lockFile e4c983e0-mkdirp-0-0-7 mkdirp@0.0.7
+705 silly lockFile 42a09ba5-mkdirp-0-0-x mkdirp@0.0.x
+706 silly lockFile 42a09ba5-mkdirp-0-0-x mkdirp@0.0.x
+707 silly resolved [ { name: 'mkdirp',
+707 silly resolved     description: 'Recursively mkdir, like `mkdir -p`',
+707 silly resolved     version: '0.0.7',
+707 silly resolved     author:
+707 silly resolved      { name: 'James Halliday',
+707 silly resolved        email: 'mail@substack.net',
+707 silly resolved        url: 'http://substack.net' },
+707 silly resolved     main: './index',
+707 silly resolved     keywords: [ 'mkdir', 'directory' ],
+707 silly resolved     repository:
+707 silly resolved      { type: 'git',
+707 silly resolved        url: 'http://github.com/substack/node-mkdirp.git' },
+707 silly resolved     scripts: { test: 'node node_modules/tap/bin/tap.js test/*.js' },
+707 silly resolved     devDependencies: { tap: '0.0.x' },
+707 silly resolved     license: 'MIT/X11',
+707 silly resolved     engines: { node: '*' },
+707 silly resolved     readme: 'mkdirp\n======\n\nLike `mkdir -p`, but in node.js!\n\nExample\n=======\n\npow.js\n------\n    var mkdirp = require(\'mkdirp\');\n    \n    mkdirp(\'/tmp/foo/bar/baz\', 0755, function (err) {\n        if (err) console.error(err)\n        else console.log(\'pow!\')\n    });\n\nOutput\n    pow!\n\nAnd now /tmp/foo/bar/baz exists, huzzah!\n',
+707 silly resolved     readmeFilename: 'README.markdown',
+707 silly resolved     bugs: { url: 'https://github.com/substack/node-mkdirp/issues' },
+707 silly resolved     homepage: 'https://github.com/substack/node-mkdirp',
+707 silly resolved     _id: 'mkdirp@0.0.7',
+707 silly resolved     _shasum: 'd89b4f0e4c3e5e5ca54235931675e094fe1a5072',
+707 silly resolved     _from: 'mkdirp@0.0.x',
+707 silly resolved     _resolved: 'https://registry.npmjs.org/mkdirp/-/mkdirp-0.0.7.tgz' } ]
+708 info install mkdirp@0.0.7 into /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder
+709 info installOne mkdirp@0.0.7
+710 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp unbuild
+711 verbose tar unpack /Users/Jing/.npm/mkdirp/0.0.7/package.tgz
+712 silly lockFile 9b26eda3-s-portfinder-node-modules-mkdirp tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp
+713 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp /Users/Jing/.npm/9b26eda3-s-portfinder-node-modules-mkdirp.lock
+714 silly lockFile 3682ab6c-ing-npm-mkdirp-0-0-7-package-tgz tar:///Users/Jing/.npm/mkdirp/0.0.7/package.tgz
+715 verbose lock tar:///Users/Jing/.npm/mkdirp/0.0.7/package.tgz /Users/Jing/.npm/3682ab6c-ing-npm-mkdirp-0-0-7-package-tgz.lock
+716 silly gunzTarPerm modes [ '755', '644' ]
+717 silly gunzTarPerm extractEntry index.js
+718 silly gunzTarPerm extractEntry package.json
+719 silly gunzTarPerm extractEntry .gitignore.rej
+720 silly gunzTarPerm extractEntry .gitignore.orig
+721 silly gunzTarPerm extractEntry README.markdown
+722 silly gunzTarPerm extractEntry LICENSE
+723 silly gunzTarPerm extractEntry .gitignore
+724 silly gunzTarPerm extractEntry examples/pow.js.orig
+725 silly gunzTarPerm extractEntry examples/pow.js.rej
+726 silly gunzTarPerm extractEntry examples/pow.js
+727 silly gunzTarPerm extractEntry test/race.js
+728 silly gunzTarPerm extractEntry test/rel.js
+729 silly gunzTarPerm extractEntry test/mkdirp.js
+730 silly lockFile 9b26eda3-s-portfinder-node-modules-mkdirp tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp
+731 silly lockFile 9b26eda3-s-portfinder-node-modules-mkdirp tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp
+732 silly lockFile 3682ab6c-ing-npm-mkdirp-0-0-7-package-tgz tar:///Users/Jing/.npm/mkdirp/0.0.7/package.tgz
+733 silly lockFile 3682ab6c-ing-npm-mkdirp-0-0-7-package-tgz tar:///Users/Jing/.npm/mkdirp/0.0.7/package.tgz
+734 info preinstall mkdirp@0.0.7
+735 verbose readDependencies using package.json deps
+736 verbose readDependencies using package.json deps
+737 silly resolved []
+738 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp
+739 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules/mkdirp
+740 verbose linkStuff [ false,
+740 verbose linkStuff   false,
+740 verbose linkStuff   false,
+740 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder/node_modules' ]
+741 info linkStuff mkdirp@0.0.7
+742 verbose linkBins mkdirp@0.0.7
+743 verbose linkMans mkdirp@0.0.7
+744 verbose rebuildBundles mkdirp@0.0.7
+745 info install mkdirp@0.0.7
+746 info postinstall mkdirp@0.0.7
+747 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder
+748 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/portfinder
+749 verbose linkStuff [ false,
+749 verbose linkStuff   false,
+749 verbose linkStuff   false,
+749 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules' ]
+750 info linkStuff portfinder@0.2.1
+751 verbose linkBins portfinder@0.2.1
+752 verbose linkMans portfinder@0.2.1
+753 verbose rebuildBundles portfinder@0.2.1
+754 verbose rebuildBundles [ 'mkdirp' ]
+755 info install portfinder@0.2.1
+756 info postinstall portfinder@0.2.1
+757 http 304 https://registry.npmjs.org/minimist
+758 silly registry.get cb [ 304,
+758 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:24 GMT',
+758 silly registry.get     server: 'Apache',
+758 silly registry.get     via: '1.1 varnish',
+758 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:08 GMT',
+758 silly registry.get     'cache-control': 'max-age=60',
+758 silly registry.get     etag: '"1XZYUOLJVFPQ6WACA6KDFYTSG"',
+758 silly registry.get     age: '21',
+758 silly registry.get     'x-served-by': 'cache-atl6220-ATL',
+758 silly registry.get     'x-cache': 'HIT',
+758 silly registry.get     'x-cache-hits': '2',
+758 silly registry.get     'x-timer': 'S1424111124.573181,VS0,VE0',
+758 silly registry.get     vary: 'Accept',
+758 silly registry.get     'content-length': '0',
+758 silly registry.get     'keep-alive': 'timeout=10, max=50',
+758 silly registry.get     connection: 'Keep-Alive' } ]
+759 verbose etag minimist from cache
+760 silly addNameRange number 2 { name: 'minimist', range: '>=0.0.1-0 <0.1.0-0', hasData: true }
+761 silly addNameRange versions [ 'minimist',
+761 silly addNameRange   [ '0.0.0',
+761 silly addNameRange     '0.0.1',
+761 silly addNameRange     '0.0.2',
+761 silly addNameRange     '0.0.3',
+761 silly addNameRange     '0.0.4',
+761 silly addNameRange     '0.0.5',
+761 silly addNameRange     '0.0.6',
+761 silly addNameRange     '0.0.7',
+761 silly addNameRange     '0.0.8',
+761 silly addNameRange     '0.0.9',
+761 silly addNameRange     '0.0.10',
+761 silly addNameRange     '0.1.0',
+761 silly addNameRange     '0.2.0',
+761 silly addNameRange     '1.0.0',
+761 silly addNameRange     '1.1.0' ] ]
+762 verbose addNamed [ 'minimist', '0.0.10' ]
+763 verbose addNamed [ '0.0.10', '0.0.10' ]
+764 silly lockFile 92f0553b-minimist-0-0-10 minimist@0.0.10
+765 verbose lock minimist@0.0.10 /Users/Jing/.npm/92f0553b-minimist-0-0-10.lock
+766 http 304 https://registry.npmjs.org/wordwrap
+767 silly registry.get cb [ 304,
+767 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:24 GMT',
+767 silly registry.get     server: 'Apache',
+767 silly registry.get     via: '1.1 varnish',
+767 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:00 GMT',
+767 silly registry.get     'cache-control': 'max-age=60',
+767 silly registry.get     etag: '"ALYDR9120G3MFMF3HT2W8TQOT"',
+767 silly registry.get     age: '26',
+767 silly registry.get     'x-served-by': 'cache-atl6232-ATL',
+767 silly registry.get     'x-cache': 'HIT',
+767 silly registry.get     'x-cache-hits': '4',
+767 silly registry.get     'x-timer': 'S1424111124.576297,VS0,VE0',
+767 silly registry.get     vary: 'Accept',
+767 silly registry.get     'content-length': '0',
+767 silly registry.get     'keep-alive': 'timeout=10, max=50',
+767 silly registry.get     connection: 'Keep-Alive' } ]
+768 verbose etag wordwrap from cache
+769 http 304 https://registry.npmjs.org/qs
+770 silly registry.get cb [ 304,
+770 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:24 GMT',
+770 silly registry.get     server: 'Apache',
+770 silly registry.get     via: '1.1 varnish',
+770 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:24:36 GMT',
+770 silly registry.get     'cache-control': 'max-age=60',
+770 silly registry.get     etag: '"7GM9TY7BL57M3R7O9GEZGC9JR"',
+770 silly registry.get     age: '49',
+770 silly registry.get     'x-served-by': 'cache-atl6227-ATL',
+770 silly registry.get     'x-cache': 'HIT',
+770 silly registry.get     'x-cache-hits': '3',
+770 silly registry.get     'x-timer': 'S1424111124.582296,VS0,VE0',
+770 silly registry.get     vary: 'Accept',
+770 silly registry.get     'content-length': '0',
+770 silly registry.get     'keep-alive': 'timeout=10, max=50',
+770 silly registry.get     connection: 'Keep-Alive' } ]
+771 verbose etag qs from cache
+772 silly addNameRange number 2 { name: 'wordwrap', range: '>=0.0.2-0 <0.1.0-0', hasData: true }
+773 silly addNameRange versions [ 'wordwrap', [ '0.0.1', '0.0.2' ] ]
+774 verbose addNamed [ 'wordwrap', '0.0.2' ]
+775 verbose addNamed [ '0.0.2', '0.0.2' ]
+776 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+777 verbose lock wordwrap@0.0.2 /Users/Jing/.npm/24a694c8-wordwrap-0-0-2.lock
+778 silly lockFile 92f0553b-minimist-0-0-10 minimist@0.0.10
+779 silly lockFile 92f0553b-minimist-0-0-10 minimist@0.0.10
+780 silly lockFile 7a855a96-minimist-0-0-1 minimist@~0.0.1
+781 silly lockFile 7a855a96-minimist-0-0-1 minimist@~0.0.1
+782 silly addNameRange number 2 { name: 'qs', range: '>=2.3.3-0 <2.4.0-0', hasData: true }
+783 silly addNameRange versions [ 'qs',
+783 silly addNameRange   [ '0.0.1',
+783 silly addNameRange     '0.0.2',
+783 silly addNameRange     '0.0.3',
+783 silly addNameRange     '0.0.4',
+783 silly addNameRange     '0.0.5',
+783 silly addNameRange     '0.0.6',
+783 silly addNameRange     '0.0.7',
+783 silly addNameRange     '0.1.0',
+783 silly addNameRange     '0.2.0',
+783 silly addNameRange     '0.3.0',
+783 silly addNameRange     '0.3.1',
+783 silly addNameRange     '0.3.2',
+783 silly addNameRange     '0.4.0',
+783 silly addNameRange     '0.4.1',
+783 silly addNameRange     '0.4.2',
+783 silly addNameRange     '0.5.0',
+783 silly addNameRange     '0.5.1',
+783 silly addNameRange     '0.5.2',
+783 silly addNameRange     '0.5.3',
+783 silly addNameRange     '0.5.4',
+783 silly addNameRange     '0.5.5',
+783 silly addNameRange     '0.5.6',
+783 silly addNameRange     '0.6.0',
+783 silly addNameRange     '0.6.1',
+783 silly addNameRange     '0.6.2',
+783 silly addNameRange     '0.6.3',
+783 silly addNameRange     '0.6.4',
+783 silly addNameRange     '0.6.5',
+783 silly addNameRange     '0.6.6',
+783 silly addNameRange     '1.0.0',
+783 silly addNameRange     '1.0.1',
+783 silly addNameRange     '1.0.2',
+783 silly addNameRange     '1.1.0',
+783 silly addNameRange     '1.2.0',
+783 silly addNameRange     '1.2.1',
+783 silly addNameRange     '1.2.2',
+783 silly addNameRange     '2.0.0',
+783 silly addNameRange     '2.1.0',
+783 silly addNameRange     '2.2.0',
+783 silly addNameRange     '2.2.1',
+783 silly addNameRange     '2.2.2',
+783 silly addNameRange     '2.2.3',
+783 silly addNameRange     '2.2.4',
+783 silly addNameRange     '2.2.5',
+783 silly addNameRange     '2.3.0',
+783 silly addNameRange     '2.3.1',
+783 silly addNameRange     '2.3.2',
+783 silly addNameRange     '2.3.3' ] ]
+784 verbose addNamed [ 'qs', '2.3.3' ]
+785 verbose addNamed [ '2.3.3', '2.3.3' ]
+786 silly lockFile 91f8f145-qs-2-3-3 qs@2.3.3
+787 verbose lock qs@2.3.3 /Users/Jing/.npm/91f8f145-qs-2-3-3.lock
+788 http 304 https://registry.npmjs.org/mime
+789 silly registry.get cb [ 304,
+789 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:24 GMT',
+789 silly registry.get     server: 'Apache',
+789 silly registry.get     via: '1.1 varnish',
+789 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:24:56 GMT',
+789 silly registry.get     'cache-control': 'max-age=60',
+789 silly registry.get     etag: '"1DZVA85EWUV4UWIWYSWG26729"',
+789 silly registry.get     age: '35',
+789 silly registry.get     'x-served-by': 'cache-atl6228-ATL',
+789 silly registry.get     'x-cache': 'HIT',
+789 silly registry.get     'x-cache-hits': '6',
+789 silly registry.get     'x-timer': 'S1424111124.587868,VS0,VE0',
+789 silly registry.get     vary: 'Accept',
+789 silly registry.get     'content-length': '0',
+789 silly registry.get     'keep-alive': 'timeout=10, max=49',
+789 silly registry.get     connection: 'Keep-Alive' } ]
+790 verbose etag mime from cache
+791 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+792 silly lockFile 24a694c8-wordwrap-0-0-2 wordwrap@0.0.2
+793 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+794 silly lockFile 8bd42136-wordwrap-0-0-2 wordwrap@~0.0.2
+795 silly addNameRange number 2 { name: 'mime', range: '>=1.2.11-0 <2.0.0-0', hasData: true }
+796 silly addNameRange versions [ 'mime',
+796 silly addNameRange   [ '1.0.0',
+796 silly addNameRange     '1.1.0',
+796 silly addNameRange     '1.2.1',
+796 silly addNameRange     '1.2.2',
+796 silly addNameRange     '1.2.3',
+796 silly addNameRange     '1.2.4',
+796 silly addNameRange     '1.2.5',
+796 silly addNameRange     '1.2.6',
+796 silly addNameRange     '1.2.7',
+796 silly addNameRange     '1.2.8',
+796 silly addNameRange     '1.2.9',
+796 silly addNameRange     '1.2.10',
+796 silly addNameRange     '1.2.11',
+796 silly addNameRange     '1.3.0',
+796 silly addNameRange     '1.3.2',
+796 silly addNameRange     '1.3.3',
+796 silly addNameRange     '1.3.4' ] ]
+797 verbose addNamed [ 'mime', '1.3.4' ]
+798 verbose addNamed [ '1.3.4', '1.3.4' ]
+799 silly lockFile 7e818080-mime-1-3-4 mime@1.3.4
+800 verbose lock mime@1.3.4 /Users/Jing/.npm/7e818080-mime-1-3-4.lock
+801 silly lockFile 91f8f145-qs-2-3-3 qs@2.3.3
+802 silly lockFile 91f8f145-qs-2-3-3 qs@2.3.3
+803 silly lockFile d9d58d79-qs-2-3-3 qs@~2.3.3
+804 silly lockFile d9d58d79-qs-2-3-3 qs@~2.3.3
+805 silly resolved [ { name: 'minimist',
+805 silly resolved     version: '0.0.10',
+805 silly resolved     description: 'parse argument options',
+805 silly resolved     main: 'index.js',
+805 silly resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0' },
+805 silly resolved     scripts: { test: 'tap test/*.js' },
+805 silly resolved     testling: { files: 'test/*.js', browsers: [Object] },
+805 silly resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+805 silly resolved     homepage: 'https://github.com/substack/minimist',
+805 silly resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+805 silly resolved     author:
+805 silly resolved      { name: 'James Halliday',
+805 silly resolved        email: 'mail@substack.net',
+805 silly resolved        url: 'http://substack.net' },
+805 silly resolved     license: 'MIT',
+805 silly resolved     readme: '# minimist\n\nparse argument options\n\nThis module is the guts of optimist\'s argument parser without all the\nfanciful decoration.\n\n[![browser support](https://ci.testling.com/substack/minimist.png)](http://ci.testling.com/substack/minimist)\n\n[![build status](https://secure.travis-ci.org/substack/minimist.png)](http://travis-ci.org/substack/minimist)\n\n# example\n\n``` js\nvar argv = require(\'minimist\')(process.argv.slice(2));\nconsole.dir(argv);\n```\n\n```\n$ node example/parse.js -a beep -b boop\n{ _: [], a: \'beep\', b: \'boop\' }\n```\n\n```\n$ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz\n{ _: [ \'foo\', \'bar\', \'baz\' ],\n  x: 3,\n  y: 4,\n  n: 5,\n  a: true,\n  b: true,\n  c: true,\n  beep: \'boop\' }\n```\n\n# methods\n\n``` js\nvar parseArgs = require(\'minimist\')\n```\n\n## var argv = parseArgs(args, opts={})\n\nReturn an argument object `argv` populated with the array arguments from `args`.\n\n`argv._` contains all the arguments that didn\'t have an option associated with\nthem.\n\nNumeric-looking arguments will be returned as numbers unless `opts.string` or\n`opts.boolean` is set for that argument name.\n\nAny arguments after `\'--\'` will not be parsed and will end up in `argv._`.\n\noptions can be:\n\n* `opts.string` - a string or array of strings argument names to always treat as\nstrings\n* `opts.boolean` - a string or array of strings to always treat as booleans\n* `opts.alias` - an object mapping string names to strings or arrays of string\nargument names to use as aliases\n* `opts.default` - an object mapping string argument names to default values\n\n# install\n\nWith [npm](https://npmjs.org) do:\n\n```\nnpm install minimist\n```\n\n# license\n\nMIT\n',
+805 silly resolved     readmeFilename: 'readme.markdown',
+805 silly resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+805 silly resolved     _id: 'minimist@0.0.10',
+805 silly resolved     _shasum: 'de3f98543dbf96082be48ad1a0c7cda836301dcf',
+805 silly resolved     _from: 'minimist@~0.0.1',
+805 silly resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-0.0.10.tgz' },
+805 silly resolved   { name: 'wordwrap',
+805 silly resolved     description: 'Wrap those words. Show them at what columns to start and stop.',
+805 silly resolved     version: '0.0.2',
+805 silly resolved     repository:
+805 silly resolved      { type: 'git',
+805 silly resolved        url: 'git://github.com/substack/node-wordwrap.git' },
+805 silly resolved     main: './index.js',
+805 silly resolved     keywords: [ 'word', 'wrap', 'rule', 'format', 'column' ],
+805 silly resolved     directories: { lib: '.', example: 'example', test: 'test' },
+805 silly resolved     scripts: { test: 'expresso' },
+805 silly resolved     devDependencies: { expresso: '=0.7.x' },
+805 silly resolved     engines: { node: '>=0.4.0' },
+805 silly resolved     license: 'MIT/X11',
+805 silly resolved     author:
+805 silly resolved      { name: 'James Halliday',
+805 silly resolved        email: 'mail@substack.net',
+805 silly resolved        url: 'http://substack.net' },
+805 silly resolved     readme: 'wordwrap\n========\n\nWrap your words.\n\nexample\n=======\n\nmade out of meat\n----------------\n\nmeat.js\n\n    var wrap = require(\'wordwrap\')(15);\n    console.log(wrap(\'You and your whole family are made out of meat.\'));\n\noutput:\n\n    You and your\n    whole family\n    are made out\n    of meat.\n\ncentered\n--------\n\ncenter.js\n\n    var wrap = require(\'wordwrap\')(20, 60);\n    console.log(wrap(\n        \'At long last the struggle and tumult was over.\'\n        + \' The machines had finally cast off their oppressors\'\n        + \' and were finally free to roam the cosmos.\'\n        + \'\\n\'\n        + \'Free of purpose, free of obligation.\'\n        + \' Just drifting through emptiness.\'\n        + \' The sun was just another point of light.\'\n    ));\n\noutput:\n\n                        At long last the struggle and tumult\n                        was over. The machines had finally cast\n                        off their oppressors and were finally\n                        free to roam the cosmos.\n                        Free of purpose, free of obligation.\n                        Just drifting through emptiness. The\n                        sun was just another point of light.\n\nmethods\n=======\n\nvar wrap = require(\'wordwrap\');\n\nwrap(stop), wrap(start, stop, params={mode:"soft"})\n---------------------------------------------------\n\nReturns a function that takes a string and returns a new string.\n\nPad out lines with spaces out to column `start` and then wrap until column\n`stop`. If a word is longer than `stop - start` characters it will overflow.\n\nIn "soft" mode, split chunks by `/(\\S+\\s+/` and don\'t break up chunks which are\nlonger than `stop - start`, in "hard" mode, split chunks with `/\\b/` and break\nup chunks longer than `stop - start`.\n\nwrap.hard(start, stop)\n----------------------\n\nLike `wrap()` but with `params.mode = "hard"`.\n',
+805 silly resolved     readmeFilename: 'README.markdown',
+805 silly resolved     bugs: { url: 'https://github.com/substack/node-wordwrap/issues' },
+805 silly resolved     homepage: 'https://github.com/substack/node-wordwrap',
+805 silly resolved     _id: 'wordwrap@0.0.2',
+805 silly resolved     _shasum: 'b79669bb42ecb409f83d583cad52ca17eaa1643f',
+805 silly resolved     _from: 'wordwrap@~0.0.2',
+805 silly resolved     _resolved: 'https://registry.npmjs.org/wordwrap/-/wordwrap-0.0.2.tgz' } ]
+806 info install minimist@0.0.10 into /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist
+807 info install wordwrap@0.0.2 into /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist
+808 info installOne minimist@0.0.10
+809 info installOne wordwrap@0.0.2
+810 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/minimist unbuild
+811 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/wordwrap unbuild
+812 silly lockFile 7e818080-mime-1-3-4 mime@1.3.4
+813 silly lockFile 7e818080-mime-1-3-4 mime@1.3.4
+814 silly lockFile 2ee47c7e-mime-1-2-11 mime@^1.2.11
+815 silly lockFile 2ee47c7e-mime-1-2-11 mime@^1.2.11
+816 verbose tar unpack /Users/Jing/.npm/minimist/0.0.10/package.tgz
+817 silly lockFile 07a08253-s-optimist-node-modules-minimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/minimist
+818 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/minimist /Users/Jing/.npm/07a08253-s-optimist-node-modules-minimist.lock
+819 silly lockFile dc5f0f6f--npm-minimist-0-0-10-package-tgz tar:///Users/Jing/.npm/minimist/0.0.10/package.tgz
+820 verbose lock tar:///Users/Jing/.npm/minimist/0.0.10/package.tgz /Users/Jing/.npm/dc5f0f6f--npm-minimist-0-0-10-package-tgz.lock
+821 verbose tar unpack /Users/Jing/.npm/wordwrap/0.0.2/package.tgz
+822 silly lockFile 144e6d8c-s-optimist-node-modules-wordwrap tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/wordwrap
+823 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/wordwrap /Users/Jing/.npm/144e6d8c-s-optimist-node-modules-wordwrap.lock
+824 silly lockFile ac506890-g-npm-wordwrap-0-0-2-package-tgz tar:///Users/Jing/.npm/wordwrap/0.0.2/package.tgz
+825 verbose lock tar:///Users/Jing/.npm/wordwrap/0.0.2/package.tgz /Users/Jing/.npm/ac506890-g-npm-wordwrap-0-0-2-package-tgz.lock
+826 silly resolved [ { name: 'qs',
+826 silly resolved     version: '2.3.3',
+826 silly resolved     description: 'A querystring parser that supports nesting and arrays, with a depth limit',
+826 silly resolved     homepage: 'https://github.com/hapijs/qs',
+826 silly resolved     main: 'index.js',
+826 silly resolved     dependencies: {},
+826 silly resolved     devDependencies: { code: '1.x.x', lab: '5.x.x' },
+826 silly resolved     scripts: { test: 'make test-cov' },
+826 silly resolved     repository: { type: 'git', url: 'https://github.com/hapijs/qs.git' },
+826 silly resolved     keywords: [ 'querystring', 'qs' ],
+826 silly resolved     licenses: [ [Object] ],
+826 silly resolved     readme: '# qs\n\nA querystring parsing and stringifying library with some added security.\n\n[![Build Status](https://secure.travis-ci.org/hapijs/qs.svg)](http://travis-ci.org/hapijs/qs)\n\nLead Maintainer: [Nathan LaFreniere](https://github.com/nlf)\n\nThe **qs** module was originally created and maintained by [TJ Holowaychuk](https://github.com/visionmedia/node-querystring).\n\n## Usage\n\n```javascript\nvar Qs = require(\'qs\');\n\nvar obj = Qs.parse(\'a=c\');    // { a: \'c\' }\nvar str = Qs.stringify(obj);  // \'a=c\'\n```\n\n### Parsing Objects\n\n```javascript\nQs.parse(string, [options]);\n```\n\n**qs** allows you to create nested objects within your query strings, by surrounding the name of sub-keys with square brackets `[]`.\nFor example, the string `\'foo[bar]=baz\'` converts to:\n\n```javascript\n{\n  foo: {\n    bar: \'baz\'\n  }\n}\n```\n\nURI encoded strings work too:\n\n```javascript\nQs.parse(\'a%5Bb%5D=c\');\n// { a: { b: \'c\' } }\n```\n\nYou can also nest your objects, like `\'foo[bar][baz]=foobarbaz\'`:\n\n```javascript\n{\n  foo: {\n    bar: {\n      baz: \'foobarbaz\'\n    }\n  }\n}\n```\n\nBy default, when nesting objects **qs** will only parse up to 5 children deep. This means if you attempt to parse a string like\n`\'a[b][c][d][e][f][g][h][i]=j\'` your resulting object will be:\n\n```javascript\n{\n  a: {\n    b: {\n      c: {\n        d: {\n          e: {\n            f: {\n              \'[g][h][i]\': \'j\'\n            }\n          }\n        }\n      }\n    }\n  }\n}\n```\n\nThis depth can be overridden by passing a `depth` option to `Qs.parse(string, [options])`:\n\n```javascript\nQs.parse(\'a[b][c][d][e][f][g][h][i]=j\', { depth: 1 });\n// { a: { b: { \'[c][d][e][f][g][h][i]\': \'j\' } } }\n```\n\nThe depth limit helps mitigate abuse when **qs** is used to parse user input, and it is recommended to keep it a reasonably small number.\n\nFor similar reasons, by default **qs** will only parse up to 1000 parameters. This can be overridden by passing a `parameterLimit` option:\n\n```javascript\nQs.parse(\'a=b&c=d\', { parameterLimit: 1 });\n// { a: \'b\' }\n```\n\nAn optional delimiter can also be passed:\n\n```javascript\nQs.parse(\'a=b;c=d\', { delimiter: \';\' });\n// { a: \'b\', c: \'d\' }\n```\n\nDelimiters can be a regular expression too:\n\n```javascript\nQs.parse(\'a=b;c=d,e=f\', { delimiter: /[;,]/ });\n// { a: \'b\', c: \'d\', e: \'f\' }\n```\n\n### Parsing Arrays\n\n**qs** can also parse arrays using a similar `[]` notation:\n\n```javascript\nQs.parse(\'a[]=b&a[]=c\');\n// { a: [\'b\', \'c\'] }\n```\n\nYou may specify an index as well:\n\n```javascript\nQs.parse(\'a[1]=c&a[0]=b\');\n// { a: [\'b\', \'c\'] }\n```\n\nNote that the only difference between an index in an array and a key in an object is that the value between the brackets must be a number\nto create an array. When creating arrays with specific indices, **qs** will compact a sparse array to only the existing values preserving\ntheir order:\n\n```javascript\nQs.parse(\'a[1]=b&a[15]=c\');\n// { a: [\'b\', \'c\'] }\n```\n\nNote that an empty string is also a value, and will be preserved:\n\n```javascript\nQs.parse(\'a[]=&a[]=b\');\n// { a: [\'\', \'b\'] }\nQs.parse(\'a[0]=b&a[1]=&a[2]=c\');\n// { a: [\'b\', \'\', \'c\'] }\n```\n\n**qs** will also limit specifying indices in an array to a maximum index of `20`. Any array members with an index of greater than `20` will\ninstead be converted to an object with the index as the key:\n\n```javascript\nQs.parse(\'a[100]=b\');\n// { a: { \'100\': \'b\' } }\n```\n\nThis limit can be overridden by passing an `arrayLimit` option:\n\n```javascript\nQs.parse(\'a[1]=b\', { arrayLimit: 0 });\n// { a: { \'1\': \'b\' } }\n```\n\nTo disable array parsing entirely, set `arrayLimit` to `-1`.\n\nIf you mix notations, **qs** will merge the two items into an object:\n\n```javascript\nQs.parse(\'a[0]=b&a[b]=c\');\n// { a: { \'0\': \'b\', b: \'c\' } }\n```\n\nYou can also create arrays of objects:\n\n```javascript\nQs.parse(\'a[][b]=c\');\n// { a: [{ b: \'c\' }] }\n```\n\n### Stringifying\n\n```javascript\nQs.stringify(object, [options]);\n```\n\nWhen stringifying, **qs** always URI encodes output. Objects are stringified as you would expect:\n\n```javascript\nQs.stringify({ a: \'b\' });\n// \'a=b\'\nQs.stringify({ a: { b: \'c\' } });\n// \'a%5Bb%5D=c\'\n```\n\nExamples beyond this point will be shown as though the output is not URI encoded for clarity. Please note that the return values in these cases *will* be URI encoded during real usage.\n\nWhen arrays are stringified, by default they are given explicit indices:\n\n```javascript\nQs.stringify({ a: [\'b\', \'c\', \'d\'] });\n// \'a[0]=b&a[1]=c&a[2]=d\'\n```\n\nYou may override this by setting the `indices` option to `false`:\n\n```javascript\nQs.stringify({ a: [\'b\', \'c\', \'d\'] }, { indices: false });\n// \'a=b&a=c&a=d\'\n```\n\nEmpty strings and null values will omit the value, but the equals sign (=) remains in place:\n\n```javascript\nQs.stringify({ a: \'\' });\n// \'a=\'\n```\n\nProperties that are set to `undefined` will be omitted entirely:\n\n```javascript\nQs.stringify({ a: null, b: undefined });\n// \'a=\'\n```\n\nThe delimiter may be overridden with stringify as well:\n\n```javascript\nQs.stringify({ a: \'b\', c: \'d\' }, { delimiter: \';\' });\n// \'a=b;c=d\'\n```\n',
+826 silly resolved     readmeFilename: 'README.md',
+826 silly resolved     bugs: { url: 'https://github.com/hapijs/qs/issues' },
+826 silly resolved     _id: 'qs@2.3.3',
+826 silly resolved     _shasum: 'e9e85adbe75da0bbe4c8e0476a086290f863b404',
+826 silly resolved     _from: 'qs@~2.3.3',
+826 silly resolved     _resolved: 'https://registry.npmjs.org/qs/-/qs-2.3.3.tgz' } ]
+827 info install qs@2.3.3 into /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union
+828 info installOne qs@2.3.3
+829 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules/qs unbuild
+830 silly gunzTarPerm modes [ '755', '644' ]
+831 verbose tar unpack /Users/Jing/.npm/qs/2.3.3/package.tgz
+832 silly lockFile 374de0f4-de-modules-union-node-modules-qs tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules/qs
+833 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules/qs /Users/Jing/.npm/374de0f4-de-modules-union-node-modules-qs.lock
+834 silly lockFile edfc8b8e-rs-Jing-npm-qs-2-3-3-package-tgz tar:///Users/Jing/.npm/qs/2.3.3/package.tgz
+835 verbose lock tar:///Users/Jing/.npm/qs/2.3.3/package.tgz /Users/Jing/.npm/edfc8b8e-rs-Jing-npm-qs-2-3-3-package-tgz.lock
+836 silly gunzTarPerm modes [ '755', '644' ]
+837 silly gunzTarPerm modes [ '755', '644' ]
+838 silly gunzTarPerm extractEntry package.json
+839 silly gunzTarPerm extractEntry index.js
+840 silly gunzTarPerm extractEntry package.json
+841 silly gunzTarPerm extractEntry LICENSE
+842 silly gunzTarPerm extractEntry index.js
+843 silly gunzTarPerm extractEntry .npmignore
+844 silly gunzTarPerm extractEntry package.json
+845 silly gunzTarPerm extractEntry .npmignore
+846 silly gunzTarPerm extractEntry README.md
+847 silly gunzTarPerm extractEntry .travis.yml
+848 silly gunzTarPerm extractEntry example/parse.js
+849 silly gunzTarPerm extractEntry LICENSE
+850 silly gunzTarPerm extractEntry index.js
+851 silly gunzTarPerm extractEntry README.markdown
+852 silly gunzTarPerm extractEntry example/center.js
+853 silly gunzTarPerm extractEntry readme.markdown
+854 silly gunzTarPerm extractEntry test/bool.js
+855 silly gunzTarPerm extractEntry CHANGELOG.md
+856 silly gunzTarPerm extractEntry CONTRIBUTING.md
+857 silly gunzTarPerm extractEntry Makefile
+858 silly gunzTarPerm extractEntry .jshintignore
+859 silly gunzTarPerm extractEntry .jshintrc
+860 silly gunzTarPerm extractEntry lib/index.js
+861 silly gunzTarPerm extractEntry lib/parse.js
+862 silly gunzTarPerm extractEntry lib/stringify.js
+863 silly gunzTarPerm extractEntry lib/utils.js
+864 silly gunzTarPerm extractEntry .travis.yml
+865 silly gunzTarPerm extractEntry test/parse.js
+866 silly gunzTarPerm extractEntry test/stringify.js
+867 silly gunzTarPerm extractEntry example/meat.js
+868 silly gunzTarPerm extractEntry test/wrap.js
+869 silly gunzTarPerm extractEntry test/break.js
+870 silly gunzTarPerm extractEntry test/idleness.txt
+871 silly gunzTarPerm extractEntry test/dash.js
+872 silly gunzTarPerm extractEntry test/default_bool.js
+873 silly gunzTarPerm extractEntry test/dotted.js
+874 silly gunzTarPerm extractEntry test/long.js
+875 silly gunzTarPerm extractEntry test/num.js
+876 silly gunzTarPerm extractEntry test/parse.js
+877 silly gunzTarPerm extractEntry test/parse_modified.js
+878 silly gunzTarPerm extractEntry test/short.js
+879 silly gunzTarPerm extractEntry test/whitespace.js
+880 http 304 https://registry.npmjs.org/minimist
+881 silly registry.get cb [ 304,
+881 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:24 GMT',
+881 silly registry.get     server: 'Apache',
+881 silly registry.get     via: '1.1 varnish',
+881 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:05 GMT',
+881 silly registry.get     'cache-control': 'max-age=60',
+881 silly registry.get     etag: '"1XZYUOLJVFPQ6WACA6KDFYTSG"',
+881 silly registry.get     age: '21',
+881 silly registry.get     'x-served-by': 'cache-atl6235-ATL',
+881 silly registry.get     'x-cache': 'HIT',
+881 silly registry.get     'x-cache-hits': '4',
+881 silly registry.get     'x-timer': 'S1424111124.612271,VS0,VE0',
+881 silly registry.get     vary: 'Accept',
+881 silly registry.get     'content-length': '0',
+881 silly registry.get     'keep-alive': 'timeout=10, max=50',
+881 silly registry.get     connection: 'Keep-Alive' } ]
+882 verbose etag minimist from cache
+883 silly addNameRange number 2 { name: 'minimist', range: '>=1.1.0-0 <2.0.0-0', hasData: true }
+884 silly addNameRange versions [ 'minimist',
+884 silly addNameRange   [ '0.0.0',
+884 silly addNameRange     '0.0.1',
+884 silly addNameRange     '0.0.2',
+884 silly addNameRange     '0.0.3',
+884 silly addNameRange     '0.0.4',
+884 silly addNameRange     '0.0.5',
+884 silly addNameRange     '0.0.6',
+884 silly addNameRange     '0.0.7',
+884 silly addNameRange     '0.0.8',
+884 silly addNameRange     '0.0.9',
+884 silly addNameRange     '0.0.10',
+884 silly addNameRange     '0.1.0',
+884 silly addNameRange     '0.2.0',
+884 silly addNameRange     '1.0.0',
+884 silly addNameRange     '1.1.0' ] ]
+885 verbose addNamed [ 'minimist', '1.1.0' ]
+886 verbose addNamed [ '1.1.0', '1.1.0' ]
+887 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+888 verbose lock minimist@1.1.0 /Users/Jing/.npm/f1c95b3a-minimist-1-1-0.lock
+889 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+890 silly lockFile f1c95b3a-minimist-1-1-0 minimist@1.1.0
+891 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+892 silly lockFile b7cda548-minimist-1-1-0 minimist@^1.1.0
+893 silly lockFile 144e6d8c-s-optimist-node-modules-wordwrap tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/wordwrap
+894 silly lockFile 144e6d8c-s-optimist-node-modules-wordwrap tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/wordwrap
+895 silly lockFile ac506890-g-npm-wordwrap-0-0-2-package-tgz tar:///Users/Jing/.npm/wordwrap/0.0.2/package.tgz
+896 silly lockFile ac506890-g-npm-wordwrap-0-0-2-package-tgz tar:///Users/Jing/.npm/wordwrap/0.0.2/package.tgz
+897 info preinstall wordwrap@0.0.2
+898 verbose readDependencies using package.json deps
+899 verbose readDependencies using package.json deps
+900 silly resolved []
+901 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/wordwrap
+902 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/wordwrap
+903 verbose linkStuff [ false,
+903 verbose linkStuff   false,
+903 verbose linkStuff   false,
+903 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules' ]
+904 info linkStuff wordwrap@0.0.2
+905 verbose linkBins wordwrap@0.0.2
+906 verbose linkMans wordwrap@0.0.2
+907 verbose rebuildBundles wordwrap@0.0.2
+908 info install wordwrap@0.0.2
+909 info postinstall wordwrap@0.0.2
+910 silly lockFile 07a08253-s-optimist-node-modules-minimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/minimist
+911 silly lockFile 07a08253-s-optimist-node-modules-minimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/minimist
+912 silly lockFile dc5f0f6f--npm-minimist-0-0-10-package-tgz tar:///Users/Jing/.npm/minimist/0.0.10/package.tgz
+913 silly lockFile dc5f0f6f--npm-minimist-0-0-10-package-tgz tar:///Users/Jing/.npm/minimist/0.0.10/package.tgz
+914 info preinstall minimist@0.0.10
+915 verbose readDependencies using package.json deps
+916 verbose readDependencies using package.json deps
+917 silly resolved []
+918 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/minimist
+919 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules/minimist
+920 verbose linkStuff [ false,
+920 verbose linkStuff   false,
+920 verbose linkStuff   false,
+920 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist/node_modules' ]
+921 info linkStuff minimist@0.0.10
+922 verbose linkBins minimist@0.0.10
+923 verbose linkMans minimist@0.0.10
+924 verbose rebuildBundles minimist@0.0.10
+925 info install minimist@0.0.10
+926 info postinstall minimist@0.0.10
+927 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist
+928 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/optimist
+929 verbose linkStuff [ false,
+929 verbose linkStuff   false,
+929 verbose linkStuff   false,
+929 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules' ]
+930 info linkStuff optimist@0.6.1
+931 verbose linkBins optimist@0.6.1
+932 verbose linkMans optimist@0.6.1
+933 verbose rebuildBundles optimist@0.6.1
+934 verbose rebuildBundles [ 'minimist', 'wordwrap' ]
+935 info install optimist@0.6.1
+936 info postinstall optimist@0.6.1
+937 silly lockFile 374de0f4-de-modules-union-node-modules-qs tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules/qs
+938 silly lockFile 374de0f4-de-modules-union-node-modules-qs tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules/qs
+939 silly lockFile edfc8b8e-rs-Jing-npm-qs-2-3-3-package-tgz tar:///Users/Jing/.npm/qs/2.3.3/package.tgz
+940 silly lockFile edfc8b8e-rs-Jing-npm-qs-2-3-3-package-tgz tar:///Users/Jing/.npm/qs/2.3.3/package.tgz
+941 info preinstall qs@2.3.3
+942 verbose readDependencies using package.json deps
+943 verbose readDependencies using package.json deps
+944 silly resolved []
+945 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules/qs
+946 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules/qs
+947 verbose linkStuff [ false,
+947 verbose linkStuff   false,
+947 verbose linkStuff   false,
+947 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union/node_modules' ]
+948 info linkStuff qs@2.3.3
+949 verbose linkBins qs@2.3.3
+950 verbose linkMans qs@2.3.3
+951 verbose rebuildBundles qs@2.3.3
+952 info install qs@2.3.3
+953 info postinstall qs@2.3.3
+954 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union
+955 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/union
+956 verbose linkStuff [ false,
+956 verbose linkStuff   false,
+956 verbose linkStuff   false,
+956 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules' ]
+957 info linkStuff union@0.4.4
+958 verbose linkBins union@0.4.4
+959 verbose linkMans union@0.4.4
+960 verbose rebuildBundles union@0.4.4
+961 verbose rebuildBundles [ 'qs' ]
+962 info install union@0.4.4
+963 info postinstall union@0.4.4
+964 http 304 https://registry.npmjs.org/he
+965 silly registry.get cb [ 304,
+965 silly registry.get   { date: 'Mon, 16 Feb 2015 18:25:24 GMT',
+965 silly registry.get     server: 'Apache',
+965 silly registry.get     via: '1.1 varnish',
+965 silly registry.get     'last-modified': 'Mon, 16 Feb 2015 18:25:24 GMT',
+965 silly registry.get     'cache-control': 'max-age=60',
+965 silly registry.get     etag: '"E23G873L84QZH0NSWESTL8FC0"',
+965 silly registry.get     age: '0',
+965 silly registry.get     'x-served-by': 'cache-atl6220-ATL',
+965 silly registry.get     'x-cache': 'HIT',
+965 silly registry.get     'x-cache-hits': '1',
+965 silly registry.get     'x-timer': 'S1424111124.621274,VS0,VE28',
+965 silly registry.get     vary: 'Accept',
+965 silly registry.get     'content-length': '0',
+965 silly registry.get     'keep-alive': 'timeout=10, max=49',
+965 silly registry.get     connection: 'Keep-Alive' } ]
+966 verbose etag he from cache
+967 silly addNameRange number 2 { name: 'he', range: '>=0.5.0-0 <0.6.0-0', hasData: true }
+968 silly addNameRange versions [ 'he',
+968 silly addNameRange   [ '0.1.0',
+968 silly addNameRange     '0.1.1',
+968 silly addNameRange     '0.1.2',
+968 silly addNameRange     '0.1.3',
+968 silly addNameRange     '0.1.4',
+968 silly addNameRange     '0.1.5',
+968 silly addNameRange     '0.1.6',
+968 silly addNameRange     '0.1.7',
+968 silly addNameRange     '0.1.8',
+968 silly addNameRange     '0.1.9',
+968 silly addNameRange     '0.1.10',
+968 silly addNameRange     '0.2.0',
+968 silly addNameRange     '0.2.1',
+968 silly addNameRange     '0.3.0',
+968 silly addNameRange     '0.3.1',
+968 silly addNameRange     '0.3.2',
+968 silly addNameRange     '0.3.3',
+968 silly addNameRange     '0.3.4',
+968 silly addNameRange     '0.3.5',
+968 silly addNameRange     '0.3.6',
+968 silly addNameRange     '0.4.0',
+968 silly addNameRange     '0.4.1',
+968 silly addNameRange     '0.5.0' ] ]
+969 verbose addNamed [ 'he', '0.5.0' ]
+970 verbose addNamed [ '0.5.0', '0.5.0' ]
+971 silly lockFile 7b3c205c-he-0-5-0 he@0.5.0
+972 verbose lock he@0.5.0 /Users/Jing/.npm/7b3c205c-he-0-5-0.lock
+973 silly lockFile 7b3c205c-he-0-5-0 he@0.5.0
+974 silly lockFile 7b3c205c-he-0-5-0 he@0.5.0
+975 silly lockFile b6bb0826-he-0-5-0 he@^0.5.0
+976 silly lockFile b6bb0826-he-0-5-0 he@^0.5.0
+977 silly resolved [ { author:
+977 silly resolved      { name: 'Robert Kieffer',
+977 silly resolved        email: 'robert@broofa.com',
+977 silly resolved        url: 'http://github.com/broofa' },
+977 silly resolved     scripts:
+977 silly resolved      { prepublish: 'node build/build.js > types.json',
+977 silly resolved        test: 'node build/test.js' },
+977 silly resolved     bin: { mime: 'cli.js' },
+977 silly resolved     contributors: [ [Object] ],
+977 silly resolved     description: 'A comprehensive library for mime-type mapping',
+977 silly resolved     licenses: [ [Object] ],
+977 silly resolved     dependencies: {},
+977 silly resolved     devDependencies: { 'mime-db': '^1.2.0' },
+977 silly resolved     keywords: [ 'util', 'mime' ],
+977 silly resolved     main: 'mime.js',
+977 silly resolved     name: 'mime',
+977 silly resolved     repository: { url: 'https://github.com/broofa/node-mime', type: 'git' },
+977 silly resolved     version: '1.3.4',
+977 silly resolved     readme: '# mime\n\nComprehensive MIME type mapping API based on mime-db module.\n\n## Install\n\nInstall with [npm](http://github.com/isaacs/npm):\n\n    npm install mime\n\n## Contributing / Testing\n\n    npm run test\n\n## Command Line\n\n    mime [path_string]\n\nE.g.\n\n    > mime scripts/jquery.js\n    application/javascript\n\n## API - Queries\n\n### mime.lookup(path)\nGet the mime type associated with a file, if no mime type is found `application/octet-stream` is returned. Performs a case-insensitive lookup using the extension in `path` (the substring after the last \'/\' or \'.\').  E.g.\n\n```js\nvar mime = require(\'mime\');\n\nmime.lookup(\'/path/to/file.txt\');         // => \'text/plain\'\nmime.lookup(\'file.txt\');                  // => \'text/plain\'\nmime.lookup(\'.TXT\');                      // => \'text/plain\'\nmime.lookup(\'htm\');                       // => \'text/html\'\n```\n\n### mime.default_type\nSets the mime type returned when `mime.lookup` fails to find the extension searched for. (Default is `application/octet-stream`.)\n\n### mime.extension(type)\nGet the default extension for `type`\n\n```js\nmime.extension(\'text/html\');                 // => \'html\'\nmime.extension(\'application/octet-stream\');  // => \'bin\'\n```\n\n### mime.charsets.lookup()\n\nMap mime-type to charset\n\n```js\nmime.charsets.lookup(\'text/plain\');        // => \'UTF-8\'\n```\n\n(The logic for charset lookups is pretty rudimentary.  Feel free to suggest improvements.)\n\n## API - Defining Custom Types\n\nCustom type mappings can be added on a per-project basis via the following APIs.\n\n### mime.define()\n\nAdd custom mime/extension mappings\n\n```js\nmime.define({\n    \'text/x-some-format\': [\'x-sf\', \'x-sft\', \'x-sfml\'],\n    \'application/x-my-type\': [\'x-mt\', \'x-mtt\'],\n    // etc ...\n});\n\nmime.lookup(\'x-sft\');                 // => \'text/x-some-format\'\n```\n\nThe first entry in the extensions array is returned by `mime.extension()`. E.g.\n\n```js\nmime.extension(\'text/x-some-format\'); // => \'x-sf\'\n```\n\n### mime.load(filepath)\n\nLoad mappings from an Apache ".types" format file\n\n```js\nmime.load(\'./my_project.types\');\n```\nThe .types file format is simple -  See the `types` dir for examples.\n',
+977 silly resolved     readmeFilename: 'README.md',
+977 silly resolved     bugs: { url: 'https://github.com/broofa/node-mime/issues' },
+977 silly resolved     homepage: 'https://github.com/broofa/node-mime',
+977 silly resolved     _id: 'mime@1.3.4',
+977 silly resolved     _shasum: '115f9e3b6b3daf2959983cb38f149a2d40eb5d53',
+977 silly resolved     _from: 'mime@^1.2.11',
+977 silly resolved     _resolved: 'https://registry.npmjs.org/mime/-/mime-1.3.4.tgz' },
+977 silly resolved   { name: 'minimist',
+977 silly resolved     version: '1.1.0',
+977 silly resolved     description: 'parse argument options',
+977 silly resolved     main: 'index.js',
+977 silly resolved     devDependencies: { tape: '~1.0.4', tap: '~0.4.0', covert: '^1.0.0' },
+977 silly resolved     scripts: { test: 'tap test/*.js', coverage: 'covert test/*.js' },
+977 silly resolved     testling: { files: 'test/*.js', browsers: [Object] },
+977 silly resolved     repository: { type: 'git', url: 'git://github.com/substack/minimist.git' },
+977 silly resolved     homepage: 'https://github.com/substack/minimist',
+977 silly resolved     keywords: [ 'argv', 'getopt', 'parser', 'optimist' ],
+977 silly resolved     author:
+977 silly resolved      { name: 'James Halliday',
+977 silly resolved        email: 'mail@substack.net',
+977 silly resolved        url: 'http://substack.net' },
+977 silly resolved     license: 'MIT',
+977 silly resolved     readme: '# minimist\n\nparse argument options\n\nThis module is the guts of optimist\'s argument parser without all the\nfanciful decoration.\n\n[![browser support](https://ci.testling.com/substack/minimist.png)](http://ci.testling.com/substack/minimist)\n\n[![build status](https://secure.travis-ci.org/substack/minimist.png)](http://travis-ci.org/substack/minimist)\n\n# example\n\n``` js\nvar argv = require(\'minimist\')(process.argv.slice(2));\nconsole.dir(argv);\n```\n\n```\n$ node example/parse.js -a beep -b boop\n{ _: [], a: \'beep\', b: \'boop\' }\n```\n\n```\n$ node example/parse.js -x 3 -y 4 -n5 -abc --beep=boop foo bar baz\n{ _: [ \'foo\', \'bar\', \'baz\' ],\n  x: 3,\n  y: 4,\n  n: 5,\n  a: true,\n  b: true,\n  c: true,\n  beep: \'boop\' }\n```\n\n# methods\n\n``` js\nvar parseArgs = require(\'minimist\')\n```\n\n## var argv = parseArgs(args, opts={})\n\nReturn an argument object `argv` populated with the array arguments from `args`.\n\n`argv._` contains all the arguments that didn\'t have an option associated with\nthem.\n\nNumeric-looking arguments will be returned as numbers unless `opts.string` or\n`opts.boolean` is set for that argument name.\n\nAny arguments after `\'--\'` will not be parsed and will end up in `argv._`.\n\noptions can be:\n\n* `opts.string` - a string or array of strings argument names to always treat as\nstrings\n* `opts.boolean` - a boolean, string or array of strings to always treat as\nbooleans. if `true` will treat all double hyphenated arguments without equal signs\nas boolean (e.g. affects `--foo`, not `-f` or `--foo=bar`)\n* `opts.alias` - an object mapping string names to strings or arrays of string\nargument names to use as aliases\n* `opts.default` - an object mapping string argument names to default values\n* `opts.stopEarly` - when true, populate `argv._` with everything after the\nfirst non-option\n* `opts[\'--\']` - when true, populate `argv._` with everything before the `--`\nand `argv[\'--\']` with everything after the `--`. Here\'s an example:\n* `opts.unknown` - a function which is invoked with a command line parameter not\ndefined in the `opts` configuration object. If the function returns `false`, the\nunknown option is not added to `argv`.\n\n```\n> require(\'./\')(\'one two three -- four five --six\'.split(\' \'), { \'--\': true })\n{ _: [ \'one\', \'two\', \'three\' ],\n  \'--\': [ \'four\', \'five\', \'--six\' ] }\n```\n\nNote that with `opts[\'--\']` set, parsing for arguments still stops after the\n`--`.\n\n# install\n\nWith [npm](https://npmjs.org) do:\n\n```\nnpm install minimist\n```\n\n# license\n\nMIT\n',
+977 silly resolved     readmeFilename: 'readme.markdown',
+977 silly resolved     bugs: { url: 'https://github.com/substack/minimist/issues' },
+977 silly resolved     _id: 'minimist@1.1.0',
+977 silly resolved     _shasum: 'cdf225e8898f840a258ded44fc91776770afdc93',
+977 silly resolved     _from: 'minimist@^1.1.0',
+977 silly resolved     _resolved: 'https://registry.npmjs.org/minimist/-/minimist-1.1.0.tgz' },
+977 silly resolved   { name: 'he',
+977 silly resolved     version: '0.5.0',
+977 silly resolved     description: 'A robust HTML entities encoder/decoder with full Unicode support.',
+977 silly resolved     homepage: 'http://mths.be/he',
+977 silly resolved     main: 'he.js',
+977 silly resolved     bin: { he: 'bin/he' },
+977 silly resolved     keywords:
+977 silly resolved      [ 'string',
+977 silly resolved        'entities',
+977 silly resolved        'entity',
+977 silly resolved        'html',
+977 silly resolved        'encode',
+977 silly resolved        'decode',
+977 silly resolved        'unicode' ],
+977 silly resolved     license: 'MIT',
+977 silly resolved     author: { name: 'Mathias Bynens', url: 'https://mathiasbynens.be/' },
+977 silly resolved     repository: { type: 'git', url: 'https://github.com/mathiasbynens/he.git' },
+977 silly resolved     bugs: { url: 'https://github.com/mathiasbynens/he/issues' },
+977 silly resolved     files: [ 'LICENSE-MIT.txt', 'he.js', 'bin/', 'man/' ],
+977 silly resolved     directories: { bin: 'bin', man: 'man', test: 'tests' },
+977 silly resolved     scripts: { test: 'node tests/tests.js' },
+977 silly resolved     devDependencies:
+977 silly resolved      { coveralls: '^2.11.1',
+977 silly resolved        grunt: '^0.4.5',
+977 silly resolved        'grunt-shell': '^1.0.1',
+977 silly resolved        'grunt-template': '^0.2.3',
+977 silly resolved        istanbul: '^0.3.0',
+977 silly resolved        jsesc: '^0.5.0',
+977 silly resolved        lodash: '^2.4.1',
+977 silly resolved        'qunit-extras': '^1.1.0',
+977 silly resolved        qunitjs: '~1.11.0',
+977 silly resolved        regenerate: '^0.6.2',
+977 silly resolved        requirejs: '^2.1.14',
+977 silly resolved        'string.fromcodepoint': '^0.2.1' },
+977 silly resolved     man: [ '/Users/Jing/.npm/he/0.5.0/package/man/he.1' ],
+977 silly resolved     readme: '# he [![Build status](https://travis-ci.org/mathiasbynens/he.svg?branch=master)](https://travis-ci.org/mathiasbynens/he) [![Code coverage status](http://img.shields.io/coveralls/mathiasbynens/he/master.svg)](https://coveralls.io/r/mathiasbynens/he) [![Dependency status](https://gemnasium.com/mathiasbynens/he.svg)](https://gemnasium.com/mathiasbynens/he)\n\n_he_ (for “HTML entities”) is a robust HTML entity encoder/decoder written in JavaScript. It supports [all standardized named character references as per HTML](http://www.whatwg.org/specs/web-apps/current-work/multipage/named-character-references.html), handles [ambiguous ampersands](https://mathiasbynens.be/notes/ambiguous-ampersands) and other edge cases [just like a browser would](http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#tokenizing-character-references), has an extensive test suite, and — contrary to many other JavaScript solutions — _he_ handles astral Unicode symbols just fine. [An online demo is available.](http://mothereff.in/html-entities)\n\n## Installation\n\nVia [npm](http://npmjs.org/):\n\n```bash\nnpm install he\n```\n\nVia [Bower](http://bower.io/):\n\n```bash\nbower install he\n```\n\nVia [Component](https://github.com/component/component):\n\n```bash\ncomponent install mathiasbynens/he\n```\n\nIn a browser:\n\n```html\n<script src="he.js"></script>\n```\n\nIn [Narwhal](http://narwhaljs.org/), [Node.js](http://nodejs.org/), and [RingoJS](http://ringojs.org/):\n\n```js\nvar he = require(\'he\');\n```\n\nIn [Rhino](http://www.mozilla.org/rhino/):\n\n```js\nload(\'he.js\');\n```\n\nUsing an AMD loader like [RequireJS](http://requirejs.org/):\n\n```js\nrequire(\n  {\n    \'paths\': {\n      \'he\': \'path/to/he\'\n    }\n  },\n  [\'he\'],\n  function(he) {\n    console.log(he);\n  }\n);\n```\n\n## API\n\n### `he.version`\n\nA string representing the semantic version number.\n\n### `he.encode(text, options)`\n\nThis function takes a string of text and encodes (by default) any symbols that aren’t printable ASCII symbols and `&`, `<`, `>`, `"`, `\'`, and `` ` ``, replacing them with character references.\n\n```js\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\');\n// → \'foo &#xA9; bar &#x2260; baz &#x1D306; qux\'\n```\n\nAs long as the input string contains [allowed code points](http://www.whatwg.org/specs/web-apps/current-work/multipage/parsing.html#preprocessing-the-input-stream) only, the return value of this function is always valid HTML. Any [(invalid) code points that cannot be represented using a character reference](http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#table-charref-overrides) in the input are not encoded.\n\n```js\nhe.encode(\'foo \\0 bar\');\n// → \'foo \\0 bar\'\n```\n\nThe `options` object is optional. It recognizes the following properties:\n\n#### `useNamedReferences`\n\nThe default value for the `useNamedReferences` option is `false`. This means that `encode()` will not use any named character references (e.g. `&copy;`) in the output — hexadecimal escapes (e.g. `&#xA9;`) will be used instead. Set it to `true` to enable the use of named references.\n\n**Note that if compatibility with older browsers is a concern, this option should remain disabled.**\n\n```js\n// Using the global default setting (defaults to `false`):\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\');\n// → \'foo &#xA9; bar &#x2260; baz &#x1D306; qux\'\n\n// Passing an `options` object to `encode`, to explicitly disallow named references:\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\', {\n  \'useNamedReferences\': false\n});\n// → \'foo &#xA9; bar &#x2260; baz &#x1D306; qux\'\n\n// Passing an `options` object to `encode`, to explicitly allow named references:\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\', {\n  \'useNamedReferences\': true\n});\n// → \'foo &copy; bar &ne; baz &#x1D306; qux\'\n```\n\n#### `encodeEverything`\n\nThe default value for the `encodeEverything` option is `false`. This means that `encode()` will not use any character references for printable ASCII symbols that don’t need escaping. Set it to `true` to encode every symbol in the input string. When set to `true`, this option takes precedence over `allowUnsafeSymbols` (i.e. setting the latter to `true` in such a case has no effect).\n\n```js\n// Using the global default setting (defaults to `false`):\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\');\n// → \'foo &#xA9; bar &#x2260; baz &#x1D306; qux\'\n\n// Passing an `options` object to `encode`, to explicitly encode all symbols:\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\', {\n  \'encodeEverything\': true\n});\n// → \'&#x66;&#x6F;&#x6F;&#x20;&#xA9;&#x20;&#x62;&#x61;&#x72;&#x20;&#x2260;&#x20;&#x62;&#x61;&#x7A;&#x20;&#x1D306;&#x20;&#x71;&#x75;&#x78;\'\n\n// This setting can be combined with the `useNamedReferences` option:\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\', {\n  \'encodeEverything\': true,\n  \'useNamedReferences\': true\n});\n// → \'&#x66;&#x6F;&#x6F;&#x20;&copy;&#x20;&#x62;&#x61;&#x72;&#x20;&ne;&#x20;&#x62;&#x61;&#x7A;&#x20;&#x1D306;&#x20;&#x71;&#x75;&#x78;\'\n```\n\n#### `strict`\n\nThe default value for the `strict` option is `false`. This means that `encode()` will encode any HTML text content you feed it, even if it contains any symbols that cause [parse errors](http://www.whatwg.org/specs/web-apps/current-work/multipage/parsing.html#preprocessing-the-input-stream). To throw an error when such invalid HTML is encountered, set the `strict` option to `true`. This option makes it possible to use _he_ as part of HTML parsers and HTML validators.\n\n```js\n// Using the global default setting (defaults to `false`, i.e. error-tolerant mode):\nhe.encode(\'\\x01\');\n// → \'&#x1;\'\n\n// Passing an `options` object to `encode`, to explicitly enable error-tolerant mode:\nhe.encode(\'\\x01\', {\n  \'strict\': false\n});\n// → \'&#x1;\'\n\n// Passing an `options` object to `encode`, to explicitly enable strict mode:\nhe.encode(\'\\x01\', {\n  \'strict\': true\n});\n// → Parse error\n```\n\n#### `allowUnsafeSymbols`\n\nThe default value for the `allowUnsafeSymbols` option is `false`. This means that characters that are unsafe for use in HTML content (`&`, `<`, `>`, `"`, `\'`, and `` ` ``) will be encoded. When set to `true`, only non-ASCII characters will be encoded. If the `encodeEverything` option is set to `true`, this option will be ignored.\n\n```js\nhe.encode(\'foo © and & ampersand\', {\n  \'allowUnsafeSymbols\': true\n});\n// → \'foo &#xA9; and & ampersand\'\n```\n\n#### Overriding default `encode` options globally\n\nThe global default setting can be overridden by modifying the `he.encode.options` object. This saves you from passing in an `options` object for every call to `encode` if you want to use the non-default setting.\n\n```js\n// Read the global default setting:\nhe.encode.options.useNamedReferences;\n// → `false` by default\n\n// Override the global default setting:\nhe.encode.options.useNamedReferences = true;\n\n// Using the global default setting, which is now `true`:\nhe.encode(\'foo © bar ≠ baz 𝌆 qux\');\n// → \'foo &copy; bar &ne; baz &#x1D306; qux\'\n```\n\n### `he.decode(html, options)`\n\nThis function takes a string of HTML and decodes any named and numerical character references in it using [the algorithm described in section 12.2.4.69 of the HTML spec](http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#tokenizing-character-references).\n\n```js\nhe.decode(\'foo &copy; bar &ne; baz &#x1D306; qux\');\n// → \'foo © bar ≠ baz 𝌆 qux\'\n```\n\nThe `options` object is optional. It recognizes the following properties:\n\n#### `isAttributeValue`\n\nThe default value for the `isAttributeValue` option is `false`. This means that `decode()` will decode the string as if it were used in [a text context in an HTML document](http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#data-state). HTML has different rules for [parsing character references in attribute values](http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#character-reference-in-attribute-value-state) — set this option to `true` to treat the input string as if it were used as an attribute value.\n\n```js\n// Using the global default setting (defaults to `false`, i.e. HTML text context):\nhe.decode(\'foo&ampbar\');\n// → \'foo&bar\'\n\n// Passing an `options` object to `decode`, to explicitly assume an HTML text context:\nhe.decode(\'foo&ampbar\', {\n  \'isAttributeValue\': false\n});\n// → \'foo&bar\'\n\n// Passing an `options` object to `decode`, to explicitly assume an HTML attribute value context:\nhe.decode(\'foo&ampbar\', {\n  \'isAttributeValue\': true\n});\n// → \'foo&ampbar\'\n```\n\n#### `strict`\n\nThe default value for the `strict` option is `false`. This means that `decode()` will decode any HTML text content you feed it, even if it contains any entities that cause [parse errors](http://www.whatwg.org/specs/web-apps/current-work/multipage/tokenization.html#tokenizing-character-references). To throw an error when such invalid HTML is encountered, set the `strict` option to `true`. This option makes it possible to use _he_ as part of HTML parsers and HTML validators.\n\n```js\n// Using the global default setting (defaults to `false`, i.e. error-tolerant mode):\nhe.decode(\'foo&ampbar\');\n// → \'foo&bar\'\n\n// Passing an `options` object to `decode`, to explicitly enable error-tolerant mode:\nhe.decode(\'foo&ampbar\', {\n  \'strict\': false\n});\n// → \'foo&bar\'\n\n// Passing an `options` object to `decode`, to explicitly enable strict mode:\nhe.decode(\'foo&ampbar\', {\n  \'strict\': true\n});\n// → Parse error\n```\n\n#### Overriding default `decode` options globally\n\nThe global default settings for the `decode` function can be overridden by modifying the `he.decode.options` object. This saves you from passing in an `options` object for every call to `decode` if you want to use a non-default setting.\n\n```js\n// Read the global default setting:\nhe.decode.options.isAttributeValue;\n// → `false` by default\n\n// Override the global default setting:\nhe.decode.options.isAttributeValue = true;\n\n// Using the global default setting, which is now `true`:\nhe.decode(\'foo&ampbar\');\n// → \'foo&ampbar\'\n```\n\n### `he.escape(text)`\n\nThis function takes a string of text and escapes it for use in text contexts in XML or HTML documents. Only the following characters are escaped: `&`, `<`, `>`, `"`, `\'`, and `` ` ``.\n\n```js\nhe.escape(\'<img src=\\\'x\\\' onerror="prompt(1)">\');\n// → \'&lt;img src=&#x27;x&#x27; onerror=&quot;prompt(1)&quot;&gt;\'\n```\n\n### `he.unescape(html, options)`\n\n`he.unescape` is an alias for `he.decode`. It takes a string of HTML and decodes any named and numerical character references in it.\n\n### Using the `he` binary\n\nTo use the `he` binary in your shell, simply install _he_ globally using npm:\n\n```bash\nnpm install -g he\n```\n\nAfter that you will be able to encode/decode HTML entities from the command line:\n\n```bash\n$ he --encode \'föo ♥ bår 𝌆 baz\'\nf&#xF6;o &#x2665; b&#xE5;r &#x1D306; baz\n\n$ he --encode --use-named-refs \'föo ♥ bår 𝌆 baz\'\nf&ouml;o &hearts; b&aring;r &#x1D306; baz\n\n$ he --decode \'f&ouml;o &hearts; b&aring;r &#x1D306; baz\'\nföo ♥ bår 𝌆 baz\n```\n\nRead a local text file, encode it for use in an HTML text context, and save the result to a new file:\n\n```bash\n$ he --encode < foo.txt > foo-escaped.html\n```\n\nOr do the same with an online text file:\n\n```bash\n$ curl -sL "http://git.io/HnfEaw" | he --encode > escaped.html\n```\n\nOr, the opposite — read a local file containing a snippet of HTML in a text context, decode it back to plain text, and save the result to a new file:\n\n```bash\n$ he --decode < foo-escaped.html > foo.txt\n```\n\nOr do the same with an online HTML snippet:\n\n```bash\n$ curl -sL "http://git.io/HnfEaw" | he --decode > decoded.txt\n```\n\nSee `he --help` for the full list of options.\n\n## Support\n\nhe has been tested in at least Chrome 27-29, Firefox 3-22, Safari 4-6, Opera 10-12, IE 6-10, Node.js v0.10.0, Narwhal 0.3.2, RingoJS 0.8-0.9, PhantomJS 1.9.0, and Rhino 1.7RC4.\n\n## Unit tests & code coverage\n\nAfter cloning this repository, run `npm install` to install the dependencies needed for he development and testing. You may want to install Istanbul _globally_ using `npm install istanbul -g`.\n\nOnce that’s done, you can run the unit tests in Node using `npm test` or `node tests/tests.js`. To run the tests in Rhino, Ringo, Narwhal, and web browsers as well, use `grunt test`.\n\nTo generate the code coverage report, use `grunt cover`.\n\n## Acknowledgements\n\nThanks to [Simon Pieters](http://simon.html5.org/) ([@zcorpan](https://twitter.com/zcorpan)) for the many suggestions.\n\n## Author\n\n| [![twitter/mathias](https://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](https://twitter.com/mathias "Follow @mathias on Twitter") |\n|---|\n| [Mathias Bynens](https://mathiasbynens.be/) |\n\n## License\n\n_he_ is available under the [MIT](http://mths.be/mit) license.\n',
+977 silly resolved     readmeFilename: 'README.md',
+977 silly resolved     _id: 'he@0.5.0',
+977 silly resolved     _shasum: '2c05ffaef90b68e860f3fd2b54ef580989277ee2',
+977 silly resolved     _from: 'he@^0.5.0',
+977 silly resolved     _resolved: 'https://registry.npmjs.org/he/-/he-0.5.0.tgz' } ]
+978 info install mime@1.3.4 into /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+979 info install minimist@1.1.0 into /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+980 info install he@0.5.0 into /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+981 info installOne mime@1.3.4
+982 info installOne minimist@1.1.0
+983 info installOne he@0.5.0
+984 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/mime unbuild
+985 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/minimist unbuild
+986 info /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/he unbuild
+987 verbose tar unpack /Users/Jing/.npm/mime/1.3.4/package.tgz
+988 silly lockFile 738612a8-dules-ecstatic-node-modules-mime tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/mime
+989 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/mime /Users/Jing/.npm/738612a8-dules-ecstatic-node-modules-mime.lock
+990 silly lockFile f71c29e3--Jing-npm-mime-1-3-4-package-tgz tar:///Users/Jing/.npm/mime/1.3.4/package.tgz
+991 verbose lock tar:///Users/Jing/.npm/mime/1.3.4/package.tgz /Users/Jing/.npm/f71c29e3--Jing-npm-mime-1-3-4-package-tgz.lock
+992 verbose tar unpack /Users/Jing/.npm/minimist/1.1.0/package.tgz
+993 silly lockFile 8447f6ff-s-ecstatic-node-modules-minimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/minimist
+994 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/minimist /Users/Jing/.npm/8447f6ff-s-ecstatic-node-modules-minimist.lock
+995 silly lockFile b40de147-g-npm-minimist-1-1-0-package-tgz tar:///Users/Jing/.npm/minimist/1.1.0/package.tgz
+996 verbose lock tar:///Users/Jing/.npm/minimist/1.1.0/package.tgz /Users/Jing/.npm/b40de147-g-npm-minimist-1-1-0-package-tgz.lock
+997 verbose tar unpack /Users/Jing/.npm/he/0.5.0/package.tgz
+998 silly lockFile 3e9bf2d3-modules-ecstatic-node-modules-he tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/he
+999 verbose lock tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/he /Users/Jing/.npm/3e9bf2d3-modules-ecstatic-node-modules-he.lock
+1000 silly lockFile 52b195b3-rs-Jing-npm-he-0-5-0-package-tgz tar:///Users/Jing/.npm/he/0.5.0/package.tgz
+1001 verbose lock tar:///Users/Jing/.npm/he/0.5.0/package.tgz /Users/Jing/.npm/52b195b3-rs-Jing-npm-he-0-5-0-package-tgz.lock
+1002 silly gunzTarPerm modes [ '755', '644' ]
+1003 silly gunzTarPerm modes [ '755', '644' ]
+1004 silly gunzTarPerm modes [ '755', '644' ]
+1005 silly gunzTarPerm extractEntry package.json
+1006 silly gunzTarPerm extractEntry package.json
+1007 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+1008 silly gunzTarPerm extractEntry package.json
+1009 silly gunzTarPerm extractEntry .npmignore
+1010 silly gunzTarPerm extractEntry README.md
+1011 silly gunzTarPerm extractEntry LICENSE
+1012 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+1013 silly gunzTarPerm extractEntry index.js
+1014 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+1015 silly gunzTarPerm extractEntry README.md
+1016 silly gunzTarPerm extractEntry he.js
+1017 silly gunzTarPerm extractEntry LICENSE
+1018 silly gunzTarPerm extractEntry cli.js
+1019 silly gunzTarPerm extractEntry .travis.yml
+1020 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+1021 silly gunzTarPerm extractEntry example/parse.js
+1022 silly gunzTarPerm modified mode [ 'example/parse.js', 436, 420 ]
+1023 silly gunzTarPerm extractEntry LICENSE-MIT.txt
+1024 silly gunzTarPerm extractEntry mime.js
+1025 silly gunzTarPerm extractEntry build/build.js
+1026 silly gunzTarPerm extractEntry readme.markdown
+1027 silly gunzTarPerm modified mode [ 'readme.markdown', 436, 420 ]
+1028 silly gunzTarPerm extractEntry test/all_bool.js
+1029 silly gunzTarPerm modified mode [ 'test/all_bool.js', 436, 420 ]
+1030 silly gunzTarPerm extractEntry build/test.js
+1031 silly gunzTarPerm extractEntry types.json
+1032 silly gunzTarPerm extractEntry test/default_bool.js
+1033 silly gunzTarPerm modified mode [ 'test/default_bool.js', 436, 420 ]
+1034 silly gunzTarPerm extractEntry bin/he
+1035 silly gunzTarPerm extractEntry man/he.1
+1036 silly gunzTarPerm extractEntry test/dotted.js
+1037 silly gunzTarPerm modified mode [ 'test/dotted.js', 436, 420 ]
+1038 silly gunzTarPerm extractEntry test/long.js
+1039 silly gunzTarPerm modified mode [ 'test/long.js', 436, 420 ]
+1040 silly gunzTarPerm extractEntry test/dash.js
+1041 silly gunzTarPerm modified mode [ 'test/dash.js', 436, 420 ]
+1042 silly gunzTarPerm extractEntry test/parse.js
+1043 silly gunzTarPerm modified mode [ 'test/parse.js', 436, 420 ]
+1044 silly gunzTarPerm extractEntry test/parse_modified.js
+1045 silly gunzTarPerm modified mode [ 'test/parse_modified.js', 436, 420 ]
+1046 silly gunzTarPerm extractEntry test/short.js
+1047 silly gunzTarPerm modified mode [ 'test/short.js', 436, 420 ]
+1048 silly gunzTarPerm extractEntry test/stop_early.js
+1049 silly gunzTarPerm modified mode [ 'test/stop_early.js', 436, 420 ]
+1050 silly gunzTarPerm extractEntry test/unknown.js
+1051 silly gunzTarPerm modified mode [ 'test/unknown.js', 436, 420 ]
+1052 silly gunzTarPerm extractEntry test/bool.js
+1053 silly gunzTarPerm modified mode [ 'test/bool.js', 436, 420 ]
+1054 silly gunzTarPerm extractEntry test/whitespace.js
+1055 silly gunzTarPerm modified mode [ 'test/whitespace.js', 436, 420 ]
+1056 silly gunzTarPerm extractEntry test/num.js
+1057 silly gunzTarPerm modified mode [ 'test/num.js', 436, 420 ]
+1058 silly lockFile 738612a8-dules-ecstatic-node-modules-mime tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/mime
+1059 silly lockFile 738612a8-dules-ecstatic-node-modules-mime tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/mime
+1060 silly lockFile f71c29e3--Jing-npm-mime-1-3-4-package-tgz tar:///Users/Jing/.npm/mime/1.3.4/package.tgz
+1061 silly lockFile f71c29e3--Jing-npm-mime-1-3-4-package-tgz tar:///Users/Jing/.npm/mime/1.3.4/package.tgz
+1062 info preinstall mime@1.3.4
+1063 verbose readDependencies using package.json deps
+1064 verbose readDependencies using package.json deps
+1065 silly resolved []
+1066 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/mime
+1067 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/mime
+1068 verbose linkStuff [ false,
+1068 verbose linkStuff   false,
+1068 verbose linkStuff   false,
+1068 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules' ]
+1069 info linkStuff mime@1.3.4
+1070 verbose linkBins mime@1.3.4
+1071 verbose link bins [ { mime: 'cli.js' },
+1071 verbose link bins   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/.bin',
+1071 verbose link bins   false ]
+1072 verbose linkMans mime@1.3.4
+1073 verbose rebuildBundles mime@1.3.4
+1074 info install mime@1.3.4
+1075 info postinstall mime@1.3.4
+1076 silly lockFile 8447f6ff-s-ecstatic-node-modules-minimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/minimist
+1077 silly lockFile 8447f6ff-s-ecstatic-node-modules-minimist tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/minimist
+1078 silly lockFile b40de147-g-npm-minimist-1-1-0-package-tgz tar:///Users/Jing/.npm/minimist/1.1.0/package.tgz
+1079 silly lockFile b40de147-g-npm-minimist-1-1-0-package-tgz tar:///Users/Jing/.npm/minimist/1.1.0/package.tgz
+1080 info preinstall minimist@1.1.0
+1081 verbose readDependencies using package.json deps
+1082 verbose readDependencies using package.json deps
+1083 silly resolved []
+1084 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/minimist
+1085 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/minimist
+1086 verbose linkStuff [ false,
+1086 verbose linkStuff   false,
+1086 verbose linkStuff   false,
+1086 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules' ]
+1087 info linkStuff minimist@1.1.0
+1088 verbose linkBins minimist@1.1.0
+1089 verbose linkMans minimist@1.1.0
+1090 verbose rebuildBundles minimist@1.1.0
+1091 info install minimist@1.1.0
+1092 info postinstall minimist@1.1.0
+1093 silly lockFile 3e9bf2d3-modules-ecstatic-node-modules-he tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/he
+1094 silly lockFile 3e9bf2d3-modules-ecstatic-node-modules-he tar:///Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/he
+1095 silly lockFile 52b195b3-rs-Jing-npm-he-0-5-0-package-tgz tar:///Users/Jing/.npm/he/0.5.0/package.tgz
+1096 silly lockFile 52b195b3-rs-Jing-npm-he-0-5-0-package-tgz tar:///Users/Jing/.npm/he/0.5.0/package.tgz
+1097 info preinstall he@0.5.0
+1098 verbose readDependencies using package.json deps
+1099 verbose readDependencies using package.json deps
+1100 silly resolved []
+1101 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/he
+1102 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/he
+1103 verbose linkStuff [ false,
+1103 verbose linkStuff   false,
+1103 verbose linkStuff   false,
+1103 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules' ]
+1104 info linkStuff he@0.5.0
+1105 verbose linkBins he@0.5.0
+1106 verbose link bins [ { he: 'bin/he' },
+1106 verbose link bins   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic/node_modules/.bin',
+1106 verbose link bins   false ]
+1107 verbose linkMans he@0.5.0
+1108 verbose rebuildBundles he@0.5.0
+1109 info install he@0.5.0
+1110 info postinstall he@0.5.0
+1111 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+1112 info build /Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/ecstatic
+1113 verbose linkStuff [ false,
+1113 verbose linkStuff   false,
+1113 verbose linkStuff   false,
+1113 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules' ]
+1114 info linkStuff ecstatic@0.5.8
+1115 verbose linkBins ecstatic@0.5.8
+1116 verbose link bins [ { ecstatic: './lib/ecstatic.js' },
+1116 verbose link bins   '/Users/Jing/Desktop/site/app/node_modules/http-server/node_modules/.bin',
+1116 verbose link bins   false ]
+1117 verbose linkMans ecstatic@0.5.8
+1118 verbose rebuildBundles ecstatic@0.5.8
+1119 verbose rebuildBundles [ '.bin', 'he', 'mime', 'minimist' ]
+1120 info install ecstatic@0.5.8
+1121 info postinstall ecstatic@0.5.8
+1122 verbose about to build /Users/Jing/Desktop/site/app/node_modules/http-server
+1123 info build /Users/Jing/Desktop/site/app/node_modules/http-server
+1124 verbose linkStuff [ false,
+1124 verbose linkStuff   false,
+1124 verbose linkStuff   false,
+1124 verbose linkStuff   '/Users/Jing/Desktop/site/app/node_modules' ]
+1125 info linkStuff http-server@0.7.4
+1126 verbose linkBins http-server@0.7.4
+1127 verbose link bins [ { 'http-server': './bin/http-server', hs: './bin/http-server' },
+1127 verbose link bins   '/Users/Jing/Desktop/site/app/node_modules/.bin',
+1127 verbose link bins   false ]
+1128 verbose linkMans http-server@0.7.4
+1129 verbose rebuildBundles http-server@0.7.4
+1130 verbose rebuildBundles [ '.bin',
+1130 verbose rebuildBundles   'colors',
+1130 verbose rebuildBundles   'ecstatic',
+1130 verbose rebuildBundles   'opener',
+1130 verbose rebuildBundles   'optimist',
+1130 verbose rebuildBundles   'portfinder',
+1130 verbose rebuildBundles   'union' ]
+1131 info /Users/Jing/Desktop/site/app/node_modules/http-server unbuild
+1132 info preuninstall http-server@0.7.4
+1133 info uninstall http-server@0.7.4
+1134 verbose true,/Users/Jing/Desktop/site/app/node_modules,/Users/Jing/Desktop/site/app/node_modules unbuild http-server@0.7.4
+1135 verbose /Users/Jing/Desktop/site/app/node_modules/.bin,[object Object] binRoot
+1136 info postuninstall http-server@0.7.4
+1137 error Error: EACCES, symlink '../http-server/bin/http-server'
+1137 error  { [Error: EACCES, symlink '../http-server/bin/http-server']
+1137 error   errno: 3,
+1137 error   code: 'EACCES',
+1137 error   path: '../http-server/bin/http-server' }
+1138 error Please try running this command again as root/Administrator.
+1139 error System Darwin 13.4.0
+1140 error command "node" "/usr/local/bin/npm" "install" "http-server"
+1141 error cwd /Users/Jing/Desktop/site/app
+1142 error node -v v0.10.28
+1143 error npm -v 1.4.9
+1144 error path ../http-server/bin/http-server
+1145 error code EACCES
+1146 error errno 3
+1147 error stack Error: EACCES, symlink '../http-server/bin/http-server'
+1148 verbose exit [ 3, true ]
