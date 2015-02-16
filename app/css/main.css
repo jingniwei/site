@@ -1,0 +1,18 @@
+#welcome_bloc {
+	text-align: center;
+	color: #FFF;
+	background-color: #FF8F8F;
+	border: 1px solid #FF8F8F;
+	height: 100%;
+	width: 100%;
+}
+.biggest {
+	font-size: 9em;
+}
+
+#profile {
+	height: 15%;	
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}

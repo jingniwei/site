@@ -24,20 +24,15 @@ app.config(['$routeProvider',
  
  
 app.controller('MainController', function($scope) {
-     console.log('hi main');
     $scope.message = 'This is Add new main screen';
-     
 });
  
- 
 app.controller('AboutController', function($scope) {
-  console.log('hi about');
     $scope.message = 'This is Show about screen';
  
 });
 
 app.controller('BlogController', function($scope) {
-     
     $scope.message = 'This is Add new blog screen';
      
 });
